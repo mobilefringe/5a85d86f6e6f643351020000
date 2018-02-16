@@ -105,7 +105,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                             },
                             {
                                 name: "header.community",
-                                href: "/pages/bonniedoon-community-support"
+                                href: "/pages/pinecentre-community-support"
                             },
                             {
                                 name: "header.green_initiatives",
