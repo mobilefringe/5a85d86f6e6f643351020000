@@ -282,6 +282,11 @@ strong, .bold {
 .green_hr {
     border: solid 2px $accent;
 }
+.checkbox {
+    a{
+        
+    }
+}
 /* LOADER */
 .custom_backdrop {
     background-color: rgba(0, 0, 0, 0.5)
