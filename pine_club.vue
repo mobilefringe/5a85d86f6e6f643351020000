@@ -4,7 +4,7 @@
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
-					<h1>Kids PinE-Club</h1>
+					<h1>PinE-Club</h1>
 				</div>
 			</div>
 		</div>
