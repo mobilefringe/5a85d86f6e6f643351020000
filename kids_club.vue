@@ -182,7 +182,6 @@
             methods: {
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
-                        if (result &&  (this.correctValNum === this.validaNum)) {
                             let errors = this.errors;
                             this.validNumError = false;
                             if(this.form_data.agree_newsletter ) {
