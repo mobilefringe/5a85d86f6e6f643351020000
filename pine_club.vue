@@ -61,7 +61,6 @@
                                     <input name="agree_terms" required type="checkbox" >
                                      Yes, I would like to receive ongoing news related to events, promotions and special announcements from {{property.name}}
                                 </label>
-                                <label class=""> <a href="https://www.morguard.com/privacy/"> Read our Privacy Policy here</a></label> 
 						    </div>
 							<div class="col-xs-12" style="margin-top: 20px;padding: 0;">
 								<button class="contest_btn" type="submit" :disabled="formSuccess">Submit</button>
