@@ -287,6 +287,10 @@ strong, .bold {
         color:$accent;
     }
 }
+.req_star {
+    color:red;
+}
+
 /* LOADER */
 .custom_backdrop {
     background-color: rgba(0, 0, 0, 0.5)
