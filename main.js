@@ -217,7 +217,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             loadData: async function() {
                 try {
                     await this.$store.dispatch('initializeApi', {
-                        site: "bonniedoon",
+                        site: "pinecentre",
                         version: "v4"
                     });
                     await Promise.all([this.$store.dispatch("getData", "property")]);
