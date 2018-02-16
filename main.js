@@ -159,6 +159,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             this.loadData().then(response => {
                 this.dataLoaded = true;
                 this.locale = "en-ca";
+                this.property.default_image_url = "";
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
         },
