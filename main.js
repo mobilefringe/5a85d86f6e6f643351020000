@@ -110,10 +110,6 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                             {
                                 name: "header.jobs",
                                 href: "/jobs"
-                            },
-                            {
-                                name: "header.gift_card",
-                                href: "/pages/bonniedoon-gift-cards"
                             }
                         ]
                     },
