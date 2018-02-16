@@ -100,7 +100,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                         name: "header.whats_happening",
                         href: "/events",
                         sub_menu: [{
-                                name: "header.services ",
+                                name: "header.events ",
                                 href: "/pages/bonniedoon-services"
                             },
                             {
