@@ -52,8 +52,6 @@
                                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
 							</div>
 						</div>
-						
-						
 						<div class="form-group account-btn text-left m-t-10 agreement">
 						    <div class="col-xs-12">
 						        <label class="checkbox">
