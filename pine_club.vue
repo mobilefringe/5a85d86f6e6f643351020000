@@ -13,7 +13,7 @@
                 </div> 
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
-                    <div class="description_text text_left" style="padding-top:40px">
+                    <div class="description_text text_left" style="padding-top:40px;padding-bottom: 20px;">
                        Get connected.. by joining the PinE-CLUB you receive exclusive offers and contests direct to your inbox.  As a member, you will receive PinE-CLUB Newsletters with upcoming events, contests and promotions that you will not want to miss!  We give away concert tickets, Gift Cards and more to our members – all you have to do is sign up!
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
