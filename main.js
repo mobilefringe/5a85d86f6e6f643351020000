@@ -108,8 +108,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                                 href: "/pages/pinecentre-community"
                             },
                             {
-                                name: "header.kids_club",
-                                href: "/kids_club"
+                                name: "header.jobs",
+                                href: "/kids_b"
                             },
                             {
                                 name: "header.gift_card",
