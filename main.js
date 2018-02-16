@@ -159,7 +159,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             this.loadData().then(response => {
                 this.dataLoaded = true;
                 this.locale = "en-ca";
-                this.property.default_logo_url = "";
+                this.property.default_logo_url = "http://via.placeholder.com/500x150/707070";
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
         },
