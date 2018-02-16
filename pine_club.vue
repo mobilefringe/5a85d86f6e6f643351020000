@@ -13,6 +13,9 @@
                 </div> 
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
+                    <div class="description_text text_left" style="padding-top:40px" v-if="locale=='en-ca'" v-html="currentContest.rich_description">
+                        <!--{{currentContest.description}}-->
+                    </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
