@@ -68,16 +68,10 @@
 							</div>
 						</div>
 						<div class="form-group account-btn text-left m-t-10 agreement">
-						    <div class="col-xs-12" :class="{'has-error': errors.has('agree_newsletter')}">
-						        <label class="checkbox">
-                                    <input name="agree_newsletter" type="checkbox" v-model="form_data.agree_newsletter">
-                                        Yes, I would like to receive ongoing news related to events, promotions and special announcements from {{property.name}}
-                                </label>
-						    </div>
 						    <div class="col-xs-12">
 						        <label class="checkbox">
                                     <input name="agree_terms" required type="checkbox" >
-                                    I agree to the <a href = "/pages/eastgate-contest-rules-and-regulations" target="_blank"><u> rules and regulations</u></a>
+                                    I understand by checking the box, I acknowledge that I have read, understood, and accept the <a href="/pages/pinecentre-pine-kid-s-club-disclaimer-and-the-code-of-conduct" target="_blank"></a>Disclaimer and the Code of Conduct
                                 </label>
 						    </div>
 							<div class="col-xs-12" style="margin-top: 20px;padding: 0;">
