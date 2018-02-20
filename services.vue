@@ -48,6 +48,7 @@
 </style>
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "bootstrap-vue"], function(Vue, Vuex, moment, tz, VueMoment, BootstrapVue) {
+        console.log(BootstrapVue);
         return Vue.component("services-component", {
             template: template, // the variable template will be injected,
             data: function() {
