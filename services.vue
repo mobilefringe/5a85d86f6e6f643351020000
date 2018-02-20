@@ -25,10 +25,7 @@
                                 I start opened because <code>visible</code> is <code>true</code>
                             </p>
                             <p class="card-text">
-                                For your shopping convenience, Toddler Strollers are available at Guest Services for FREE.   Some strollers can accommodate two children.    There is no charge to use the strollers but current photo ID is required as a deposit.
-Do you need some assistance getting around? Then visit the Guest Services for FREE use of a wheelchair or power scooter during your visit to Pine Centre.
-
-*you will need to leave a piece of photo identification with customer service until you return the wheelchairs and/or strollers.
+                               
                             </p>
                         </b-card-body>
                     </b-collapse>
@@ -101,7 +98,10 @@ Please review the Locker Usage Rules & Regulations located below and on the insi
                     text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS.",
                     services : [
                         {
-                            text: ""
+                            text: " For your shopping convenience, Toddler Strollers are available at Guest Services for FREE.   Some strollers can accommodate two children.    There is no charge to use the strollers but current photo ID is required as a deposit.
+Do you need some assistance getting around? Then visit the Guest Services for FREE use of a wheelchair or power scooter during your visit to Pine Centre.
+
+*you will need to leave a piece of photo identification with customer service until you return the wheelchairs and/or strollers."
                         }
                         ]
                 }
