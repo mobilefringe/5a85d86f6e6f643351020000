@@ -65,7 +65,7 @@ Please review the Locker Usage Rules & Regulations located below and on the insi
                     <b-collapse id="accordion3" accordion="my-accordion" role="tabpanel">
                         <b-card-body>
                             <p class="card-text">
-                                {{ text }}
+                               Would you like to promote your charity or non-profit at Pine Centre? Contact Shelley Sivell at 250 563 3681 ext. 22 at to book a table or event or to display your brochure at Guest Services.  Download the Use of Premises Booking Form here.
                             </p>
                         </b-card-body>
                     </b-collapse>
