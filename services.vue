@@ -14,18 +14,50 @@
                 <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
                 <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
             </div>
-            <div>
-              <b-btn v-b-toggle.collapse1 variant="primary">Toggle Collapse</b-btn>
-              <b-collapse id="collapse1" class="mt-2">
-                <b-card>
-                  <p class="card-text">Collapse contents Here</p>
-                  <b-btn v-b-toggle.collapse1_inner size="sm">Toggle Inner Collapse</b-btn>
-                  <b-collapse id=collapse1_inner class="mt-2">
-                    <b-card>Hello!</b-card>
-                  </b-collapse>
-                </b-card>
-              </b-collapse>
-            </div>
+           <div role="tablist">
+    <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+            <b-btn block href="#" v-b-toggle.accordion1 variant="info">Accordion 1</b-btn>
+        </b-card-header>
+        <b-collapse id="accordion1" visible accordion="my-accordion" role="tabpanel">
+            <b-card-body>
+                <p class="card-text">
+                    I start opened because <code>visible</code> is <code>true</code>
+                </p>
+                <p class="card-text">
+                    {{ text }}
+                </p>
+            </b-card-body>
+        </b-collapse>
+    </b-card>
+    <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+            <b-btn block href="#" v-b-toggle.accordion2 variant="info">Accordion 2</b-btn>
+        </b-card-header>
+        <b-collapse id="accordion2" accordion="my-accordion" role="tabpanel">
+            <b-card-body>
+                <p class="card-text">
+                    {{ text }}
+                </p>
+            </b-card-body>
+        </b-collapse>
+    </b-card>
+    <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+            <b-btn block href="#" v-b-toggle.accordion3 variant="info">Accordion 3</b-btn>
+        </b-card-header>
+        <b-collapse id="accordion3" accordion="my-accordion" role="tabpanel">
+            <b-card-body>
+                <p class="card-text">
+                    {{ text }}
+                </p>
+            </b-card-body>
+        </b-collapse>
+    </b-card>
+</div>
+      </b-collapse>
+    </b-card>
+  </div>
         </div>
         <div style="padding:20px 0;"></div>
     </div>
