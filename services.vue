@@ -17,7 +17,7 @@
             <div role="tablist">
                 <b-card no-body class="mb-1">
                     <b-card-header header-tag="header" class="p-1" role="tab">
-                        <b-btn block href="#" v-b-toggle.accordion1 variant="info">Accordion 1</b-btn>
+                        <b-btn block href="#" v-b-toggle.accordion1 variant="info">Strollers, Wheelchairs and Power Scooters</b-btn>
                     </b-card-header>
                     <b-collapse id="accordion1" visible accordion="my-accordion" role="tabpanel">
                         <b-card-body>
