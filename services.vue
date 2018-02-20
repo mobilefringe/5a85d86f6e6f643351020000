@@ -40,7 +40,20 @@ Do you need some assistance getting around? Then visit the Guest Services for FR
                     <b-collapse id="accordion2" accordion="my-accordion" role="tabpanel">
                         <b-card-body>
                             <p class="card-text">
-                                {{ text }}
+                              For your shopping convenience, coin operated lockers are now available and located down the hallway with the pay phones near Guest Services. They are available for a small fee of $2 per use.
+Please review the Locker Usage Rules & Regulations located below and on the inside door of each locker.
+
+1. Lockers are available to our shoppers for their convenience while at Pine Centre.
+2. There is a $2.00 fee per use (noting once you open your locker, you will be required to insert an additional $2.00 to re-use).
+3. Lockers are available during Pine Centre shopping hours only and will be emptied daily at closing times.
+4. Please ensure that you collect all of your belongings at the end of your visit.
+5. Any items left at the end of the day will be considered ‘lost’ and recorded and handled as per our ‘Lost and Found Policy’.
+6. Lockers are meant to store jackets, shopping bags and other personal items that cannot be managed while shopping.
+7. Pine Centre Mall is NOT responsible for any lost or stolen items.
+8. Any misuse of lockers including vandalism, storage of illegal items, or storage of items that are ‘perishable’ in nature or otherwise unsuitable for storage, may result in legal action.
+9. It is important to note that this area is under video surveillance and activities may be recorded.
+10. Please see the Guest Services to claim any items left behind, report damaged lockers or request additional information about our Lost & Found Policy or Video Surveillance Policy or call 250 563 3681.
+11. There is a $10 replacement fee for lost keys.
                             </p>
                         </b-card-body>
                     </b-collapse>
