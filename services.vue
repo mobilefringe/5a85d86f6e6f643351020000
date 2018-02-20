@@ -14,7 +14,18 @@
                 <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
                 <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
             </div>
-            
+            <div>
+              <b-btn v-b-toggle.collapse1 variant="primary">Toggle Collapse</b-btn>
+              <b-collapse id="collapse1" class="mt-2">
+                <b-card>
+                  <p class="card-text">Collapse contents Here</p>
+                  <b-btn v-b-toggle.collapse1_inner size="sm">Toggle Inner Collapse</b-btn>
+                  <b-collapse id=collapse1_inner class="mt-2">
+                    <b-card>Hello!</b-card>
+                  </b-collapse>
+                </b-card>
+              </b-collapse>
+            </div>
         </div>
         <div style="padding:20px 0;"></div>
     </div>
