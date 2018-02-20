@@ -14,21 +14,7 @@
             <!--    <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>-->
             <!--    <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>-->
             <!--</div>-->
-            <accordion :one-at-atime="false" type="info">
-                <panel is-open type="primary">
-                    <strong slot="header"><u>Panel #1</u></strong>
-                ...
-              </panel>
-              <panel header="Panel #2">
-                ...
-              </panel>
-              <panel header="Panel #3">
-                ...
-              </panel>
-              <panel header="Panel #4">
-                ...
-              </panel>
-            </accordion>
+            
         </div>
         <div style="padding:20px 0;"></div>
     </div>
