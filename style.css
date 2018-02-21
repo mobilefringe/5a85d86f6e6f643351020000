@@ -2981,7 +2981,9 @@ gallery:after{
 
 /****** accordion style ******/
 .accordion {
-    
+    .btn {
+        font-size: 1.25rem;;
+    }
 }
 @media (max-width: 1300px) {
     #primary_nav ul .menu_item {
