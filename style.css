@@ -2981,6 +2981,7 @@ gallery:after{
 
 /****** accordion style ******/
 .accordion {
+    padding-top: 20px;
     .btn {
         font-size: 1.25rem;
         text-align: left;
