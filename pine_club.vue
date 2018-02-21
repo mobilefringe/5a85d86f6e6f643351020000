@@ -35,7 +35,7 @@
 								<input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="email">
 								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
 							</div>
-							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('postal')}"  style="padding-top: 20px;">
+							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('postal')}">
 								<label class="label" for="postal">Postal Code <span class="req_star"> *</span></label>
 								<input v-model="form_data.postal_code" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="postal" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
 								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
@@ -43,12 +43,12 @@
 							
 						</div>
 						<div class="form-group ">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}"   style="padding-top: 20px;">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}" >
 								<label class="label" for="birthday">Birthday <span class="req_star"> *</span></label>
 								<input v-model="form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" name="birthday" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday">
 								<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
 							</div>
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}">
 								<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
 								<radio name="gender" value="male" v-model="form_data.gender">Male</radio>
                                 <radio name="gender" value="female" v-model="form_data.gender">Female</radio>
