@@ -2985,6 +2985,9 @@ gallery:after{
         font-size: 1.25rem;
         text-align: left;
     }
+    .collapse.show {
+        padding: 6px 12px;
+    }
 }
 @media (max-width: 1300px) {
     #primary_nav ul .menu_item {
