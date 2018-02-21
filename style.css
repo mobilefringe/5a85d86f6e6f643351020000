@@ -2994,6 +2994,9 @@ gallery:after{
     }
     .accordion_body {
         padding: 6px 12px;
+        a {
+            color : $accent;
+        }
     }
 }
 @media (max-width: 1300px) {
