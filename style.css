@@ -2978,7 +2978,12 @@ gallery:after{
     }
     
 }
-
+/**** pages ****/
+.page_body {
+    a {
+            color : $accent;
+        }
+}
 /****** accordion style ******/
 .accordion {
     padding-top: 20px;
