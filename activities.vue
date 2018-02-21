@@ -83,28 +83,6 @@ Please review the Locker Usage Rules & Regulations located below and on the insi
 11. There is a $10 replacement fee for lost keys.`,
                             is_visible : false,
                             id: "accordion_2"
-                        }, 
-                        {
-                            title: "Community Booking",
-                            text: `Would you like to promote your charity or non-profit at Pine Centre? Contact Shelley Sivell at 250 563 3681 ext. 22 at to book a table or event or to display your brochure at Guest Services.  Download the <a href="//www.mallmaverick.com/system/site_images/photos/000/036/937/original/jan2016Pine-Centre-Use-of-Premises-Application.pdf?1519147526">Use of Premises Booking Form here.</a>`,
-                            is_visible : false,
-                            id: "accordion_3"
-                        },
-                         {
-                            title: "Lost and Found",
-                            text: `If you have lost or found an item during your visit to Pine Centre, please contact Guest Services immediately. Lost and found items will be held for a maximum of thirty (30) days. If you have lost something, please be sure to leave your name and phone number with our Guest Service Representatives so that we can contact you if your item(s) are found. We cannot guarantee the safe return of your item(s), but will do our best!`,
-                            is_visible : false,
-                            id: "accordion_4"
-                        },
-                        {
-                            title: "Wifi Access and Wifi Terms and Conditions",
-                            text: `FREE Wifi is available in select areas of the main mall. The strongest signals can be found in the following locations:
-Toddler Play Area / Guest Services
-Food Court / Centre Court
-South Entrance Junction
-Use is limited to a thirty (30) minute session, thereby, the user would need to sign-in again for further use. Users must agree to the Terms and Conditions. <a href="//www.mallmaverick.com/system/site_images/photos/000/036/937/original/jan2016Pine-Centre-Use-of-Premises-Application.pdf?1519147526">Use of Premises Booking Form here.</a>`,
-                            is_visible : false,
-                            id: "accordion_5"
                         }
                         ]
                 }
