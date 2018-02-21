@@ -63,8 +63,6 @@
                             title: "About Mall Walking",
                             text:   `<p><span>Registration is FREE at the Guest Services&nbsp;Centre &ndash; it&rsquo;s easy, safe and you can enjoy Pine Centre Mall all year round!</span></p>
 
-<p>&nbsp;</p>
-
 <p><strong>Mall Walking Hours and Access</strong></p>
 
 <p>Monday to Saturday&nbsp;&ndash;&nbsp;South Entrance open at 7:00am; remaining doors at 8:30am.Sunday &ndash;&nbsp;South Entrance open at 9am; remaining doors at 10:30 am.</p>
