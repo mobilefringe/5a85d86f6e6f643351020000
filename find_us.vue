@@ -70,6 +70,10 @@
                     'property',
                     'findRepoByName'
                 ]),
+                full_address() {
+                    return this.property.address1 +''+this.property.city +''+ this.property.country +''+this.property.province_state +''+this.property.province_state
+            
+                }
             },
             methods: {
                 loadData: async function() {
