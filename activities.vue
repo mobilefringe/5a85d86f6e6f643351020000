@@ -136,6 +136,7 @@ Health regulations require that everyone in the Play Area must wear socks. Weari
             created(){
                 this.loadData().then(response => {
                     this.currentPage = response[0].data;
+                    
                     var temp_repo = this.findRepoByName('Pages Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
@@ -143,6 +144,21 @@ Health regulations require that everyone in the Play Area must wear socks. Weari
                     this.pageBanner = this.pageBanner;
                 });
             },
+            watch : {
+                currentPage () {
+                     promos.map(promo => {
+                        promo.image_url = promo.promo_image_url_abs;
+                        promo.locale = state.locale;
+                        promo.store = null;
+                        if (promo.promotionable_type === "Store") {
+                            let foundStore = stores.find(store => store.id === promo.promotionable_id.toString());
+                            if (foundStore) {
+                                promo.store = foundStore;
+                            }
+                        }
+                    });
+                }
+            }
             computed: {
                 ...Vuex.mapGetters([
                     'property',
