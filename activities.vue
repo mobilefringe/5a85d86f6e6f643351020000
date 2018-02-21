@@ -69,7 +69,7 @@ Monday to Saturday – South Entrance open at 7:00am; remaining doors at 8:30am.
                             id: "accordion_1"
                         },
                         {
-                            title: "Locker Storage",
+                            title: "About Pine for Play - Toddlers Play Area",
                             text: ` For your shopping convenience, coin operated lockers are now available and located down the hallway with the pay phones near Guest Services. They are available for a small fee of $2 per use.
 Please review the Locker Usage Rules & Regulations located below and on the inside door of each locker.
 
