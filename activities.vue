@@ -15,7 +15,7 @@
                 <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
             </div>
             <div role="tablist" class="accordion">
-                <b-card no-body class="mb-1" v-for = "service in services">
+                <b-card no-body class="mb-1" v-for = "service in currentPage.subpages">
                     <b-card-header header-tag="header" class="p-1" role="tab">
                         <b-btn block @click="service.is_visible = !service.is_visible" :class="service.is_visible ? 'collapsed' : null" :aria-controls="service.id" :aria-expanded="service.is_visible ? 'true' : 'false'">
                             <i v-if="service.is_visible"  class="fa fa-caret-down"></i>
