@@ -60,7 +60,7 @@
                     text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS.",
                     services : [
                         {
-                            title: "Strollers, Wheelchairs and Power Scooters",
+                            title: "About Mall Walking",
                             text:   `Registration is FREE at the Guest Services Centre – it’s easy, safe and you can enjoy Pine Centre Mall all year round!
 Mall Walking Hours and Access
 
