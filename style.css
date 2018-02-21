@@ -2986,7 +2986,10 @@ gallery:after{
         text-align: left;
         border: 1px solid $accent;
         margin-bottom: 5px;
-       transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        .fa {
+            transition: all 0.3s ease;
+        }
     }
     .accordion_body {
         padding: 6px 12px;
