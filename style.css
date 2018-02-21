@@ -2987,7 +2987,7 @@ gallery:after{
         border: 1px solid $accent;
         margin-bottom: 5px;
     }
-    .collapse.show {
+    .accordion_body {
         padding: 6px 12px;
     }
 }
