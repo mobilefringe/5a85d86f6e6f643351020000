@@ -2982,7 +2982,8 @@ gallery:after{
 /****** accordion style ******/
 .accordion {
     .btn {
-        font-size: 1.25rem;;
+        font-size: 1.25rem;
+        text-align: left;
     }
 }
 @media (max-width: 1300px) {
