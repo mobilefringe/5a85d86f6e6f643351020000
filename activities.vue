@@ -70,45 +70,49 @@ Monday to Saturday – South Entrance open at 7:00am; remaining doors at 8:30am.
                         },
                         {
                             title: "About Pine for Play - Toddlers Play Area",
-                            text: `Pine for Play
+                            text: `
+<p><strong>Pine for Play</strong></p>
 
-Take off your shoes and relax with your child at our popular soft play area, located near the North Entrance/Guest Services.
+<p>Take off your shoes and relax with your child at our&nbsp;popular&nbsp;soft play area, located near the North Entrance/Guest Services.</p>
 
-The Toddler Play Area will be closed every day from 2:00pm – 2:30pm for scheduled cleaning. 
+<p><em>The Toddler Play Area will be closed every day from 2:00pm &ndash; 2:30pm for&nbsp;scheduled&nbsp;cleaning.&nbsp;</em></p>
 
-Why must my child wear socks in the Play Area?
-Health regulations require that everyone in the Play Area must wear socks. Wearing socks is sanitary and prohibits the spread of foot diseases such as Athlete’s Foot and Plantar warts.  Socks also offer the safest method of play for the design and material of the play area.
+<p><strong>Why must my child wear socks in the Play Area?</strong><br />
+Health regulations require that everyone in the Play Area must wear socks. Wearing socks is sanitary and prohibits the spread of foot diseases such as Athlete&rsquo;s Foot and Plantar warts. &nbsp;Socks also offer the safest method of play for the design and material of the play area.</p>
 
-Be prepared to play! Download (view or print) the Parent Acknowledgement and Rules & Regulations for your next visit! A blank window will open, which is normal. Closing the window will cancel the download.
+<p>Be prepared to play!&nbsp;<a href="http://pinecentre.com/wp-content/uploads/Childrens-Play-Area-Rules-Regulations-8-24-13-Revised.pdf" style="color: rgb(94, 94, 94); font-weight: bold; text-decoration-line: none;" target="_blank"><span>Download&nbsp;</span></a>(view or print) the Parent Acknowledgement and Rules &amp; Regulations for your next visit!&nbsp;<em>A blank window will open, which is normal. Closing the window will cancel the download.</em></p>
 
-The colourful Toddler Play Area has been themed to reflect our wildlife and recreational lifestyles and incorporates the communities of Prince George, Vanderhoof, Quesnel and Mackenzie (a map of this region has been included in the carpet layout). It complements our tribute to ‘Celebrate Northern Living’ and further enhances our strong ties to the families and residents of Prince George and the surrounding area.
+<p>The colourful Toddler Play Area has been themed to reflect our wildlife and recreational lifestyles and incorporates the communities of Prince George, Vanderhoof, Quesnel and Mackenzie (a map of this region has been included in the carpet layout). It complements our tribute to &lsquo;Celebrate Northern Living&rsquo; and further enhances our strong ties to the families and residents of Prince George and the surrounding area.</p>
 
-Children under six years of age (and or under 42” in height) who are accompanied by a parent or guardian are invited to enjoy the play area. Children MUST be supervised at ALL times – no exceptions!
+<p>Children under&nbsp;six years of age (and or under 42&rdquo; in height) who are accompanied by a parent or guardian are invited to enjoy the&nbsp;play area. Children MUST be supervised at ALL times &ndash; no exceptions!</p>
 
-Caregiver groups (eg. child care providers, pre-school groups) please ask for ‘guidelines for caregiver groups’.
+<p>Caregiver groups (eg. child care providers, pre-school groups) please ask for &lsquo;guidelines for caregiver groups&rsquo;.</p>
 
-(Pine Centre Mall Youth & Children’s Policies are in full effect noting children twelve and under are NOT permitted in the mall OR the play area without a parent or legal guardian within arm’s reach at ALL times.)   
+<p><em>(Pine Centre Mall Youth &amp; Children&rsquo;s Policies are in full effect noting children twelve and under&nbsp;are NOT permitted in the mall OR the play area without a parent or legal guardian within arm&rsquo;s reach at ALL times.)&nbsp;&nbsp;&nbsp;</em></p>
 
-Pine Centre follows the age guidelines as set by the Canadian Child Welfare Research Group.
+<p><em>Pine Centre follows the age guidelines as set by the&nbsp;<a href="http://www.cwrp.ca/" style="color: rgb(94, 94, 94); font-weight: bold; text-decoration-line: none;" target="_blank">Canadian Child Welfare Research Group.</a></em></p>
 
-The following Rules and Regulations apply:
+<p><strong>The following Rules and Regulations apply</strong>:</p>
 
-Parent or guardian MUST SIGN-IN at the Customer Service Centre prior to entering.
-Playtime periods may be limited to thirty minutes during peak times.
-Adults, guardians and children MUST remove footwear. NO bare feet or shoes allowed. Socks in two different sizes are available in a nearby dispenser for $1 per pair.
-NO food or drinks are allowed in the toddler play area – exceptions are made for breastfeeding and baby-held bottle feeding. Should any leaks or spills occur please notify Customer Service immediately. This rule does NOT allow for young children to walk around with a bottle or lidded cup in the play area.
-Play safely. NO running, jumping, hitting, pushing or ANY other unsafe play.
-Child(ren) MUST NOT stand on the outer edge seating at any time.
-NO yelling, screaming or swearing. Use of profanities WILL NOT be tolerated.    Children are asked to use their “inside voice” in consideration of the other parents and children and the retailers located close by.
-The number of visitors at any particular time may be limited to twenty– for safety and comfort reasons.
-Any child(ren) exhibiting cold or flu-like symptoms (or any other ‘contagious’ condition(s)) may be refused access to the play area.
-NO changing of diapers in the play area. Change tables are provided in the Family Room in the Food Court or in either of the Women’s Washrooms.
-Child(ren) MUST BE closely supervised by an adult at all times while in the Toddler Play Area. DO NOT leave child(ren) unattended at ANY time for ANY reason. Parents and or guardians are fully responsible for supervising the child(ren) they have signed in and acknowledge that they play at their own risk.
-While every consideration has been given for safety and convenience, Pine Centre is not responsible for injuries or lost articles.
-Pine Centre reserves the right to refuse access to the play area if these rules are not observed.
-For rule details or assistance please see the Customer Service Centre.
+<ul>
+	<li>Parent or guardian&nbsp;<strong>MUST SIGN-IN</strong>&nbsp;at the Customer Service Centre prior to entering.</li>
+	<li>Playtime periods may be limited to thirty&nbsp;minutes during peak times.</li>
+	<li>Adults, guardians and children&nbsp;<strong>MUST</strong>&nbsp;remove footwear.&nbsp;<strong>NO</strong>&nbsp;bare feet or shoes allowed.&nbsp;<em>Socks in two different sizes are available in a nearby dispenser for $1 per pair.</em></li>
+	<li><strong>NO&nbsp;</strong>food or drinks are allowed in the toddler play area &ndash; exceptions are made for breastfeeding and baby-held bottle feeding. Should any leaks or spills occur please notify Customer Service immediately. This rule does&nbsp;<strong>NOT&nbsp;</strong>allow for young children to walk around with a bottle or lidded cup in the play area.</li>
+	<li>Play safely.&nbsp;<strong>NO</strong>&nbsp;running, jumping, hitting, pushing or ANY other unsafe play.</li>
+	<li>Child(ren)&nbsp;<strong>MUST NOT</strong>&nbsp;stand on the outer edge seating at any time.</li>
+	<li><strong>NO</strong>&nbsp;yelling, screaming or swearing. Use of profanities&nbsp;<strong>WILL NOT</strong>&nbsp;be tolerated.&nbsp;&nbsp;&nbsp; Children are asked to&nbsp;use their&nbsp;&ldquo;inside voice&rdquo; in consideration of the other parents and children and the&nbsp;retailers located close by.</li>
+	<li>The number of visitors at any particular time may be limited to twenty&ndash; for safety and comfort reasons.</li>
+	<li>Any child(ren) exhibiting cold or flu-like symptoms (or any other &lsquo;contagious&rsquo; condition(s)) may be refused access to the play area.</li>
+	<li><strong>NO</strong>&nbsp;changing of diapers in the play area. Change tables are provided in the Family Room in the Food Court or&nbsp;in either&nbsp;of the Women&rsquo;s Washrooms.</li>
+	<li>Child(ren)&nbsp;<strong>MUST BE</strong>&nbsp;closely supervised by an adult at all times while in the Toddler Play Area.&nbsp;<strong>DO NOT</strong>&nbsp;leave child(ren) unattended at ANY time for ANY reason. Parents and or guardians are fully responsible for supervising the child(ren) they have signed in and acknowledge that they play at their own risk.</li>
+	<li>While every consideration has been given for safety and convenience, Pine Centre is not responsible for injuries or lost articles.</li>
+	<li>Pine Centre reserves the right to refuse access to the play area if these rules are not observed.</li>
+</ul>
 
-Please follow the rules to ensure that everyone can have a great time!`,
+<p>For rule details or assistance please see the Customer Service Centre.</p>
+
+<p>Please follow the rules to ensure that everyone can have a great time!</p>`,
                             is_visible : false,
                             id: "accordion_2"
                         }
