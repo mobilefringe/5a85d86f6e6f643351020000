@@ -61,7 +61,10 @@
                     services : [
                         {
                             title: "Strollers, Wheelchairs and Power Scooters",
-                            text: " For your shopping convenience, Toddler Strollers are available at Guest Services for FREE.   Some strollers can accommodate two children.    There is no charge to use the strollers but current photo ID is required as a deposit. Do you need some assistance getting around? Then visit the Guest Services for FREE use of a wheelchair or power scooter during your visit to Pine Centre.*you will need to leave a piece of photo identification with customer service until you return the wheelchairs and/or strollers.",
+                            text:   `Registration is FREE at the Guest Services Centre – it’s easy, safe and you can enjoy Pine Centre Mall all year round!
+Mall Walking Hours and Access
+
+Monday to Saturday – South Entrance open at 7:00am; remaining doors at 8:30am.Sunday – South Entrance open at 9am; remaining doors at 10:30 am.`,
                             is_visible : true,
                             id: "accordion_1"
                         },
