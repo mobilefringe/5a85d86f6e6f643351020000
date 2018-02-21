@@ -2978,6 +2978,11 @@ gallery:after{
     }
     
 }
+
+/****** accordion style ******/
+.accordion {
+    
+}
 @media (max-width: 1300px) {
     #primary_nav ul .menu_item {
         min-width: 130px;
