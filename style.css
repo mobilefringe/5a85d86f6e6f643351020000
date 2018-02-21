@@ -2981,8 +2981,8 @@ gallery:after{
 /**** pages ****/
 .page_body {
     a {
-            color : $accent;
-        }
+        color : $accent;
+    }
 }
 /****** accordion style ******/
 .accordion {
