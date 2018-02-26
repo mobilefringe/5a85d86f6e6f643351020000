@@ -158,7 +158,7 @@
                 }
             },
             created() {
-                this.loadData(this.id).then(response => {
+                this.loadData().then(response => {
                     this.currentContest = this.findContestBySlug('pinecentre-kids-pine-club');
                     var temp_repo = this.findRepoByName('Pages Banner');
                     if(temp_repo) {
