@@ -187,7 +187,6 @@
                     }
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
-                        this.validNumError = false;
                         if(this.form_data.agree_newsletter ) {
                             $.getJSON("//mobilefringe.createsend.com/t/d/s/irudui/?callback=?",
                             "cm-name=" + this.form_data.first_name + this.form_data.last_name +
