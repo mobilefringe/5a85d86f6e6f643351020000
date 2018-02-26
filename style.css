@@ -2984,6 +2984,9 @@ gallery:after{
         color : $accent;
     }
 }
+.radio-component{
+    
+}
 /****** accordion style ******/
 .accordion {
     padding-top: 20px;
