@@ -2090,7 +2090,9 @@ strong, .bold {
     // border: 1px solid #000;
 }
 .no_store_logo {
-    width: 100%;height: 100%;position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .store_details_logo {
     margin-left: auto;
