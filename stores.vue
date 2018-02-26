@@ -44,7 +44,7 @@
 					<div class="col-xs-6 col-sm-3 col-md-2 cats_row" v-for="store in filteredStores" :data-cat="store.cat_list">
 						<div class="store_logo_container" :id="store.initial">
 							<router-link :to="'/stores/'+ store.slug">
-								<div v-if="_.includes(store.store_front_url_abs, 'missing')" style="width: 100%;height: 100%;position: relative;">
+								<div v-if="_.includes(store.store_front_url_abs, 'missing')" class="no_store_logo">
                                     <h3 style="margin: 0;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 100%;font-size: 28px;font-weight: bold;">{{store.name}}</h3>
 								</div>
 								<img v-else class="store_img" :style="store.initial_img" :src="store.store_front_url_abs"/>
