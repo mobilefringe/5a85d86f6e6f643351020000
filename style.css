@@ -2109,6 +2109,9 @@ strong, .bold {
         letter-spacing: 1.5px;
         
     }
+    &:hover {
+        background: #fff;
+    }
 }
 .store_details_logo {
     margin-left: auto;
