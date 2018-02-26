@@ -2985,7 +2985,9 @@ gallery:after{
     }
 }
 .radio-component{
-    
+    label {
+        
+    }
 }
 /****** accordion style ******/
 .accordion {
