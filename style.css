@@ -2094,6 +2094,7 @@ strong, .bold {
     height: 100%;
     position: relative;
     min-height: 170px;
+    background: $accent;
     .store_name {
         margin: 0;
         text-align: center;
