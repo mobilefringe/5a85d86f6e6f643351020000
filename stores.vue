@@ -166,11 +166,11 @@
                     console.log(this.processedStores);
                     // http://via.placeholder.com/400x400/757575
                     var stores = this.processedStores;
-                   stores.map(store => {
-                       if (_.includes(store.store_front_url_abs, 'missing')) {
-                            store.store_front_url_abs = this.property.default_logo_url;
-                        }
-                    });
+                    // stores.map(store => {
+                    //   if (_.includes(store.store_front_url_abs, 'missing')) {
+                    //         store.store_front_url_abs = this.property.default_logo_url;
+                    //     }
+                    // });
                     return this.processedStores;
                 },
                 allCatergories() {
