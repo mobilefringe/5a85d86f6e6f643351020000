@@ -45,7 +45,7 @@
 						<div class="store_logo_container" :id="store.initial">
 							<router-link :to="'/stores/'+ store.slug">
 								<img v-else class="store_img" :style="store.initial_img" :src="store.store_front_url_abs"/>
-								<div v-else>
+								<div v-if="_.includes(store.store_front_url_abs, 'missing')">
 								    
 								</div>
 								<img class="store_hover" :style="store.initial_img" :src="store.hover_img"/>
