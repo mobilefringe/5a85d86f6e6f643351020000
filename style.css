@@ -2986,7 +2986,7 @@ gallery:after{
 }
 .radio-component{
     label {
-        
+        font-size: 1rem;
     }
 }
 /****** accordion style ******/
