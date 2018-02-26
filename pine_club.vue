@@ -71,7 +71,7 @@
                     <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
-                        Thank you for subscribing to Kids PinE-club. A member from our team will contact you shortly.
+                        Thank you for subscribing to Kids PinE-club!
                     </div>
                     <div id="send_contact_error" class="alert alert-danger text-left" role="alert" v-show="formError">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
