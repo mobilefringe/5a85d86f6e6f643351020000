@@ -2105,6 +2105,7 @@ strong, .bold {
         width: 100%;
         font-size: 1.5rem;
         font-weight: bold;
+        letter-spacing: 1.5px;
     }
 }
 .store_details_logo {
