@@ -2111,6 +2111,11 @@ strong, .bold {
     }
     &:hover {
         background: #fff;
+         -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
     }
 }
 .store_details_logo {
