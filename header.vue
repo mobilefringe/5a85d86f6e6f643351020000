@@ -107,90 +107,88 @@
                     show_mobile_menu: false,
                     property_logo: "//codecloud.cdn.speedyrails.net/sites/5a9714046e6f644dc3160000/image/png/1520457420000/whitelogo1@2x.png",
                     menu_items: [
-                        {
-                            name: "header.stores",
-                            href: "/stores",
-                            show_sub_menu: false,
-                            sub_menu: [{
-                                    name: "header.stores",
-                                    href: "/stores"
-                                },
-                                {
-                                    name: "header.centre_map",
-                                    href: "/map"
-                                },
-                                {
-                                    name: "header.restaurants",
-                                    href: "/restaurants"
-                                }
-                            ]
-                        },
-                        {
-                            name: "header.promos",
-                            href: "/promotions",
-                            show_sub_menu: false,
-                        },
-                        {
-                            name: "header.news_events",
-                            href: "/events",
-                            show_sub_menu: false,
-                            sub_menu: [{
-                                    name: "header.events",
-                                    href: "/events"
-                                },
-                                {
-                                    name: "header.blog",
-                                    href: "/blog"
-                                }
-                            ]
-                        },
-                        {
-                            name: "header.services",
-                            href: "/pages/bramaleacitycentre-services",
-                            show_sub_menu: false,
-                            sub_menu: [{
-                                    name: "header.services ",
-                                    href: "/pages/bramaleacitycentre-services"
-                                },
-                                {
-                                    name: "header.gift_card",
-                                    href: "/pages/bramaleacitycentre-gift-cards"
-                                },
-                                {
-                                    name: "header.accessibility",
-                                    href: "/pages/bramaleacitycentre-accessibilty"
-                                }
-                                
-                            ]
-                        },
-                        {
-                            name: "header.contact_us",
-                            href: "/contact_us",
-                            show_sub_menu: false,
-                            sub_menu: [
-                                {
-                                    name: "header.contact_us",
-                                    href: "/contact_us"
-                                },
-                                {
-                                    name: "header.hours",
-                                    href: "/hours"
-                                },
-                                {
-                                    name: "header.employment",
-                                    href: "/jobs"
-                                },
-                                {
-                                    name: "header.leasing",
-                                    href: "/pages/bramaleacitycentre-leasing"
-                                },
-                                {
-                                    name: "header.newsletter",
-                                    href: "/newsletter"
-                                }
-                            ],
-                        }
-                    ],
+                    {
+                        name: "header.stores",
+                        href: "/stores",
+                        sub_menu: [{
+                                name: "header.stores",
+                                href: "/stores"
+                            },
+                            {
+                                name: "header.centre_map",
+                                href: "/map"
+                            }
+                        ]
+                    },
+                    {
+                        name: "header.promos",
+                        href: "/promotions",
+                    },
+                    {
+                        name: "header.whats_happening",
+                        href: "/events",
+                        sub_menu: [{
+                                name: "header.events ",
+                                href: "/events"
+                            },
+                            {
+                                name: "header.community",
+                                href: "/pages/pinecentre-community"
+                            },
+                            {
+                                name: "header.jobs",
+                                href: "/jobs"
+                            }
+                        ]
+                    },
+                    {
+                        name: "header.guest_services",
+                        href: "/services",
+                        sub_menu: [{
+                                name: "header.services ",
+                                href: "/services"
+                            },
+                            {
+                                name: "header.gift_card",
+                                href: "/pages/pinecentre-gift-cards"
+                            },
+                            {
+                                name: "header.kids_club",
+                                href: "/kids_club"
+                            },
+                            {
+                                name: "header.activity_programs",
+                                href: "/activities"
+                            }
+                        ]
+                    },
+                    {
+                        name: "header.contact_us",
+                        href: "/contact_us",
+                        sub_menu: [
+                            {
+                                name: "header.contact_us",
+                                href: "/contact_us"
+                            },
+                            {
+                                name: "header.hours",
+                                href: "/hours"
+                            },
+                            {
+                                name: "header.find_us",
+                                href: "/find_us"
+                            },
+                            {
+                                name: "header.pineclub",
+                                href: "/pine_club"
+                            },
+                            {
+                                name: "header.leasing",
+                                href: "/pages/pinecentre-leasing-information"
+                            }
+                        ],
+                    }
+                ],
                 }
             },
             watch: {
