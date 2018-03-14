@@ -73,8 +73,35 @@
                         if(response == null || response == undefined) {
                             this.$router.replace('/');
                         }
+                        // this.currentPage = response[0].data;
+                        // var temp_repo = this.findRepoByName('Pages Banner');
+                        // if(temp_repo) {
+                        //     this.pageBanner = temp_repo.images[0];
+                        // }
+                        // this.pageBanner = this.pageBanner;
+                        
                         this.currentPage = response[0].data;
-                        var temp_repo = this.findRepoByName('Pages Banner');
+                        var temp_repo = null;
+                        //Add custom banners for indivial pages 
+                        if( _.includes(id, 'community')) {
+                            temp_repo = this.findRepoByName('Community Banner');
+                        }
+                        else if ( _.includes(id, 'gift-cards')) {
+                            temp_repo = this.findRepoByName('Gift Card Banner');
+                        }
+                        else if( _.includes(id, 'accessibilty')) {
+                            temp_repo = this.findRepoByName('Accessibility Banner');
+                        }
+                        else if( _.includes(id, 'fashionicity')) {
+                            temp_repo = this.findRepoByName('FashioniCity Banner');
+                        }
+                        else if( _.includes(id, 'leasing')) {
+                            temp_repo = this.findRepoByName('Leasing Banner');
+                        }
+                        else {
+                            temp_repo = this.findRepoByName('Pages Banner');
+                        }
+                        
                         if(temp_repo) {
                             this.pageBanner = temp_repo.images[0];
                         }
