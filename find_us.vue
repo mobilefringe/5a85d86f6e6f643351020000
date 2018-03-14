@@ -37,7 +37,7 @@
             created(){
                 this.loadData().then(response => {
                     // this.currentPage = response[0].data;
-                    var temp_repo = this.findRepoByName('CFind Us Banner');
+                    var temp_repo = this.findRepoByName('Find Us Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
