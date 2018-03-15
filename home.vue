@@ -162,7 +162,10 @@
                         //     value.mobile_order = key + 1;
                         // }
                         if(key == 2) {
-                            value.mobile_order = 5;
+                            value.mobile_order = 1;
+                        }
+                        if(key == 3) {
+                            value.mobile_order = 1;
                         }
                     });
                     features = _.sortBy(features, [function(o) { return o.mobile_order; }]);
