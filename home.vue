@@ -167,6 +167,9 @@
                         if(key == 3) {
                             value.mobile_order = 2;
                         }
+                        if(key == 1) { 
+                            value.mobile_order = 3;
+                        }
                     });
                     features = _.sortBy(features, [function(o) { return o.mobile_order; }]);
                     console.log(features);
