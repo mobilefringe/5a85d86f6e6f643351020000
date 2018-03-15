@@ -34,11 +34,11 @@
                 </div>
                 
             </div>
-            <div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="hidden_phone">
-                <div v-masonry-tile class="item" >
-                    <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
+            <div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">
+                <div v-masonry-tile class="item " >
+                    <div v-for="feature in mobile_feature_items" :class="'grid-item ' + feature.masonry_class ">
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
-                    	<!--class="ih-item circle effect19"-->
+                    	class="ih-item circle effect19"
                     		<router-link :to="feature.url">
                     			<img :src="feature.image_url" alt="name">
                     			<div class="info">
@@ -51,7 +51,6 @@
                     	</div>
                     </div>
                 </div>
-                
             </div>
             
             <div>
