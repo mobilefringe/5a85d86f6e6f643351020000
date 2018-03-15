@@ -171,7 +171,7 @@
                             value.mobile_order = 3;
                         }
                         if(key == 8) { 
-                            value.mobile_order = 3;
+                            value.mobile_order = 6;
                         }
                     });
                     features = _.sortBy(features, [function(o) { return o.mobile_order; }]);
