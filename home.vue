@@ -190,7 +190,7 @@
                         if(key == 1) { 
                             value.mobile_order = 3;
                         }
-                        if(key == 8) { 
+                        if(key == 7) { 
                             value.mobile_order = 6;
                         }
                     });
