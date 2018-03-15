@@ -159,7 +159,7 @@
                         //     value.mobile_order = key + ;
                         // }
                         // else {
-                            value.mobile_order = key + 1;
+                            value.mobile_order = key;
                         // }
                         if(key == 2) {
                             value.mobile_order = 1;
