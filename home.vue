@@ -155,11 +155,11 @@
                         else {
                             value.masonry_class = " ";
                         }
-                        // if(key > 5) {
-                        //     value.mobile_order = key + 2;
+                        // if(key > 3) {
+                        //     value.mobile_order = key + ;
                         // }
                         // else {
-                        //     value.mobile_order = key + 1;
+                            value.mobile_order = key + 1;
                         // }
                         if(key == 2) {
                             value.mobile_order = 1;
