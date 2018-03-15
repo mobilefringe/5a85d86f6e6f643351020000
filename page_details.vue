@@ -87,7 +87,10 @@
                             temp_repo = this.findRepoByName('Community Banner');
                         } else if ( _.includes(id, 'gift-cards')) {
                             temp_repo = this.findRepoByName('Gift Card Banner');
-                        } else {
+                        } 
+                        } else if ( _.includes(id, 'leasing')) {
+                            temp_repo = this.findRepoByName('Gift Card Banner');
+                        }else {
                             temp_repo = this.findRepoByName('Pages Banner');
                         }
                         
