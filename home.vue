@@ -32,7 +32,7 @@
                     	</div>
                     </div>
                 </div>
-                <div v-masonry-tile class="item" >
+                <div v-masonry-tile class="item visible_phone" >
                     <div v-for="feature in mobile_feature_items" :class="'grid-item ' + feature.masonry_class ">
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
                     	<!--class="ih-item circle effect19"-->
