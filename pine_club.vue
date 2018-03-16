@@ -195,7 +195,7 @@
                         if(this.form_data.agree_newsletter ) {
                             $.getJSON("//mobilefringe.createsend.com/t/d/s/irudui/?callback=?",
                             "cm-name=" + this.form_data.first_name + this.form_data.last_name +
-                            "&cm-irudui-irudui=" + this.form_data.email +
+                            "&cm-zlyluu-zlyluu=" + this.form_data.email +
                             "&cm-f-jtukyu=" + this.form_data.city+
                             "&cm-f-jtukjr=" + this.form_data.phone +
                             "&cm-f-jtukjy=" + this.form_data.mailing_address +
