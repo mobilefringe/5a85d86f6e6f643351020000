@@ -193,7 +193,7 @@
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         if(this.form_data.agree_newsletter ) {
-                            $.getJSON("//mobilefringe.createsend.com/t/d/s/irudui/?callback=?",
+                            $.getJSON("//mobilefringe.createsend.com/t/d/s/zlyluu/?callback=?",
                             "cm-name=" + this.form_data.first_name + this.form_data.last_name +
                             "&cm-zlyluu-zlyluu=" + this.form_data.email +
                             "&cm-f-jtukyu=" + this.form_data.city+
