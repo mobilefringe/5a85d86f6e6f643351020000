@@ -56,10 +56,6 @@
 								<div class="store_coming_soon" v-if="store.is_new_store">
 									<div class="new_store">{{$t("stores_page.new_store")}}</div>
 								</div>
-								<!--<div class="store_list_promos">-->
-								<!--	<span class="promo_exist" v-if="store.total_published_jobs > 0"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{store.total_published_jobs}}</span>-->
-								<!--	<span class="promo_exist" v-if="store.total_published_promos > 0"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt=""> {{store.total_published_promos}}</span>-->
-								<!--</div>-->
 							</router-link>
 						</div>
 					</div>
@@ -88,15 +84,6 @@
                     search_result : null,
                 }
             },
-            // created() {
-            //     // window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
-            //     this.$store.dispatch("getData", "categories").then(response => {
-            //         this.dataloaded = true;
-            //         this.filteredStores = this.allStores;
-            //     }, error => {
-            //         console.error("Could not retrieve data from server. Please check internet connection and try again.");
-            //     });
-            // },
             created (){
                 this.loadData().then(response => {
                     this.dataloaded = true;
