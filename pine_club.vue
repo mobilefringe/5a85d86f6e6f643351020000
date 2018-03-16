@@ -167,10 +167,15 @@
                     this.pageBanner = this.pageBanner;
                 });
             },
-            mounted() {
-                //creating random validation num 
-                this.correctValNum = Utility.rannumber();
-                
+            mounted () {
+                this.form_data.email = this.$route.query.email;
+                $("#newsletter_email").val(this.form_data.email);
+            },
+            watch : {
+                $route () {
+                    this.form_data.email = this.$route.query.email;
+                    $("#newsletter_email").val(this.form_data.email);
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
