@@ -17,7 +17,7 @@
 				</div>
 				<div class="col-sm-8 promo_image_container text-left">
 					<div class="col-sm-12 no_padding">
-						<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" :initialZoom="_.toNumber('-1')" :initial-position="'1250 1250'" :height="_.toNumber('625')" @updateMap="updatePNGMap"></png-map>
+						<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" :initialZoom="_.toNumber('0')" :initial-position="'1250 1250'" :height="_.toNumber('625')" @updateMap="updatePNGMap"></png-map>
 					</div>
 				</div>
 			</div>
