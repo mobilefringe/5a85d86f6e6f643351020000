@@ -121,6 +121,7 @@
                         this.storePromos = temp_promo;
                     }
                     if(this.currentPromo.store) {
+                         var storeHours = [];
                         var vm = this;
                         _.forEach(this.currentPromo.store.store_hours, function (value, key) {
                             var hour = vm.findHourById(value);
@@ -130,7 +131,7 @@
                             else {
                                 hour.order = hour.day_of_week;
                             }
-                            vm.storeHours.push(hour);
+                            storeHours.push(hour);
                         });
                         this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
                     }
