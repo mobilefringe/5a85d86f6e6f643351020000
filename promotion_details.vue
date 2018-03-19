@@ -130,7 +130,7 @@
                             else {
                                 hour.order = hour.day_of_week;
                             }
-                            storeHours.push();
+                            storeHours.push(hour);
                         });
                         this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
                     }
