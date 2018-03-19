@@ -174,7 +174,6 @@
                 if(this.$route.query.success == 'success') {
                     
                     this.formSuccess = true;
-                    console.log('this.$router' ,this.$router);
                     this.$router.replace('/newsletter');
                 }
             },
