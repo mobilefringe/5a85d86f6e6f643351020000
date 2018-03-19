@@ -187,46 +187,33 @@
             },
             methods: {
                 validateBeforeSubmit() {
-                    if(this.form_data.gender == null || this.form_data.gender == undefined || this.form_data.gender.length == 0){
-                        this.genderError = true;
-                    }
                     this.$validator.validateAll().then((result) => {
-                        let errors = this.errors;
-                        if(this.form_data.agree_newsletter ) {
-                            $.getJSON("//mobilefringe.createsend.com/t/d/s/zlyluu/?callback=?",
-                            "cm-name=" + this.form_data.first_name + this.form_data.last_name +
-                            "&cm-zlyluu-zlyluu=" + this.form_data.email +
-                            "&cm-f-jtukyu=" + this.form_data.city+
-                            "&cm-f-jtukjr=" + this.form_data.phone +
-                            "&cm-f-jtukjy=" + this.form_data.mailing_address +
-                            "&cm-f-jtukjj=" + this.form_data.postal_code +
-                            "&cm-f-jtukjt=" + this.form_data.birthday,
-                                function (data) {
-                                if (data.Status === 400) {
-                                    e.preventDefault();
-                                    console.error("Please try again later.");
-                                } else { // 200
-                                    console.log("Newsletter submission successful.");
-                                }
-                            });  
+                        if (result) {
+                            let errors = this.errors;
+                            
+                            if(errors.length > 0) {
+                                console.log("Error");
+                                this.formError = true;
+                            }
+                            else {
+                                form.preventDefault();
+                                console.log("No Error", form);
+                                var vm = this;
+                                $.getJSON(
+                                    form.target.action ,
+                                    $(form.target).serialize(),
+                                    function (data) {
+                                    if (data.Status === 400) {
+                                      vm.formError = true;
+                                        console.log("ERROR");
+                                    } else { // 200
+                                        vm.formSuccess = true;
+                                        console.log("SUCCESS");
+                                    }
+                                });
+                                form.preventDefault();
+                            }
                         }
-                        //format contests data for MM
-                        // var contest_entry = {};
-                        // contest_entry.contest = this.form_data;
-                        // var vm = this;
-                        // host_name = this.property.mm_host.replace("http:", "");
-                        // var url = host_name + "/contests/" + this.currentContest.slug + "/create_js_entry";
-                        // $.ajax({
-                        //     url: url,
-                        //     type: "POST",
-                        //     data: contest_entry,
-                        //     success: function(data) {
-                        //         vm.formSuccess = true;
-                        //     },
-                        //     error: function(data){
-                        //         vm.formError = true;
-                        //     }
-                        // });
                     })
                 },
                 loadData: async function() {
