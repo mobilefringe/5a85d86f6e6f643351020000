@@ -16,7 +16,7 @@
                     <div class="description_text text_left" style="padding-top:40px;padding-bottom: 20px;">
                        Get connected.. by joining the PinE-CLUB you receive exclusive offers and contests direct to your inbox.  As a member, you will receive PinE-CLUB Newsletters with upcoming events, contests and promotions that you will not want to miss!  We give away concert tickets, Gift Cards and more to our members – all you have to do is sign up!
                     </div>
-                    <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A6C853307DE1968F369EC40BE733D4D5F8458A5E09D247F6F2E7016EB4DAFD16534D29AAD20BB67ACEC9E0FEFEEEEA5A2" @submit.prevent="validateBeforeSubmit">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
 								<label class="label" for="first_name">First Name <span class="req_star"> *</span></label>
