@@ -209,7 +209,7 @@
                                 this.formError = true;
                             }
                             else {
-                                $("#fieldName").val= this.form_data.first_name + " " + this.form_data.last_name;
+                                $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
                                 form.preventDefault();
                                 console.log("No Error", form);
                                 var vm = this;
