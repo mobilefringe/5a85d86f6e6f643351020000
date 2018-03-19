@@ -82,7 +82,7 @@
             beforeRouteUpdate(to, from, next) {
                 this.currentPromo = this.findPromoBySlug(to.params.id);
                     if (this.currentPromo === null || this.currentPromo === undefined){
-                        this.$router.replace({ name: '404'});
+                        this.$router.replace('/');
                     }
                 next();
             },
@@ -121,7 +121,6 @@
                         this.storePromos = temp_promo;
                     }
                     if(this.currentPromo.store) {
-                        var storeHours = [];
                         var vm = this;
                         _.forEach(this.currentPromo.store.store_hours, function (value, key) {
                             var hour = vm.findHourById(value);
