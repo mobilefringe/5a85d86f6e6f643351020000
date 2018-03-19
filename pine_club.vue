@@ -50,8 +50,8 @@
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}">
 								<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
-								<radio name="gender" value="male" v-model="form_data.gender">Male</radio>
-                                <radio name="gender" value="female" v-model="form_data.gender">Female</radio>
+								<radio name="cm-f-qhdikh" value="male" v-model="form_data.gender">Male</radio>
+                                <radio name="cm-f-qhdikh" value="female" v-model="form_data.gender">Female</radio>
                                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
 							</div>
 						</div>
