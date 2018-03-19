@@ -32,13 +32,13 @@
 						<div class="form-group">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cm-zlyluu-zlyluu')}">
 								<label class="label" for="cm-zlyluu-zlyluu">Email <span class="req_star"> *</span></label>
-								<input v-model="form_data.email" v-validate="'required|email'" class="form-control js-cm-email-input" :class="{'input': true}" name="cm-zlyluu-zlyluu" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="cm-zlyluu-zlyluu" id="newsletter_email">
+								<input v-model="form_data.email" v-validate="'required|email'" class="form-control js-cm-email-input" :class="{'input': true}" name="cm-zlyluu-zlyluu" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="email" id="newsletter_email">
 								<span v-show="errors.has('cm-zlyluu-zlyluu')" class="form-control-feedback">{{ errors.first('cm-zlyluu-zlyluu') }}</span>
 							</div>
-							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('postal')}">
-								<label class="label" for="postal">Postal Code <span class="req_star"> *</span></label>
+							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('cm-f-qhdikl')}">
+								<label class="label" for="cm-f-qhdikl">Postal Code <span class="req_star"> *</span></label>
 								<input v-model="form_data.postal_code" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="postal" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
-								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
+								<span v-show="errors.has('cm-f-qhdikl')" class="form-control-feedback">{{ errors.first('cm-f-qhdikl') }}</span>
 							</div>
 							
 						</div>
