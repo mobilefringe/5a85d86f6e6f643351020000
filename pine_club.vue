@@ -30,7 +30,7 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cm-zlyluu-zlyluu')}">
 								<label class="label" for="cm-zlyluu-zlyluu">Email <span class="req_star"> *</span></label>
 								<input v-model="form_data.email" v-validate="'required|email'" class="form-control js-cm-email-input" :class="{'input': true}" name="cm-zlyluu-zlyluu" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="cm-zlyluu-zlyluu" id="newsletter_email">
 								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
