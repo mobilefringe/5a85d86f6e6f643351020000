@@ -109,6 +109,7 @@
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
+                    console.log("processedPromos", this.processedPromos)
                     _.forEach(this.processedPromos, function(value, key) {
                         value.description_short = _.truncate(value.description, {
                             'length': 150
