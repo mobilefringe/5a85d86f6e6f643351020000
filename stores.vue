@@ -41,7 +41,7 @@
 			</div>
 			<div class="row">
 				<div id="store_list_container">
-					<div class="col-xs-6 col-sm-3 col-md-2 cats_row" v-for="store in filteredStores" :data-cat="store.cat_list">
+					<div class="col-xs-6 col-sm-3 col-md-2 cats_row" v-for="store in filteredStores" :data-cat="store.cat_list" :key="store.id">
 						<div class="store_logo_container" :id="store.initial">
 							<router-link :to="'/stores/'+ store.slug">
 								<div v-if="_.includes(store.store_front_url_abs, 'missing')" class="no_store_logo">
