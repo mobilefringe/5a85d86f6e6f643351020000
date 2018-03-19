@@ -198,6 +198,7 @@
                             }
                             else {
                                 form.preventDefault();
+                                this.form_data.name = this.form_data.name + " " + form_data.name;
                                 console.log("No Error", form);
                                 var vm = this;
                                 $.getJSON(
