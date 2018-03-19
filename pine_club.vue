@@ -62,7 +62,7 @@
                                      Yes, I would like to receive ongoing news related to events, promotions and special announcements from {{property.name}}
                                 </label>
 						    </div>
-							<div class="col-xs-12 no_desktop_padding" style="margin-top: 20px;">
+							<div class="col-xs-12" style="margin-top: 20px;">
 								<button class="contest_btn" type="submit" :disabled="formSuccess">Submit</button>
 							</div>
 						</div>
