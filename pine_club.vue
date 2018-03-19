@@ -16,6 +16,16 @@
                     <div class="description_text text_left" style="padding-top:40px;padding-bottom: 20px;">
                        Get connected.. by joining the PinE-CLUB you receive exclusive offers and contests direct to your inbox.  As a member, you will receive PinE-CLUB Newsletters with upcoming events, contests and promotions that you will not want to miss!  We give away concert tickets, Gift Cards and more to our members – all you have to do is sign up!
                     </div>
+                    <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        <span class="sr-only">Success</span>
+                        Thank you for subscribing to Kids PinE-club!
+                    </div>
+                    <div id="send_contact_error" class="alert alert-danger text-left" role="alert" v-show="formError">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        There was an error when trying to submit your request. Please try again later.
+                    </div>
                     <form class="form-horizontal js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A2424A7FAF2895AE27BC1E6B945831C3A814668D6DF314C6CFD5AD436FBA4357E38F8203633B221924D53F47AEFF534B1" @submit.prevent="validateBeforeSubmit">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
