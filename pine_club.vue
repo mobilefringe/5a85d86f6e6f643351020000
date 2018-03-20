@@ -202,6 +202,7 @@
                             if(errors.length > 0) {
                                 console.log("Error");
                                 this.formError = true;
+                                form.preventDefault();
                             }
                             else {
                                 $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
