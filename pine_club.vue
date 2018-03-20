@@ -199,8 +199,6 @@
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         if(errors && errors.items.length == 0){ 
-                            
-                            
                             if(errors.length > 0) {
                                 console.log("Error");
                                 this.formError = true;
