@@ -203,6 +203,7 @@
                                 console.log("Error");
                                 this.formError = true;
                                 form.preventDefault();
+                                form.target.action = "";
                             }
                             else {
                                 $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
