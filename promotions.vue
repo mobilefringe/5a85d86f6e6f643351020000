@@ -112,6 +112,11 @@
                     var temp_job = [];
                     console.log("processedPromos", this.processedPromos);
                     _.forEach(this.processedPromos, function(value, key) {
+                        today = moment();
+                        webDate = moment(value.show_on_web_date)
+                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                            published_promos.push(val);
+                        }
                         value.description_short = _.truncate(value.description, {
                             'length': 150
                         });
