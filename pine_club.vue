@@ -200,7 +200,7 @@
                         if (result) {
                             let errors = this.errors;
                             
-                            if(errors.length > 0) {
+                            if(errors && errors.items.length > 0){
                                 console.log("Error");
                                 this.formError = true;
                             }
