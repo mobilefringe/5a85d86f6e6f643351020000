@@ -114,7 +114,7 @@
                     _.forEach(this.processedPromos, function(value, key) {
                         today = moment();
                         webDate = moment(value.show_on_web_date)
-                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(this.timezone) {
                             value.description_short = _.truncate(value.description, {
                             'length': 150
                             });
