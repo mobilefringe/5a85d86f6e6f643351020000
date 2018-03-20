@@ -74,7 +74,7 @@
                                 </label>
 						    </div>
 							<div class="col-xs-12" style="margin-top: 20px;">
-								<button class="contest_btn" type="submit" :disabled="formSuccess" @submit="validateBeforeSubmit">Submit</button>
+								<button class="contest_btn" type="submit" :disabled="formSuccess" @click="validateBeforeSubmit">Submit</button>
 							</div>
 						</div>
 					</form>
