@@ -205,23 +205,23 @@
                                 this.formError = true;
                             }
                             else {
-                                // $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
-                                // form.preventDefault();
-                                // console.log("No Error", form);
-                                // var vm = this;
-                                // $.getJSON(
-                                //     form.target.action ,
-                                //     $(form.target).serialize(),
-                                //     function (data) {
-                                //     if (data.Status === 400) {
-                                //       vm.formError = true;
-                                //         console.log("ERROR");
-                                //     } else { // 200
-                                //         vm.formSuccess = true;
-                                //         console.log("SUCCESS");
-                                //     }
-                                // });
-                                // form.preventDefault();
+                                $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
+                                form.preventDefault();
+                                console.log("No Error", form);
+                                var vm = this;
+                                $.getJSON(
+                                    form.target.action ,
+                                    $(form.target).serialize(),
+                                    function (data) {
+                                    if (data.Status === 400) {
+                                      vm.formError = true;
+                                        console.log("ERROR");
+                                    } else { // 200
+                                        vm.formSuccess = true;
+                                        console.log("SUCCESS");
+                                    }
+                                });
+                                form.preventDefault();
                             }
                         }
                     })
