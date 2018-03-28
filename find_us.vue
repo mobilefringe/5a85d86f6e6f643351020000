@@ -9,7 +9,7 @@
 		</div>  
 		<!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="site_container page_content">
-			<div class="row text-left">
+			<div class="row text-center">
 			    <div class="col-md-12">
 			        <div class="text-left site_container padding_tb_30" v-if="currentPage" v-html="currentPage.body"></div>    
 			    </div>
