@@ -40,9 +40,6 @@
                         this.pageBanner = temp_repo.images[0];
                     }
                     this.currentPage = response[0].data;
-                    // this.pageBanner = this.findRepoByName('Contact Us Banner').images[0];
-                   console.log(this.pageBanner); 
-                   console.log(this.property);
                 });
             },
             computed: {
