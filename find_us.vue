@@ -21,9 +21,8 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-meta", 'vee-validate'], function(Vue, Vuex, Meta, VeeValidate) {
+    define(["Vue", "vuex", "vue-meta"], function(Vue, Vuex, Meta) {
         Vue.use(Meta);
-        Vue.use(VeeValidate);
         return Vue.component("find-us-component", {
             template: template, // the variable template will be injected,
             data: function() {
