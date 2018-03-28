@@ -8,12 +8,12 @@
 			</div>
 		</div>  
 		<!-- for some reason if you do not put an outer container div this component template will not render -->
-		<div>
+		<div class="site_container page_content">
 			<div class="row text-left">
-					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1405.0774986332171!2d-113.45766032569233!3d53.52063222563502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc85d0c9c289d88ad!2sBonnie+Doon+Shopping+Centre!5e0!3m2!1sen!2sca!4v1517707745783" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-					<iframe title="Map" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+full_address  +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+full_address  +'&amp;z=17&amp;output=embed'"></iframe>
+			    <div class="text-left site_container padding_tb_30" v-if="currentPage" v-html="currentPage.body"></div>
+				<iframe title="Map" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+full_address  +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+full_address  +'&amp;z=17&amp;output=embed'"></iframe>
 
-                <!--<div class="text-left site_container padding_tb_30" v-if="currentPage" v-html="currentPage.body"></div>-->
+                
 					
 			</div>
 			<div class="padding_top_40"></div>
@@ -36,7 +36,7 @@
             },
             created(){
                 this.loadData().then(response => {
-                    // this.currentPage = response[0].data;
+                    this.currentPage = response[0].data;
                     var temp_repo = this.findRepoByName('Find Us Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
@@ -61,7 +61,7 @@
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/pinecentre-contact-us.json"}),this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/pinecentre-find-us.json"}),this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
