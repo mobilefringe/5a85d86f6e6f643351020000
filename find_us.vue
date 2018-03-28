@@ -12,9 +12,6 @@
 			<div class="row text-left">
 			    <div class="text-left site_container padding_tb_30" v-if="currentPage" v-html="currentPage.body"></div>
 				<iframe title="Map" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+full_address  +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+full_address  +'&amp;z=17&amp;output=embed'"></iframe>
-
-                
-					
 			</div>
 			<div class="padding_top_40"></div>
 		</div>
@@ -36,11 +33,11 @@
             },
             created(){
                 this.loadData().then(response => {
-                    this.currentPage = response[0].data;
                     var temp_repo = this.findRepoByName('Find Us Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
+                    this.currentPage = response[0].data;
                     // this.pageBanner = this.findRepoByName('Contact Us Banner').images[0];
                    console.log(this.pageBanner); 
                    console.log(this.property);
@@ -54,7 +51,6 @@
                 full_address() {
                     var address = this.property.address1 +','+this.property.city +','+ this.property.country +','+this.property.province_state +','+this.property.province_state;
                     return address.replace(/ /g,"+");
-            
                 }
             },
             methods: {
@@ -66,7 +62,7 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
+                }
             }
         });
     });
