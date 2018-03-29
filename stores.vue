@@ -97,7 +97,7 @@
                     }
                     if(this.category == "history"){
                        this.selected = "history"
-                       this.currentSelection = this.historyGallery;
+                       this.filterByCategory();
                     } else if(this.category == "anniversary"){
                         this.filteredStores = this.allStores;
                     }
