@@ -159,6 +159,12 @@
                         else {
                             value.no_hover_class = true;
                         }
+                        if( _.includes(value.url, '//')) {
+                            value.do_anchor_tag = true;
+                        }
+                        else {
+                            value.do_anchor_tag = false;
+                        }
                     });
                     return features;
                 },
