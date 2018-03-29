@@ -13,7 +13,7 @@
             		<!--<div class="property_address">-->
             		<!--     {{property.address1}} <br/> {{property.city}} <br/> {{property.province}} {{property.postal_code}} -->
             		<!--</div>-->
-                    <div class="text-left" v-html="currentPage.body"></div>
+                    <div class="text-left contact_us_body" v-html="currentPage.body"></div>
                 </div> 
                 <div class="col-sm-6 contact_contents">
                     <div class="description_text text_left caps">
