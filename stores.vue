@@ -95,10 +95,10 @@
                     if(temp_repo) {
                         this.storeBanner = temp_repo.images[0];
                     }
-                    if(this.id == "history"){
+                    if(this.category == "history"){
                        this.selected = "history"
                        this.currentSelection = this.historyGallery;
-                    } else if(this.id == "anniversary"){
+                    } else if(this.category == "anniversary"){
                         this.selected = "anniversary";
                         this.currentSelection = this.anniversaryGallery;
                     }
