@@ -95,7 +95,13 @@
                     if(temp_repo) {
                         this.storeBanner = temp_repo.images[0];
                     }
-                    console.log(temp_repo, this.storeBanner); 
+                    if(this.id == "history"){
+                       this.selected = "history"
+                       this.currentSelection = this.historyGallery;
+                    } else if(this.id == "anniversary"){
+                        this.selected = "anniversary";
+                        this.currentSelection = this.anniversaryGallery;
+                    }
                 });
             },
             watch: {
