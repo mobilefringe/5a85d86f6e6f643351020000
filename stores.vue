@@ -95,7 +95,7 @@
                     if(temp_repo) {
                         this.storeBanner = temp_repo.images[0];
                     }
-                    if(this.category == "history"){
+                    if(this.category == "food"){
                        this.selectedCat = "history"
                        this.filterByCategory(this.selectedCat);
                     } else {
