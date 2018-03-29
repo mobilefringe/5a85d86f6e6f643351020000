@@ -99,8 +99,7 @@
                        this.selected = "history"
                        this.currentSelection = this.historyGallery;
                     } else if(this.category == "anniversary"){
-                        this.selected = "anniversary";
-                        this.currentSelection = this.anniversaryGallery;
+                        
                     }
                 });
             },
