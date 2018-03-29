@@ -15,6 +15,7 @@
             		<!--</div>-->
                     <div class="text-left contact_us_body" v-html="currentPage.body"></div>
                 </div> 
+                <hr class="visible_hone">
                 <div class="col-sm-6 contact_contents">
                     <div class="description_text text_left caps">
                         CONTACT US FOR QUESTIONS, COMMENTS AND MORE INFORMATION.
