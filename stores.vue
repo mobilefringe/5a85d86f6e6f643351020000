@@ -98,7 +98,7 @@
                     console.log("this.category", this.category);
                     if(this.category == "food"){
                        this.selectedCat = "Food Services";
-                       this.filterByCategory();
+                       this.filterByCategory;
                     } else {
                         this.filteredStores = this.allStores;
                     }
