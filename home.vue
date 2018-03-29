@@ -160,7 +160,7 @@
                             value.no_hover_class = true;
                         }
                         if( _.includes(value.name, 'Food')) {
-                            value.url = true;
+                            value.url = val.url + "?restraurant";
                         }
                         // else {
                         //     value.do_anchor_tag = false;
