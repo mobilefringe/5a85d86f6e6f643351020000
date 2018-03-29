@@ -98,7 +98,7 @@
                     if(this.category == "history"){
                        this.selectedCat = "history"
                        this.filterByCategory();
-                    } else if(this.category == "anniversary"){
+                    } else {
                         this.filteredStores = this.allStores;
                     }
                 });
