@@ -97,7 +97,7 @@
                     }
                     if(this.category == "history"){
                        this.selectedCat = "history"
-                       this.filterByCategory();
+                       this.filterByCategory(this.selectedCat);
                     } else {
                         this.filteredStores = this.allStores;
                     }
