@@ -162,9 +162,9 @@
                         if( _.includes(value.name, 'Food')) {
                             value.do_anchor_tag = true;
                         }
-                        else {
-                            value.do_anchor_tag = false;
-                        }
+                        // else {
+                        //     value.do_anchor_tag = false;
+                        // }
                     });
                     return features;
                 },
