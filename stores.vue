@@ -96,7 +96,7 @@
                         this.storeBanner = temp_repo.images[0];
                     }
                     if(this.category == "food"){
-                       this.selectedCat = "history"
+                       this.selectedCat = "Food Services";
                        this.filterByCategory(this.selectedCat);
                     } else {
                         this.filteredStores = this.allStores;
