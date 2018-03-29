@@ -160,7 +160,7 @@
                             value.no_hover_class = true;
                         }
                         if( _.includes(value.name, 'Food')) {
-                            value.url = val.url + "?restraurant";
+                            value.prop = 'food';
                         }
                         // else {
                         //     value.do_anchor_tag = false;
