@@ -159,7 +159,7 @@
                         else {
                             value.no_hover_class = true;
                         }
-                        if( _.includes(value.url, '//')) {
+                        if( _.includes(value.name, 'Food')) {
                             value.do_anchor_tag = true;
                         }
                         else {
