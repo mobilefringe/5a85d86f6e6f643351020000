@@ -191,6 +191,7 @@
                     ],
                 }
             },
+            props: ['property_logo'],
             watch: {
                 $route: function() {
                     // hide dropdown when route changes
