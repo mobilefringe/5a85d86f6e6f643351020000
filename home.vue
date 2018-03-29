@@ -20,7 +20,7 @@
                     <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
                     	<!--class="ih-item circle effect19"-->
-                    		<router-link :to="{ name: 'storeDetails', params: { id: feature.prop }}" v-if="feature.prop == 'food'">
+                    		<router-link :to="{ name: 'storeDetails', params: { category: feature.prop }}" v-if="feature.prop == 'food'">
                     			<img :src="feature.image_url" alt="name">
                     			<div class="info">
                     				<div class="content">
