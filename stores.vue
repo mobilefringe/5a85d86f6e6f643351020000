@@ -96,7 +96,7 @@
                         this.storeBanner = temp_repo.images[0];
                     }
                     if(this.category == "history"){
-                       this.selected = "history"
+                       this.selectedCat = "history"
                        this.filterByCategory();
                     } else if(this.category == "anniversary"){
                         this.filteredStores = this.allStores;
