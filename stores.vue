@@ -95,6 +95,7 @@
                     if(temp_repo) {
                         this.storeBanner = temp_repo.images[0];
                     }
+                    console.log("this.category", this.category);
                     if(this.category == "food"){
                        this.selectedCat = "Food Services";
                        this.filterByCategory(this.selectedCat);
