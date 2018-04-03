@@ -168,6 +168,7 @@
                         else {
                             value.no_hover_class = true;
                         }
+                        
                         if( _.includes(value.name, 'Food')) {
                             value.prop = 'food';
                         }
@@ -190,6 +191,7 @@
                         else {
                             value.masonry_class = " ";
                         }
+                        
                         if( _.includes(value.name, 'Food')) {
                             value.prop = 'food';
                         }
