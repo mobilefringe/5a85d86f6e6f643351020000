@@ -190,6 +190,9 @@
                         else {
                             value.masonry_class = " ";
                         }
+                        if( _.includes(value.name, 'Food')) {
+                            value.prop = 'food';
+                        }
                         // if(key > 3) {
                         //     value.mobile_order = key + ;
                         // }
