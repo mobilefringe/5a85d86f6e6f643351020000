@@ -128,6 +128,7 @@
                     currentContest: null,
                     pageBanner: null,
                     genderError : false,
+                    currentPage : null
                 }
             },
             created() {
