@@ -114,7 +114,7 @@
         Vue.use(VeeValidate);
         Vue.use(VCalendar.default);
         Vue.use(CheckboxRadio.default);
-        return Vue.component("strollers_n_bootst", {
+        return Vue.component("strollers_n_boots", {
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
