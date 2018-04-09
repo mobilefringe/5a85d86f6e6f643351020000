@@ -9,7 +9,7 @@
 			</div>
 		</div>
         <div class="site_container">
-            <div class="row text-center">
+            <div class="row text-left">
                 <div class="col-sm-12">
                     <div v-if="currentPage" v-html="currentPage.body"></div>
                 </div>
