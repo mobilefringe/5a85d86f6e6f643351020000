@@ -4,7 +4,9 @@
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
-					<h1>Kids PinE-Club</h1>
+					<!--<h1>Kids PinE-Club</h1>-->
+					<h1 v-if="locale=='en-ca'">{{currentPage.title}}</h1>
+					<h1 v-else>{{currentPage.title_2}}</h1>
 				</div>
 			</div>
 		</div>
