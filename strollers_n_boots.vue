@@ -161,6 +161,8 @@
                             // }
                             //format contests data for MM
                             // this.form_data.notes = this.form_data.child_first_name + " " + this.form_data.child_last_name;
+                            send_data = {};
+                        send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
                             this.$store.dispatch("CONTACT_US", send_data).then(res => {
                                 this.formSuccess = true;
                             }).catch(error => {
