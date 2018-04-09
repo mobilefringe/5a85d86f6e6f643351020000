@@ -17,6 +17,9 @@ define([], function () {
                 newObj.push(tempVal);
             });
             return newObj;
+        },
+        campaignMonitorCall(){
+            
         }
     }
 });
