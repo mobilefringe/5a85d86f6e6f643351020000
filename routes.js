@@ -198,6 +198,16 @@ define([], function() {
             }]
         },
         {
+            path: '/strollers_n_boots',
+            component: view('default'),
+            redirect: '/404',
+            children: [{
+                path: '',
+                component: view('strollers_n_boots'),
+                name: 'strollers_n_boots'
+            }]
+        },
+        {
             path: '/404',
             name: '404',
             component: view('notfoundcomponent')
