@@ -133,7 +133,7 @@
             created() {
                 this.loadData().then(response => {
                     this.currentContest = this.findContestBySlug('pinecentre-kids-pine-club');
-                    console.log(this.currentContest)
+                    // /pages/pinecentre-stroller-s-n-boots
                     var temp_repo = this.findRepoByName('Kids Club Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
