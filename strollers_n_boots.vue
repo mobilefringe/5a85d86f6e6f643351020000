@@ -49,10 +49,10 @@
 								<input v-model="form_data.emergency_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="emerg_name" type="text" placeholder="Emergency Contact Ful Name" data-vv-delay="500" data-vv-as="emergency contact name">
 								<span v-show="errors.has('emerg_name')" class="form-control-feedback">{{ errors.first('emerg_name') }}</span>
 							</div>
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}" >
-								<label class="label" for="phone">Emergency Contact Number <span class="req_star"> *</span></label>
-								<input v-model="form_data.emergency_phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="phone">
-								<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('emergency_')}" >
+								<label class="label" for="emergency_">Emergency Contact Number <span class="req_star"> *</span></label>
+								<input v-model="form_data.emergency_phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="emergency contact phone">
+								<span v-show="errors.has('emergency_')" class="form-control-feedback">{{ errors.first('emergency_') }}</span>
 							</div>
 						</div>
 						
