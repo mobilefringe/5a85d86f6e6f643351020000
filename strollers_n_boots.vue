@@ -24,7 +24,7 @@
 								<span v-show="errors.has('first_name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('last_name')}">
-								<label class="label" for="last_name">Guardian's Last Name <span class="req_star"> *</span></label>
+								<label class="label" for="last_name">Last Name <span class="req_star"> *</span></label>
 								<input v-model="form_data.parent_last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="last_name" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="guardian's last name">
 								<span v-show="errors.has('last_name')" class="form-control-feedback">{{ errors.first('last_name') }}</span>
 							</div>
