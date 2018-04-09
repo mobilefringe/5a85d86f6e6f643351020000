@@ -132,6 +132,7 @@
             },
             created() {
                 this.loadData().then(response => {
+                    this.currentPage = response[0].data;
                     this.currentContest = this.findContestBySlug('pinecentre-kids-pine-club');
                     // /pages/pinecentre-stroller-s-n-boots
                     var temp_repo = this.findRepoByName('Kids Club Banner');
