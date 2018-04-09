@@ -42,10 +42,10 @@
 							</div>
 						</div>
 						<div class="form-group ">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_first_name')}">
-								<label class="label" for="child_first_name"> Emergency Contact Name <span class="req_star"> *</span></label>
-								<input v-model="form_data.child_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="child_first_name" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="child's first name">
-								<span v-show="errors.has('emerg_name')" class="form-control-feedback">{{ errors.first('child_first_name') }}</span>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('emerg_name')}">
+								<label class="label" for="emerg_name"> Emergency Contact Name <span class="req_star"> *</span></label>
+								<input v-model="form_data.emergency)first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="emerg_name" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="child's first name">
+								<span v-show="errors.has('emerg_name')" class="form-control-feedback">{{ errors.first('emerg_name') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}" >
 								<label class="label" for="phone">Emergency Contact Number <span class="req_star"> *</span></label>
