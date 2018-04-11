@@ -32,6 +32,7 @@
         Vue.use(CheckboxRadio.default);
         return Vue.component("multi-children-component", {
             template: template, // the variable template will be injected
+            props:['id_num'],
             data: function() {
                 return {
                     child_form_data: {},
