@@ -114,9 +114,8 @@
         Vue.use(VeeValidate);
         Vue.use(VCalendar.default);
         Vue.use(CheckboxRadio.default);
-        return Vue.component("kids-club-component", {
+        return Vue.component("multi-xhildren-component", {
             template: template, // the variable template will be injected
-            props:['locale'],
             data: function() {
                 return {
                     child_form_data: {},
