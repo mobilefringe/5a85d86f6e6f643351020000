@@ -27,7 +27,7 @@
 </template>
 
 <script>
-    define(["Vue", 'vee-validate'], function(Vue,  VeeValidate) {
+    define(["Vue", 'vee-validate',  'vue-checkbox-radio'], function(Vue,  VeeValidate) {
         Vue.use(VeeValidate);
         Vue.use(CheckboxRadio.default);
         return Vue.component("multi-children-component", {
