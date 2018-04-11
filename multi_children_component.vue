@@ -39,7 +39,9 @@
                 }
             },
             computed: {
-                
+                randKey() {
+                    return Utility.rannumber();
+                }  
             },
             watch : {
                 child_form_data () {
