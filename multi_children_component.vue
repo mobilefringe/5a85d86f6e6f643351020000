@@ -156,35 +156,6 @@
                 ])
             },
             methods: {
-                validateBeforeSubmit() {
-                    if(this.form_data.gender == null || this.form_data.gender == undefined || this.form_data.gender.length == 0){
-                        this.genderError = true;
-                    }
-                    this.$validator.validateAll().then((result) => {
-                        let errors = this.errors;
-                        console.log("errors",errors);
-                        if(errors && errors.items.length == 0){
-                            //format contests data for MM
-                            // this.form_data.notes = this.form_data.child_first_name + " " + this.form_data.child_last_name;
-                            var contest_entry = {};
-                            contest_entry.json = this.form_data;
-                            var vm = this;
-                            host_name = this.property.mm_host.replace("http:", "");
-                            var url = host_name + "/contests/" + this.currentContest.slug + "/json_entry";//"/create_js_entry";
-                            $.ajax({
-                                url: url,
-                                type: "POST",
-                                data: contest_entry,
-                                success: function(data) {
-                                    vm.formSuccess = true;
-                                },
-                                error: function(data){
-                                    vm.formError = true;
-                                }
-                            });
-                        }
-                    })
-                },
             }
         });
     });
