@@ -62,8 +62,6 @@
                 child_form_data () {
                     this.$emit('childUpdated', this.child_form_data);
                 }
-            },
-            methods: {
             }
         });
     });
