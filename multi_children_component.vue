@@ -119,7 +119,7 @@
             props:['locale'],
             data: function() {
                 return {
-                    form_data: {},
+                    child_form_data: {},
                 }
             },
             created() {
