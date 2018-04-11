@@ -29,7 +29,7 @@
 <script>
     define(["Vue", 'vee-validate'], function(Vue,  VeeValidate) {
         Vue.use(VeeValidate);
-         Vue.use(CheckboxRadio.default);
+        Vue.use(CheckboxRadio.default);
         return Vue.component("multi-children-component", {
             template: template, // the variable template will be injected
             data: function() {
