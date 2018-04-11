@@ -46,7 +46,7 @@
             },
             watch : {
                 child_form_data () {
-                    this.child_form_data = this.id_num;
+                    this.child_form_data.id_num = this.id_num;
                     this.$emit('childUpdated', this.child_form_data);
                 }
             }
