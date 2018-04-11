@@ -61,7 +61,7 @@
                     child_form_data: {},
                 }
             },
-            watch() {
+            watch : {
                 
             },
             methods: {
