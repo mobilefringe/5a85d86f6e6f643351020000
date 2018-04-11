@@ -142,11 +142,6 @@
                     this.pageBanner = this.pageBanner;
                 });
             },
-            mounted() {
-                //creating random validation num 
-                this.correctValNum = Utility.rannumber();
-                
-            },
             methods: {
             }
         });
