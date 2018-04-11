@@ -63,7 +63,7 @@
             },
             watch : {
                 child_form_data () {
-                    
+                    this.$emit('updateMap', this.child_form_data);
                 }
             },
             methods: {
