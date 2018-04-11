@@ -147,14 +147,6 @@
                 this.correctValNum = Utility.rannumber();
                 
             },
-            computed: {
-                ...Vuex.mapGetters([
-                    'property',
-                    'timezone',
-                    'findContestBySlug',
-                    'findRepoByName'
-                ])
-            },
             methods: {
             }
         });
