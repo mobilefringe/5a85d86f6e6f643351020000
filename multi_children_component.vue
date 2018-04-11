@@ -18,8 +18,8 @@
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
 				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
-				<radio name="gender_randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
-                <radio name="gender_randKey" value="female" v-model="child_form_data.gender" :key="randKey">Female</radio>
+				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
+                <radio :name="'gender_'+randKey" value="female" v-model="child_form_data.gender" :key="randKey">Female</radio>
                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
 			</div>
 		</div>
