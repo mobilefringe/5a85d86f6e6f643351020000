@@ -34,6 +34,7 @@
             data: function() {
                 return {
                     child_form_data: {},
+                    genderError : false,
                 }
             },
             watch : {
