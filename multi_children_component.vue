@@ -62,7 +62,9 @@
                 }
             },
             watch : {
-                
+                child_form_data () {
+                    
+                }
             },
             methods: {
             }
