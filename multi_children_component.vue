@@ -120,15 +120,6 @@
             data: function() {
                 return {
                     form_data: {},
-                    formSuccess: false,
-                    formError: false,
-                    validaNum: '',
-                    correctValNum: null,
-                    validNumError: false,
-                    currentContest: null,
-                    pageBanner: null,
-                    genderError : false,
-                    numberOfChildren: 0,
                 }
             },
             created() {
