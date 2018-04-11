@@ -41,7 +41,6 @@
 							</div>
 						</div>
 					</form>
-                    
                 </div>
             </div>
             <div class="padding_top_40"></div>    
@@ -62,7 +61,7 @@
                     child_form_data: {},
                 }
             },
-            created() {
+            watch() {
                 
             },
             methods: {
