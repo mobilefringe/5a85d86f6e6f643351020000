@@ -8,12 +8,12 @@
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_last_name')}">
 				<label class="label" for="child_last_name">Child's Last Name <span class="req_star"> *</span></label>
-				<input v-model="child_form_data.child_last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="'child_last_name'+ id_num" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="child's last name">
+				<input v-model="child_form_data.child_last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_last_name'+ id_num" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="child's last name">
 				<span v-show="errors.has('child_last_name')" class="form-control-feedback">{{ errors.first('child_last_name') }}</span>
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}"   style="padding-top: 20px;">
 				<label class="label" for="birthday">Birthday <span class="req_star"> *</span></label>
-				<input v-model="child_form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" name="'birthday'+ id_num" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday">
+				<input v-model="child_form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" :name="'birthday'+ id_num" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday">
 				<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
