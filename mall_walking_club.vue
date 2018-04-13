@@ -237,7 +237,7 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                campaignMonitorCall(form, form_data_id, successMessage, cm_form_dets) {
+                campaignMonitorCall(form, form_data_id, successMessage) {
                     // Get e-mail value.
                     var vm = this;
                     email = $('input[type=email]', form).val();
