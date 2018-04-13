@@ -50,16 +50,17 @@
 								<input v-model="form_data.mailing_address" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrd" type="text" placeholder="Mailing Address" data-vv-delay="500" data-vv-as="mailing address">
 								<span v-show="errors.has('mailing_address')" class="form-control-feedback">{{ errors.first('mailing_address') }}</span>
 							</div>
-							<div class="col-sm-6 col-xs-12"  :class="{'has-error': errors.has('city')}" style="padding-top: 20px;">
-								<label class="label" for="city"> City <span class="req_star"> *</span></label>
-								<input v-model="form_data.city" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrh" type="text" placeholder="Town/City" data-vv-delay="500" data-vv-as="city">
-								<span v-show="errors.has('city')" class="form-control-feedback">{{ errors.first('city') }}</span>
-							</div>
 							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('postal')}"  style="padding-top: 20px;">
 								<label class="label" for="postal">Postal Code <span class="req_star"> *</span></label>
 								<input v-model="form_data.postal_code" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
 								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
 							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
+				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
+				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
+                <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
+                <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
+			</div>
 						</div>
 						
 						<div class="form-group account-btn text-left m-t-10 agreement">
