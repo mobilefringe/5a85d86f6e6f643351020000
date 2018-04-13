@@ -95,7 +95,6 @@
 
 						</p>
 						<div class="form-group account-btn text-left m-t-10 agreement">
-						    
 							<div class="col-xs-12" style="margin-top: 20px;">
 								<button class="contest_btn" type="submit" :disabled="formSuccess">Submit</button>
 							</div>
