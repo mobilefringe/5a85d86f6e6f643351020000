@@ -197,7 +197,7 @@
                             contact_form.full_name = this.form_data.first_name + " " + this.form_data.last_name;
                             contact_form.email = this.form_data.email;
                             contact_form.phone = this.form_data.phone;
-                            contact_form.mailing_address = this.form_data.emergency_full_name;
+                            contact_form.mailing_address = this.form_data.mailing_address;
                             contact_form.emergency_contact_number = this.form_data.emergency_phone ;
                             contact_form.message = " ";
                             
