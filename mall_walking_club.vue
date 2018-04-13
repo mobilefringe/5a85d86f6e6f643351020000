@@ -77,8 +77,9 @@
                 			</div>
                 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('howd_you_hear')}"  style="padding-top: 20px;">
                 				<label class="label" for="howd_you_hear">How did you hear about the Walking Club? <span class="req_star"> *</span></label>
-                				<radio name="howd_you_hear" value="male" v-model="form_data.howd_you_hear">Yes</radio>
-                                <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">No</radio>
+                				<radio name="howd_you_hear" value="male" v-model="form_data.howd_you_hear">Advertising</radio>
+                                <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Brochure</radio>
+                                <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Friends</radio>
                                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
                 			</div>
                 			<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('num_walks')}"  style="padding-top: 20px;">
