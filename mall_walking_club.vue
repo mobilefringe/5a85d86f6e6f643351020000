@@ -126,6 +126,11 @@
     </div>
 </template>
 
+<style>
+    .docError {
+        
+    }
+</style>
 
 <script>
     define(["Vue", "vuex", "axios", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', "v-calendar", 'utility', 'vue-checkbox-radio', 'jquery'], function(Vue, Vuex,axios, moment, tz, VueMoment, Meta, VeeValidate, VCalendar, Utility, CheckboxRadio, $) {
