@@ -92,7 +92,6 @@
 						</div>
 						<p>
 						    RISK OF INJURY:  Persons entering upon the premises of the Centre for the purpose of being a registered walker and member of the Pine Centre Walking Club, do so at their own risk.  Neither the Centre, nor any of its owners, their beneficiaries, merchants or agents shall have any liability for injury. We advise all registered walkers to check with their physician to see if walking at Pine Centre Mall is right for you.
-
 						</p>
 						<div class="form-group account-btn text-left m-t-10 agreement">
 						    <div class="col-xs-12">
