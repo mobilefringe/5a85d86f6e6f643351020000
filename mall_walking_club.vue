@@ -64,7 +64,7 @@
                 				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
                 				<radio name="gender_" value="male" v-model="form_data.gender">Male</radio>
                                 <radio name="gender" value="female" v-model="form_data.gender">Female</radio>
-                                <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
+                                <span v-if="genderError" class="form-control-feedback">Please choose a gender</span>
                 			</div>
                 			
 						</div>
