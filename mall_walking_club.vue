@@ -68,8 +68,6 @@
                 			</div>
 						</div>
 						<div class="form-group">
-						    
-						    
 						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('doc_approval')}"  style="padding-top: 20px;">
                 				<label class="label" for="doc_approval">Have you checked with your physician prior to walking at the centre? <span class="req_star"> *</span></label>
                 				<radio name="doc_approval" value="male" v-model="form_data.doc_approval">Yes</radio>
