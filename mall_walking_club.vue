@@ -88,7 +88,7 @@
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Brochure</radio>
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Friends</radio>
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Other</radio>
-                                <span v-if="genderError" class="form-control-feedback">Please choose an option</span>
+                                <span v-if="heardError" class="form-control-feedback">Please choose an option</span>
                 			</div>
                 			
 						</div>
