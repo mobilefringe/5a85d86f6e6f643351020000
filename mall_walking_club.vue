@@ -78,8 +78,8 @@
                 			</div>
 						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('doc_approval')}"  style="padding-top: 20px;">
                 				<label class="label" for="doc_approval">Have you checked with your physician about walking at the centre?<span class="req_star"> *</span></label>
-                				<radio name="m-f-attkkh" value="male" v-model="form_data.doc_approval">Yes</radio>
-                                <radio name="m-f-attkkh" value="female" v-model="form_data.doc_approval">No</radio>
+                				<radio name="cm-f-attkkh" value="male" v-model="form_data.doc_approval">Yes</radio>
+                                <radio name="cm-f-attkkh" value="female" v-model="form_data.doc_approval">No</radio>
                                 <span v-if="docError" class="form-control-feedback ">Please choose an option</span>
                                 <p>* Pine Centre advises all registrants to please check with their family physician to ensure walking at Pine Centre is right for you.</p>
                 			</div>
