@@ -68,14 +68,7 @@
                 			</div>
 						</div>
 						<div class="form-group">
-						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('doc_approval')}"  style="padding-top: 20px;">
-                				<label class="label" for="doc_approval">Have you checked with your physician prior to walking at the centre? <span class="req_star"> *</span></label>
-                				<radio name="doc_approval" value="male" v-model="form_data.doc_approval">Yes</radio>
-                                <radio name="doc_approval" value="female" v-model="form_data.doc_approval">No</radio>
-                                <span v-if="docError" class="form-control-feedback">Please choose an option</span>
-                                <span>* Pine Centre advises all registrants to please check with their family physician to ensure walking at Pine Centre is right for you.</span>
-                			</div>
-                			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('howd_you_hear')}"  style="padding-top: 20px;">
+						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('howd_you_hear')}"  style="padding-top: 20px;">
                 				<label class="label" for="howd_you_hear">How did you hear about the Walking Club? <span class="req_star"> *</span></label>
                 				<radio name="howd_you_hear" value="male" v-model="form_data.howd_you_hear">Advertising</radio>
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Brochure</radio>
@@ -83,6 +76,14 @@
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Other</radio>
                                 <span v-if="heardError" class="form-control-feedback">Please choose an option</span>
                 			</div>
+						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('doc_approval')}"  style="padding-top: 20px;">
+                				<label class="label" for="doc_approval">Have you checked with your physician prior to walking at the centre? <span class="req_star"> *</span></label>
+                				<radio name="doc_approval" value="male" v-model="form_data.doc_approval">Yes</radio>
+                                <radio name="doc_approval" value="female" v-model="form_data.doc_approval">No</radio>
+                                <span v-if="docError" class="form-control-feedback">Please choose an option</span>
+                                <span>* Pine Centre advises all registrants to please check with their family physician to ensure walking at Pine Centre is right for you.</span>
+                			</div>
+                			
                 			<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('num_walks')}"  style="padding-top: 20px;">
 								<label class="label" for="num_walks">How many times per week do you plan to walk at the centre?<span class="req_star"> *</span></label>
 								<input v-model="form_data.num_walks" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
