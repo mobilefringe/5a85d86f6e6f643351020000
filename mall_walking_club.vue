@@ -72,7 +72,7 @@
                 				<label class="label" for="howd_you_hear">How did you hear about the Walking Club? <span class="req_star"> *</span></label>
                 				<radio name="cm-f-attkkd" value="Advertising" v-model="form_data.howd_you_hear">Advertising</radio>
                                 <radio name="cm-f-attkkd" value="Brochure" v-model="form_data.howd_you_hear">Brochure</radio>
-                                <radio name="cm-f-attkkd" value="female" v-model="form_data.howd_you_hear">Friends</radio>
+                                <radio name="cm-f-attkkd" value="Friends" v-model="form_data.howd_you_hear">Friends</radio>
                                 <radio name="cm-f-attkkd" value="female" v-model="form_data.howd_you_hear">Other</radio>
                                 <span v-if="heardError" class="form-control-feedback">Please choose an option</span>
                 			</div>
