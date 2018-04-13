@@ -186,7 +186,7 @@
                         this.genderError = true;
                     }
                     if(this.form_data.howd_you_hear == null || this.form_data.howd_you_hear == undefined || this.form_data.howd_you_hear.length == 0){
-                        this.genderError = true;
+                        this.heardError = true;
                     }
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
