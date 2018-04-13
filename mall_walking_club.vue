@@ -199,8 +199,8 @@
                             contact_form.phone = this.form_data.phone;
                             contact_form.mailing_address = this.form_data.mailing_address;
                             contact_form.postal_code = this.form_data.postal_code ;
-                            contact_form.postal_code = this.form_data.postal_code ;
-                            contact_form.postal_code = this.form_data.postal_code ;
+                            contact_form.age = this.form_data.age ;
+                            contact_form.gender = this.form_data.gender ;
                             contact_form.postal_code = this.form_data.postal_code ;
                             contact_form.postal_code = this.form_data.postal_code ;
                             contact_form.postal_code = this.form_data.postal_code ;
