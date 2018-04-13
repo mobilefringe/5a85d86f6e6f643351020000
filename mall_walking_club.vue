@@ -68,7 +68,7 @@
                 			</div>
 						</div>
 						<div class="form-group">
-						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('howd_you_hear')}"  style="padding-top: 20px;">
+						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('howd_you_hear')}"  style="padding-top: 20px;">
                 				<label class="label" for="howd_you_hear">How did you hear about the Walking Club? <span class="req_star"> *</span></label>
                 				<radio name="howd_you_hear" value="male" v-model="form_data.howd_you_hear">Advertising</radio>
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Brochure</radio>
@@ -86,7 +86,7 @@
                 			
                 			<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('num_walks')}"  style="padding-top: 20px;">
 								<label class="label" for="num_walks">How many times per week do you plan to walk at the centre?<span class="req_star"> *</span></label>
-								<input v-model="form_data.num_walks" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
+								<input v-model="form_data.num_walks" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Times Per Week" data-vv-delay="500" data-vv-as="postal code">
 								<span v-show="errors.has('num_walks')" class="form-control-feedback">{{ errors.first('num_walks') }}</span>
 							</div>
 						</div>
