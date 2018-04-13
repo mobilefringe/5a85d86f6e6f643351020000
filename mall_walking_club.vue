@@ -203,7 +203,7 @@
                             contact_form.gender = this.form_data.gender ;
                             contact_form["How did you hear about the Walking Club"] = this.form_data.howd_you_hear ;
                             contact_form["Have you checked with your physician about walking at the centre?"] = this.form_data.doc_approval ;
-                            contact_form.postal_code = this.form_data.postal_code ;
+                            contact_form["How many times per week do you plan to walk at the centre?"] = this.form_data.postal_code ;
                             contact_form.message = " ";
                             
                             send_data = {};
