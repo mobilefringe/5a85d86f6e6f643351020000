@@ -182,7 +182,7 @@
                     if(this.form_data.gender == null || this.form_data.gender == undefined || this.form_data.gender.length == 0){
                         this.genderError = true;
                     }
-                    if(this.form_data.gender == null || this.form_data.gender == undefined || this.form_data.gender.length == 0){
+                    if(this.form_data.doc_approval == null || this.form_data.gender == undefined || this.form_data.gender.length == 0){
                         this.genderError = true;
                     }
                     if(this.form_data.gender == null || this.form_data.gender == undefined || this.form_data.gender.length == 0){
