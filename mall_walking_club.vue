@@ -269,15 +269,6 @@
                             }
                         }
                     }
-                },
-                campaignResponse (request, successMessage) {
-                    if (request.readyState === 4) {
-                        if (_.includes(request.response, 'Thank You')) {
-                            successMessage.show('slow');
-                        } else {
-                            form.prepend('<p class="error">' + config.errorMessage + '</p>');
-                        }
-                    }
                 }
             }
         });
