@@ -194,7 +194,7 @@
                         if(errors && errors.items.length == 0){
                             //format contests data for MM
                             var contact_form = {};
-                            contact_form.subject = "STROLLER'S N BOOTS Form Submission";
+                            contact_form.subject = "Mall Walking Club Form Submission";
                             contact_form.full_name = this.form_data.first_name + " " + this.form_data.last_name;
                             contact_form.email = this.form_data.email;
                             contact_form.phone = this.form_data.phone;
