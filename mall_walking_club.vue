@@ -80,7 +80,6 @@
 								<input v-model="form_data.postal_code" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
 								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
 							</div>
-                			How many times per week do you plan to walk at the centre?
 						</div>
 						<div class="form-group account-btn text-left m-t-10 agreement">
 						    
