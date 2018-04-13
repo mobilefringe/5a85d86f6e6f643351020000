@@ -262,7 +262,14 @@
                                 subscribeRequest.send(form.serialize());
                                 // On ready state call response function.
                                 subscribeRequest.onreadystatechange = function() {
-                                    vm.campaignResponse(subscribeRequest, successMessage);
+                                    // vm.campaignResponse(subscribeRequest, successMessage);
+                                    if (subscribeRequest.readyState === 4) {
+                                        if (_.includes(subscribeRequest.response, 'Thank You')) {
+                                            successMessage.show('slow');
+                                        } else {
+                                            form.prepend('<p class="error">' + config.errorMessage + '</p>');
+                                        }
+                                    }
                                 }
                             } else {
                                 vm.campaignResponse(tokenRequest, successMessage);
