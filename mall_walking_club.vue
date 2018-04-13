@@ -237,7 +237,7 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                campaignMonitorCall(form, form_data_id, successMessage) {
+                campaignMonitorCall(form, form_data_id) {
                     // Get e-mail value.
                     var vm = this;
                     email = $('input[type=email]', form).val();
@@ -262,21 +262,20 @@
                                 subscribeRequest.send(form.serialize());
                                 // On ready state call response function.
                                 subscribeRequest.onreadystatechange = function() {
-                                    // vm.campaignResponse(subscribeRequest, successMessage);
                                     if (subscribeRequest.readyState === 4) {
                                         if (_.includes(subscribeRequest.response, 'Thank You')) {
-                                            successMessage.show('slow');
+                                            return true;
                                         } else {
-                                            form.prepend('<p class="error">' + config.errorMessage + '</p>');
+                                            return false;
                                         }
                                     }
                                 }
                             } else {
-                                vm.campaignResponse(tokenRequest, successMessage);
+                                return false;
                             }
                         }
                     }
-                }
+                },
             }
         });
     });
