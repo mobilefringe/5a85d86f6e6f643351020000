@@ -201,7 +201,7 @@
                             contact_form.postal_code = this.form_data.postal_code ;
                             contact_form.age = this.form_data.age ;
                             contact_form.gender = this.form_data.gender ;
-                            contact_form["How did you hear about the Walking Club"] = this.form_data.postal_code ;
+                            contact_form["How did you hear about the Walking Club"] = this.form_data.howd_you_hear ;
                             contact_form.postal_code = this.form_data.postal_code ;
                             contact_form.postal_code = this.form_data.postal_code ;
                             contact_form.message = " ";
