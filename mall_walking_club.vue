@@ -80,6 +80,7 @@
                 				<radio name="howd_you_hear" value="male" v-model="form_data.howd_you_hear">Advertising</radio>
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Brochure</radio>
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Friends</radio>
+                                <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Other</radio>
                                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
                 			</div>
                 			<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('num_walks')}"  style="padding-top: 20px;">
