@@ -149,6 +149,8 @@
                     currentContest: null,
                     pageBanner: null,
                     genderError : false,
+                    docError: false,
+                    heardError : false,
                     currentPage : null
                 }
             },
