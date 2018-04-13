@@ -98,7 +98,7 @@
 						    <div class="col-xs-12">
 						        <label class="checkbox">
                                     <input name="agree_terms" required type="checkbox" >
-                                    By signing this document I acknowledge that I have read this document and Risk of Injury sections and agree with the above.</a>
+                                    By signing this document I acknowledge that I have read this document and Risk of Injury sections and agree with the above.
                                 </label>
                                 <label class=""> <a href="https://www.morguard.com/privacy/"> Read our Privacy Policy here</a></label> 
 						    </div>
