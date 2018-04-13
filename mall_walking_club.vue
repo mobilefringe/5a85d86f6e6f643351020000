@@ -157,7 +157,7 @@
                     this.currentPage = response[0].data;
                     this.currentContest = this.findContestBySlug('pinecentre-walking-club');
                     // /pages/pinecentre-stroller-s-n-boots
-                    var temp_repo = this.findRepoByName('Kids Club Banner');
+                    var temp_repo = this.findRepoByName('Programs Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
