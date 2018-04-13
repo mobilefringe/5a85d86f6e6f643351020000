@@ -69,6 +69,11 @@
                 			
 						</div>
 						<div class="form-group">
+						<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('num_walks')}"  style="padding-top: 20px;">
+								<label class="label" for="num_walks">How many times per week do you plan to walk at the centre?<span class="req_star"> *</span></label>
+								<input v-model="form_data.num_walks" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
+								<span v-show="errors.has('num_walks')" class="form-control-feedback">{{ errors.first('num_walks') }}</span>
+							</div>
 						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('doc_approval')}"  style="padding-top: 20px;">
                 				<label class="label" for="doc_approval">Have you checked with your physician prior to walking at the centre? <span class="req_star"> *</span></label>
                 				<radio name="doc_approval" value="male" v-model="form_data.doc_approval">Yes</radio>
@@ -84,11 +89,7 @@
                                 <radio name="howd_you_hear" value="female" v-model="form_data.howd_you_hear">Other</radio>
                                 <span v-if="genderError" class="form-control-feedback">Please choose an option</span>
                 			</div>
-                			<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('num_walks')}"  style="padding-top: 20px;">
-								<label class="label" for="num_walks">How many times per week do you plan to walk at the centre?<span class="req_star"> *</span></label>
-								<input v-model="form_data.num_walks" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjrk" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code">
-								<span v-show="errors.has('num_walks')" class="form-control-feedback">{{ errors.first('num_walks') }}</span>
-							</div>
+                			
 						</div>
 						<p>
 						    RISK OF INJURY:  Persons entering upon the premises of the Centre for the purpose of being a registered walker and member of the Pine Centre Walking Club, do so at their own risk.  Neither the Centre, nor any of its owners, their beneficiaries, merchants or agents shall have any liability for injury. We advise all registered walkers to check with their physician to see if walking at Pine Centre Mall is right for you.
