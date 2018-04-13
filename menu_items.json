@@ -34,6 +34,10 @@
             {
                 "name": "header.strollers_n_boots",
                 "href": "/strollers_n_boots"
+            },
+            {
+                "name": "header.mall_walking",
+                "href" : "/mall_walking_club"
             }
         ]
     },
