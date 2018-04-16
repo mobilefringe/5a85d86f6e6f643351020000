@@ -184,9 +184,9 @@
                     if(this.form_data.doc_approval == null || this.form_data.doc_approval == undefined || this.form_data.doc_approval.length == 0){
                         this.docError = true;
                     }
-                    if(this.form_data.howd_you_hear == null || this.form_data.howd_you_hear == undefined || this.form_data.howd_you_hear.length == 0){
-                        this.heardError = true;
-                    }
+                    // if(this.form_data.howd_you_hear == null || this.form_data.howd_you_hear == undefined || this.form_data.howd_you_hear.length == 0){
+                    //     this.heardError = true;
+                    // }
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         console.log("errors",errors);
