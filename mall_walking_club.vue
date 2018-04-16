@@ -147,7 +147,7 @@
                     pageBanner: null,
                     genderError : false,
                     docError: false,
-                    heardError : false,
+                    // heardError : false,
                     currentPage : null
                 }
             },
