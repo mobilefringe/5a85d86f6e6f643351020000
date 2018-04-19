@@ -188,7 +188,7 @@ define([], function() {
             }]
         },
         {
-            path: '/activities',
+            path: '/toddler_play_area',
             component: view('default'),
             redirect: '/404',
             children: [{
@@ -213,7 +213,7 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('mall_walking_club'),
-                name: 'strollers_n_boots'
+                name: 'mall_walking_club'
             }]
         },
         {
