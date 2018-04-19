@@ -198,7 +198,7 @@ define([], function() {
             }]
         },
         {
-            path: '/strollers_n_boots',
+            path: '/strollers_n_booties',
             component: view('default'),
             redirect: '/404',
             children: [{
