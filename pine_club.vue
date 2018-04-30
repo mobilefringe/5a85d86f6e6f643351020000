@@ -200,7 +200,7 @@
                         let errors = this.errors;
                         if(errors && errors.items.length == 0){ 
                             if(errors.length > 0) {
-                                console.log("Error");
+                                console.log("Error", errors);
                                 this.formError = true;
                                 form.preventDefault();
                                 form.target.action = "";
