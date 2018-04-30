@@ -26,7 +26,7 @@
                         <span class="sr-only">Error:</span>
                         There was an error when trying to submit your request. Please try again later.
                     </div>
-                    <form class="form-horizontal js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A2424A7FAF2895AE27BC1E6B945831C3A814668D6DF314C6CFD5AD436FBA4357E38F8203633B221924D53F47AEFF534B1" @submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal js-cm-form" id="subForm" class="form-horizontal padding_top_20 js-cm-form" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
 								<label class="label" for="first_name">First Name <span class="req_star"> *</span></label>
