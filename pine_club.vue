@@ -206,43 +206,23 @@
                                 form.target.action = "";
                             }
                             else {
-                                // Get e-mail value.
+                                $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
+                                form.preventDefault();
+                                console.log("No Error", form);
                                 var vm = this;
-                                email = $('input[type=email]', form).val();
-                    
-                                // Build request data for tokenRequest.
-                                request_data = "email=" + encodeURIComponent(email) + "&data=" + form_data_id;
-                    
-                                // Prepare tokenRequest.
-                                tokenRequest = new XMLHttpRequest();
-                                tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
-                                tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                tokenRequest.send(request_data);
-                    
-                                // Ready state.
-                                tokenRequest.onreadystatechange = function() {
-                                    if (this.readyState === 4) {
-                                        if (this.status === 200) {
-                                            // Having token and new submit url we can create new request to subscribe a user.
-                                            subscribeRequest = new XMLHttpRequest();
-                                            subscribeRequest.open('POST', this.responseText, true);
-                                            subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                            subscribeRequest.send(form.serialize());
-                                            // On ready state call response function.
-                                            subscribeRequest.onreadystatechange = function() {
-                                                if (subscribeRequest.readyState === 4) {
-                                                    if (_.includes(subscribeRequest.response, 'Thank You')) {
-                                                        return true;
-                                                    } else {
-                                                        return false;
-                                                    }
-                                                }
-                                            }
-                                        } else {
-                                            return false;
-                                        }
+                                $.getJSON(
+                                    form.target.action ,
+                                    $(form.target).serialize(),
+                                    function (data) {
+                                    if (data.Status === 400) {
+                                      vm.formError = true;
+                                        console.log("ERROR");
+                                    } else { // 200
+                                        vm.formSuccess = true;
+                                        console.log("SUCCESS");
                                     }
-                                }
+                                });
+                                form.preventDefault();
                             }
                         }
                     })
@@ -256,6 +236,45 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
+                campaignMonitorCall(form, form_data_id) {
+                    // Get e-mail value.
+                    var vm = this;
+                    email = $('input[type=email]', form).val();
+        
+                    // Build request data for tokenRequest.
+                    request_data = "email=" + encodeURIComponent(email) + "&data=" + form_data_id;
+        
+                    // Prepare tokenRequest.
+                    tokenRequest = new XMLHttpRequest();
+                    tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
+                    tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    tokenRequest.send(request_data);
+        
+                    // Ready state.
+                    tokenRequest.onreadystatechange = function() {
+                        if (this.readyState === 4) {
+                            if (this.status === 200) {
+                                // Having token and new submit url we can create new request to subscribe a user.
+                                subscribeRequest = new XMLHttpRequest();
+                                subscribeRequest.open('POST', this.responseText, true);
+                                subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                                subscribeRequest.send(form.serialize());
+                                // On ready state call response function.
+                                subscribeRequest.onreadystatechange = function() {
+                                    if (subscribeRequest.readyState === 4) {
+                                        if (_.includes(subscribeRequest.response, 'Thank You')) {
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+                                    }
+                                }
+                            } else {
+                                return false;
+                            }
+                        }
+                    }
+                }
             }
         });
     });
