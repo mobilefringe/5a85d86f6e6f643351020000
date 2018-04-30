@@ -222,7 +222,7 @@
                                 //         console.log("SUCCESS");
                                 //     }
                                 // });
-                                this.campaignMonitorCall($('#walking_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A283BF1E3C2E61D583B605E13F21FF0FF32C7715BAF2BA07E11A65475E7F27713134C2662AA252AA55B4872C0D7BA96E2');
+                                this.campaignMonitorCall($('#subForm'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A283BF1E3C2E61D583B605E13F21FF0FF32C7715BAF2BA07E11A65475E7F27713134C2662AA252AA55B4872C0D7BA96E2');
                                 form.preventDefault();
                             }
                         }
