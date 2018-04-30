@@ -272,7 +272,7 @@
                                 subscribeRequest.onreadystatechange = function() {
                                     if (subscribeRequest.readyState === 4) {
                                         if (_.includes(subscribeRequest.response, 'Thank You')) {
-                                            return true;
+                                            this.formSuccess = true;
                                         } else {
                                             this.formError = true;
                                         }
