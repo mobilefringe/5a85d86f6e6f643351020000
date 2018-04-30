@@ -272,9 +272,9 @@
                                 subscribeRequest.onreadystatechange = function() {
                                     if (subscribeRequest.readyState === 4) {
                                         if (_.includes(subscribeRequest.response, 'Thank You')) {
-                                            this.formSuccess = true;
+                                            vm.formSuccess = true;
                                         } else {
-                                            this.formError = true;
+                                            vm.formError = true;
                                         }
                                     }
                                 }
