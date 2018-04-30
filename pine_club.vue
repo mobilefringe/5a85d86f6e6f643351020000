@@ -271,8 +271,9 @@
                                 // On ready state call response function.
                                 subscribeRequest.onreadystatechange = function() {
                                     if (subscribeRequest.readyState === 4) {
-                                        console.log("subscribeRequest.response", subscribeRequest.response)
+                                        console.log("subscribeRequest.response", subscribeRequest.response);
                                         if (_.includes(subscribeRequest.response, 'Thank You')) {
+                                            console.log(_.includes(subscribeRequest.response, 'Thank You'));
                                             vm.formSuccess = true;
                                         } else {
                                             vm.formError = true;
