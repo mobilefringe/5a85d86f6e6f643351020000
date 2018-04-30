@@ -274,7 +274,7 @@
                                         if (_.includes(subscribeRequest.response, 'Thank You')) {
                                             return true;
                                         } else {
-                                            return false;
+                                            this.formError = true;
                                         }
                                     }
                                 }
