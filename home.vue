@@ -102,7 +102,12 @@
                     show_popup: false,
                     popup: null,
                     formData : {},
-                    instaFeed: null
+                    instaFeed: null,
+                    meta: {
+                        meta_title: "",
+                        meta_description: "",
+                        meta_keywords: ""
+                    }
                 }
             },
             created () {
