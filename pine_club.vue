@@ -206,22 +206,23 @@
                                 form.target.action = "";
                             }
                             else {
-                                $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
-                                form.preventDefault();
-                                console.log("No Error", form);
-                                var vm = this;
-                                $.getJSON(
-                                    form.target.action ,
-                                    $(form.target).serialize(),
-                                    function (data) {
-                                    if (data.Status === 400) {
-                                      vm.formError = true;
-                                        console.log("ERROR");
-                                    } else { // 200
-                                        vm.formSuccess = true;
-                                        console.log("SUCCESS");
-                                    }
-                                });
+                                // $("#fieldName").val(this.form_data.first_name + " " + this.form_data.last_name);
+                                // form.preventDefault();
+                                // console.log("No Error", form);
+                                // var vm = this;
+                                // $.getJSON(
+                                //     form.target.action ,
+                                //     $(form.target).serialize(),
+                                //     function (data) {
+                                //     if (data.Status === 400) {
+                                //       vm.formError = true;
+                                //         console.log("ERROR");
+                                //     } else { // 200
+                                //         vm.formSuccess = true;
+                                //         console.log("SUCCESS");
+                                //     }
+                                // });
+                                this.campaignMonitorCall($('#walking_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A283BF1E3C2E61D583B605E13F21FF0FF32C7715BAF2BA07E11A65475E7F27713134C2662AA252AA55B4872C0D7BA96E2');
                                 form.preventDefault();
                             }
                         }
