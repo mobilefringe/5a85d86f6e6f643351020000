@@ -210,8 +210,13 @@
                             send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
                             this.$store.dispatch("CONTACT_US", send_data).then(res => {
                                
-                                this.campaignMonitorCall($('#walking_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A283BF1E3C2E61D583B605E13F21FF0FF32C7715BAF2BA07E11A65475E7F27713134C2662AA252AA55B4872C0D7BA96E2');
-                                this.formSuccess = true;
+                                var is_success = this.campaignMonitorCall($('#walking_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A283BF1E3C2E61D583B605E13F21FF0FF32C7715BAF2BA07E11A65475E7F27713134C2662AA252AA55B4872C0D7BA96E2');
+                                if(is_success){
+                                    this.formSuccess = true;
+                                }
+                                else {
+                                    this.formError = true;
+                                }
                                 
                             }).catch(error => {
                                 try {
