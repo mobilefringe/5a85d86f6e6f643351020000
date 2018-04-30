@@ -272,6 +272,7 @@
                                 // On ready state call response function.
                                 subscribeRequest.onreadystatechange = function() {
                                     if (subscribeRequest.readyState === 4) {
+                                        console.log(subscribeRequest.response)l
                                         if (_.includes(subscribeRequest.response, 'Thank You')) {
                                             return true;
                                         } else {
