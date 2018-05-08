@@ -163,7 +163,7 @@
                             store.store_front_url_abs = store.store_front_url_abs;
                         }
                     });
-                    return this.processedStores;
+                    return stores;
                 },
                 allCatergories() {
                     return this.processedCategories;
