@@ -46,7 +46,7 @@
 								<span v-show="errors.has('cm-zlyluu-zlyluu')" class="form-control-feedback">{{ errors.first('cm-zlyluu-zlyluu') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('cm-f-qhdikl')}">
-								<label class="label" for="cm-f-qhdikl">Postal Code <span class="req_star"> *</span></label>
+								<label class="label" for="postal_code">Postal Code <span class="req_star"> *</span></label>
 								<input v-model="form_data.postal_code" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-qhdikl" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="postal code" required id="postal_code">
 								<span v-show="errors.has('cm-f-qhdikl')" class="form-control-feedback">{{ errors.first('cm-f-qhdikl') }}</span>
 							</div>
