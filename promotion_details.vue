@@ -16,8 +16,8 @@
 					</div>
 					<div class="text-center">
 					    <div v-if="currentPromo.promotionable_type == 'Store'">
-						    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{currentPromo.store.name}}</h4>
-						    <h4 class="event_store_name caps" v-else>{{currentPromo.store.name_2}}</h4>
+						    <h2 class="event_store_name caps" v-if="locale=='en-ca'">{{currentPromo.store.name}}</h2>
+						    <h2 class="event_store_name caps" v-else>{{currentPromo.store.name_2}}</h2>
 						</div>
 						<h4 v-if="currentPromo.store.phone" class="store_dets_title"> <a :href="'tel:'+currentPromo.store.phone">{{currentPromo.store.phone}}</a></h4>
 						<h4 v-if="currentPromo.store.website" class="store_dets_title"> <a :href="'//'+currentPromo.store.website" target="_blank"> {{$t("stores_page.store_website")}}</a></h4>
