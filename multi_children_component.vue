@@ -2,7 +2,7 @@
     <div> <!-- for some reason if you do not put an outer container div this component template will not render -->
        <div class="form-group " id="child_container">
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_first_name')}">
-				<label class="label" for="'child_first_name' + id_num">Child's First Name <span class="req_star"> *</span></label>
+				<label class="label" :for="'child_first_name' + id_num">Child's First Name <span class="req_star"> *</span></label>
 				<input v-model="child_form_data.child_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_first_name' + id_num" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="child's first name" :id="'child_first_name' + id_num">
 				<span v-show="errors.has('child_first_name')" class="form-control-feedback">{{ errors.first('child_first_name') }}</span>
 			</div>
