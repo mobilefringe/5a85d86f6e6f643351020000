@@ -12,7 +12,7 @@
 			<div class="row">
 				<div class="col-sm-4 promo_logo_container hidden_phone">
 					<div class="image_container">
-						<img v-lazy="currentPromo.store.store_front_url_abs" class="image" :alt="'Click here to view ' + promo.name"/>
+						<img v-lazy="currentPromo.store.store_front_url_abs" class="image" :alt="currentPromo.store.name"/>
 					</div>
 					<div class="text-center">
 					    <div v-if="currentPromo.promotionable_type == 'Store'">
