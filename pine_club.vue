@@ -64,6 +64,8 @@
                 				<fieldset>
     								<radio name="cm-f-qhdikh" value="male" v-model="form_data.gender" required>Male</radio>
                                     <radio name="cm-f-qhdikh" value="female" v-model="form_data.gender" required>Female</radio>
+                                    <legend> Choose male or female</legend>
+                                </fieldset>
                                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
 							</div>
 						</div>
