@@ -21,7 +21,7 @@
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
                     	<!--class="ih-item circle effect19"-->
                     		<router-link :to="{ name: 'storeList', params: { category: feature.prop }}" v-if="feature.prop">
-                    			<img :src="feature.image_url" alt="feature.name">
+                    			<img :src="feature.image_url" :alt="feature.name">
                     			<div class="info">
                     				<div class="content">
                     					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>
@@ -49,7 +49,7 @@
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
                     	<!--class="ih-item circle effect19"-->
                     		<router-link :to="feature.url">
-                    			<img :src="feature.image_url" alt="name">
+                    			<img :src="feature.image_url" :alt="feature.name">
                     			<div class="info">
                     				<div class="content">
                     					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>
