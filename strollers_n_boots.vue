@@ -50,7 +50,7 @@
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('emerg_name')}">
 								<label class="label" for="emerg_name"> Emergency Contact Name <span class="req_star"> *</span></label>
-								<input v-model="form_data.emergency_full_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-ajhhyd" type="text" placeholder="Emergency Contact Ful Name" data-vv-delay="500" data-vv-as="emergency contact name">
+								<input v-model="form_data.emergency_full_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-ajhhyd" type="text" placeholder="Emergency Contact Ful Name" data-vv-delay="500" data-vv-as="emergency contact name" id="emerg_name">
 								<span v-show="errors.has('emerg_name')" class="form-control-feedback">{{ errors.first('emerg_name') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('emergency_phone')}" >
