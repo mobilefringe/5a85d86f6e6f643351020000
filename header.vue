@@ -138,7 +138,9 @@
                 }
             },
             methods: {
-            
+                toggleDropdown(index) {
+                    
+                }
                 
             }
             
