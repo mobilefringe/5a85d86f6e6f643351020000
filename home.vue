@@ -17,53 +17,7 @@
 		    </div>
 		    <masonry-component class="hidden_phone" :featurelist="feature_items" :locale="locale"></masonry-component>
             <masonry-component class="visible_phone" :featurelist="mobile_feature_items" :locale="locale"></masonry-component>
-		    <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="hidden_phone">-->
-      <!--          <div v-masonry-tile class="item" >-->
-      <!--              <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-      <!--              	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> -->
-                    	<!--class="ih-item circle effect19"-->
-      <!--              		<router-link :to="{ name: 'storeList', params: { category: feature.prop }}" v-if="feature.prop">-->
-      <!--              			<img :src="feature.image_url" :alt="feature.name">-->
-      <!--              			<div class="info">-->
-      <!--              				<div class="content">-->
-      <!--              					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>-->
-      <!--              					<h3 v-else> {{feature.name_2}} </h3>-->
-      <!--              				</div>-->
-      <!--              			</div>-->
-      <!--              		</router-link>-->
-      <!--              		<router-link :to="feature.url" v-else>-->
-      <!--              			<img :src="feature.image_url" alt="name">-->
-      <!--              			<div class="info">-->
-      <!--              				<div class="content">-->
-      <!--              					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>-->
-      <!--              					<h3 v-else> {{feature.name_2}} </h3>-->
-      <!--              				</div>-->
-      <!--              			</div>-->
-      <!--              		</router-link>-->
-      <!--              	</div>-->
-      <!--              </div>-->
-      <!--          </div>-->
-                
-      <!--      </div>-->
-      <!--      <div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">-->
-      <!--          <div v-masonry-tile class="item " >-->
-      <!--              <div v-for="feature in mobile_feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-      <!--              	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> -->
-                    	<!--class="ih-item circle effect19"-->
-      <!--              		<router-link :to="feature.url">-->
-      <!--              			<img :src="feature.image_url" :alt="feature.name">-->
-      <!--              			<div class="info">-->
-      <!--              				<div class="content">-->
-      <!--              					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>-->
-      <!--              					<h3 v-else> {{feature.name_2}} </h3>-->
-      <!--              				</div>-->
-      <!--              			</div>-->
-      <!--              		</router-link>-->
-      <!--              	</div>-->
-      <!--              </div>-->
-      <!--          </div>-->
-      <!--      </div>-->
-            
+            <h2 style="display:none;">Home Page Features</h2>
             <div>
 		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
 		    </div>
