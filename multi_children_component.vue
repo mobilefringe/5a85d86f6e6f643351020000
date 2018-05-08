@@ -7,7 +7,7 @@
 				<span v-show="errors.has('child_first_name')" class="form-control-feedback">{{ errors.first('child_first_name') }}</span>
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_last_name')}">
-				<label class="label" for="child_last_name">Child's Last Name <span class="req_star"> *</span></label>
+				<label class="label" :for="'child_last_name'+ id_num">Child's Last Name <span class="req_star"> *</span></label>
 				<input v-model="child_form_data.child_last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_last_name'+ id_num" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="child's last name" :id="'child_last_name'+ id_num">
 				<span v-show="errors.has('child_last_name')" class="form-control-feedback">{{ errors.first('child_last_name') }}</span>
 			</div>
