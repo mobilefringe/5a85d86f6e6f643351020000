@@ -157,7 +157,7 @@
 
                 ]),
                 allStores() {
-                    console.log(this.processedStores);
+                    // console.log(this.processedStores);
                     // http://via.placeholder.com/400x400/757575
                     var stores = this.processedStores;
                     // stores.map(store => {
