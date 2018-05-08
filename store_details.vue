@@ -26,10 +26,10 @@
 				<div class="col-sm-4">
 					<div class="text-center">
 					    <h2 class="event_store_name caps" v-if="locale=='en-ca'">{{currentStore.name}}</h2>
-						<h4 class="event_store_name caps" v-else>{{currentStore.name_2}}</h4>
-						<h4 v-if="currentStore.phone" class="store_dets_title"> <a :href="'tel:'+currentStore.phone">{{currentStore.phone}}</a></h4>
-						<h4 v-if="currentStore.website" class="store_dets_title"> <a :href="'//'+currentStore.website" target="_blank">{{$t("stores_page.store_website")}}</a></h4>
-						<h4 v-if="storeHours.length > 0 " class="store_dets_title">{{$t("stores_page.store_hours")}}</h4>
+						<h3 class="event_store_name caps" v-else>{{currentStore.name_2}}</h3>
+						<h3 v-if="currentStore.phone" class="store_dets_title"> <a :href="'tel:'+currentStore.phone">{{currentStore.phone}}</a></h3>
+						<h3 v-if="currentStore.website" class="store_dets_title"> <a :href="'//'+currentStore.website" target="_blank">{{$t("stores_page.store_website")}}</a></h3>
+						<h3 v-if="storeHours.length > 0 " class="store_dets_title">{{$t("stores_page.store_hours")}}</h3>
 						<ul class="store_hours_list">
 							<li v-if="storeHours" v-for="hour in storeHours" class="col-xs-12">
 							    <span class="col-xs-5 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
