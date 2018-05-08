@@ -1442,7 +1442,7 @@ strong, .bold {
 .ih-item.circle.effect19 .info {
     // background: $accent;
     // opacity:0.7;
-    background: rgba(72, 118, 41, .9);
+    background: rgba(72, 118, 41, .95);
     transition: all 0.35s linear;
 }
 .ih-item.circle.effect19 .info .content {
