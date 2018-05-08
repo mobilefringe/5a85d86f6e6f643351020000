@@ -132,9 +132,6 @@
                         if( _.includes(value.name, 'Food')) {
                             value.prop = 'food';
                         }
-                        // else {
-                        //     value.do_anchor_tag = false;
-                        // }
                     });
                     return features;
                 },
