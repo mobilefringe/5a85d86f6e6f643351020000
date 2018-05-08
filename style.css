@@ -2358,7 +2358,7 @@ strong, .bold {
     }
 }
 .event_name {
-    
+    font-size: 1.5rem;
 }
 .event_dets_container{
     min-height: 220px;
