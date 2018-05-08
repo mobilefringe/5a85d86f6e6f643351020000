@@ -63,7 +63,7 @@
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
                 				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
-                				<input class="form-control" name="cm-name" type="hidden" :value="form_data.first_name + ' ' + form_data.last_name">
+                				<input class="form-control" id="gender" type="hidden">
                 				<radio name="cm-f-attkki" value="male" v-model="form_data.gender">Male</radio>
                                 <radio name="cm-f-attkki" value="female" v-model="form_data.gender">Female</radio>
                                 <span v-if="genderError" class="form-control-feedback">Please choose a gender</span>
