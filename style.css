@@ -697,6 +697,7 @@ strong, .bold {
 	background: rgba(0, 43, 73, 0.6);
 	width: 100%;
 	transition: all ease 0.3s;
+	border-radius: 4px;
 }
 
 #primary_nav ul .menu_item ul .dropdown_item {
