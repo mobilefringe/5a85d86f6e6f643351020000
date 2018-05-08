@@ -80,7 +80,7 @@
     					<nav id="primary_nav">
     						<ul>
     						    <li v-for="item in menu_items" class="menu_item">
-    						        <router-link :to="item.href">{{$t(item.name)}}</router-link>
+    						        <router-link v-if="item.sub_menu" :to="item.href">{{$t(item.name)}}</router-link>
     						        <ul v-if="item.sub_menu">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
     						                <router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
