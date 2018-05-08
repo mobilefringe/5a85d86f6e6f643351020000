@@ -1,0 +1,92 @@
+[
+    {
+        "name": "header.stores",
+        "href": "#",
+        "sub_menu": [{
+                "name": "header.stores",
+                "href": "/stores"
+            },
+            {
+                "name": "header.centre_map",
+                "href": "/map"
+            }
+        ]
+    },
+    {
+        "name": "header.promos",
+        "href": "/promotions"
+    },
+    {
+        "name": "header.whats_happening",
+        "href": "#",
+        "sub_menu": [{
+                "name": "header.events ",
+                "href": "/events"
+            },
+            {
+                "name": "header.community",
+                "href": "/pages/pinecentre-community"
+            },
+            {
+                "name": "header.jobs",
+                "href": "/jobs"
+            },
+            {
+                "name": "header.kids_club",
+                "href": "/kids_club"
+            },
+            {
+                "name": "header.strollers_n_boots",
+                "href": "/strollers_n_booties"
+            },
+            {
+                "name": "header.mall_walking",
+                "href" : "/mall_walking_club"
+            }
+        ]
+    },
+    {
+        "name": "header.guest_services",
+        "href": "#",
+        "sub_menu": [{
+                "name": "header.services ",
+                "href": "/services"
+            },
+            {
+                "name": "header.gift_card",
+                "href": "/pages/pinecentre-gift-cards"
+            },
+            
+            {
+                "name": "header.activity_programs",
+                "href": "/toddler_play_area"
+            }
+        ]
+    },
+    {
+        "name": "header.contact_us",
+        "href": "#",
+        "sub_menu": [
+            {
+                "name": "header.contact_us",
+                "href": "/contact_us"
+            },
+            {
+                "name": "header.hours",
+                "href": "/hours"
+            },
+            {
+                "name": "header.find_us",
+                "href": "/find_us"
+            },
+            {
+                "name": "header.pineclub",
+                "href": "/pine_club"
+            },
+            {
+                "name": "header.leasing",
+                "href": "/pages/pinecentre-leasing-information"
+            }
+        ]
+    }
+]
