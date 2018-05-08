@@ -19,7 +19,7 @@
 		    <masonry-component class="hidden_phone" :featurelist="feature_items" :locale="locale"></masonry-component>
             <masonry-component class="visible_phone" :featurelist="mobile_feature_items" :locale="locale"></masonry-component>
             <div>
-		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
+		        <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
 		    </div>
 		    <div class="insta-feed-container">
                 <a v-for="(item, index) in instaFeed" :href="item.link" target="_blank" class="col-xs-6 col-sm-3 no_padding">
