@@ -699,11 +699,7 @@ strong, .bold {
 	transition: all ease 0.3s;
 	border-radius: 0px;
 }
-dropdown-toggle {
-    outline: thin dotted;
-     outline: 5px auto -webkit-focus-ring-color;
-     outline-offset: -2px;
-}
+
 #primary_nav ul .menu_item ul .dropdown_item {
     padding: 5px 0;
 	float: none;
