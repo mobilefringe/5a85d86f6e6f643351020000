@@ -32,7 +32,7 @@
 							</div>
 							<div>
 							    <label class="label" for="cm-name" style="display:none;">Full Name</label>
-								<input class="form-control" name="cm-name" type="hidden" :value="form_data.first_name + ' ' + form_data.last_name">
+								<input class="form-control" name="cm-name" id="cm-name" type="hidden" :value="form_data.first_name + ' ' + form_data.last_name">
 							</div>
 						</div>
 						<div class="form-group">
