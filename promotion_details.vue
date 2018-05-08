@@ -19,7 +19,7 @@
 						    <h2 class="event_store_name caps" v-if="locale=='en-ca'">{{currentPromo.store.name}}</h2>
 						    <h2 class="event_store_name caps" v-else>{{currentPromo.store.name_2}}</h2>
 						</div>
-						<h4 v-if="currentPromo.store.phone" class="store_dets_title"> <a :href="'tel:'+currentPromo.store.phone">{{currentPromo.store.phone}}</a></h4>
+						<h3 v-if="currentPromo.store.phone" class="store_dets_title"> <a :href="'tel:'+currentPromo.store.phone">{{currentPromo.store.phone}}</a></h3>
 						<h4 v-if="currentPromo.store.website" class="store_dets_title"> <a :href="'//'+currentPromo.store.website" target="_blank"> {{$t("stores_page.store_website")}}</a></h4>
 						<h4 v-if="storeHours.length > 0" class="store_dets_title"> {{$t("stores_page.store_hours")}}</h4>
 						<ul class="store_hours_list">
