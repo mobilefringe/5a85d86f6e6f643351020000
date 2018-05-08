@@ -139,7 +139,8 @@
             },
             methods: {
                 toggleDropdown(index) {
-                    console.log("menu is", this.menu_items[index])
+                    console.log("menu is", this.menu_items[index]);
+                    
                 }
                 
             }
