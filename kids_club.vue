@@ -23,8 +23,8 @@
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
-								<label class="label" for="first_name">Guardian's First Name <span class="req_star"> *</span></label>
-								<input v-model="form_data.parent_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="first_name" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="guardian's first name" id="first_name">
+								<label class="label" for="parent_first_name">Guardian's First Name <span class="req_star"> *</span></label>
+								<input v-model="form_data.parent_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="first_name" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="guardian's first name" id="parent_first_name">
 								<span v-show="errors.has('first_name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('last_name')}">
