@@ -47,7 +47,7 @@
 								<div v-if="_.includes(store.store_front_url_abs, 'missing')" class="no_store_logo">
                                     <h3 class="store_name">{{store.name}}</h3>
 								</div>
-								<img v-else class="store_img" :style="store.initial_img" :src="store.store_front_url_abs"/>
+								<img v-else class="store_img" :style="store.initial_img" :src="store.store_front_url_abs" :alt="'Click here to view info about ' + store.name"/>
 								<div class="store_coming_soon" v-if="store.is_coming_soon_store">
 									<div class="new_store">{{$t("stores_page.coming_soon")}}</div>
 								</div>
