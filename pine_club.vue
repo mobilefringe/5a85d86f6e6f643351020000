@@ -54,7 +54,7 @@
 						</div>
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cm-f-qhdikk')}" >
-								<label class="label" for="cm-f-qhdikk">Birthday <span class="req_star"> *</span></label>
+								<label class="label" for="birthday">Birthday <span class="req_star"> *</span></label>
 								<input v-model="form_data.birthday" class="form-control" v-validate="'required|date_format:DD/MM/YYYY'" :class="{'input': true}" name="cm-f-qhdikk" type="text" placeholder="dd/mm/yyyy" data-vv-delay="500" data-vv-as="birthday" required>
 								<span v-show="errors.has('cm-f-qhdikk')" class="form-control-feedback">{{ errors.first('cm-f-qhdikk') }}</span>
 							</div>
