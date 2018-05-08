@@ -59,7 +59,7 @@
 								<span v-show="errors.has('cm-f-qhdikk')" class="form-control-feedback">{{ errors.first('cm-f-qhdikk') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cm-f-qhdikh')}">
-								<label class="label" for="cm-f-qhdikh">Gender <span class="req_star"> *</span></label>
+								<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
 								<input class="form-control" id="gender" type="hidden">
                 				<fieldset>
     								<radio name="cm-f-qhdikh" value="male" v-model="form_data.gender" required>Male</radio>
