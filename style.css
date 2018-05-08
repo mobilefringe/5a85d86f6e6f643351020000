@@ -2357,6 +2357,9 @@ strong, .bold {
         text-decoration:none;
     }
 }
+.event_name {
+    
+}
 .event_dets_container{
     min-height: 220px;
     .event_name {
