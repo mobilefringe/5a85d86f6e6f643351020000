@@ -79,7 +79,7 @@
     				<div class="row top_nav hidden_phone">
     					<nav id="primary_nav">
     						<ul>
-    						    <li v-for="item in menu_items" class="menu_item" :class="{dropdown : item.sub_menu,open : item.open_dropdown}" @keyup.down="console.log('tabbing');">
+    						    <li v-for="item in menu_items" class="menu_item" :class="{dropdown : item.sub_menu,open : item.open_dropdown}" @keyup.down="toggleDropdown">
     						        <router-link v-if="item.sub_menu" to="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">{{$t(item.name)}}</router-link>
     						        <router-link v-else :to="item.href">{{$t(item.name)}}</router-link>
     						        <ul v-if="item.sub_menu">
