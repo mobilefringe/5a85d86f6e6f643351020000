@@ -2488,6 +2488,9 @@ strong, .bold {
         list-style:none;
     }
 }
+.event_store_name {
+    
+}
 .store_dets_title {
     color: $accent;
     letter-spacing: 1.2px;
