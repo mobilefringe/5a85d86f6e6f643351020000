@@ -104,7 +104,6 @@
 
                 ]),
                 allStores() {
-                    console.log(this.processedStores);
                     return this.processedStores;
                 },
                 allCatergories() {
