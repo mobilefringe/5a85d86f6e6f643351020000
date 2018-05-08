@@ -66,7 +66,7 @@
 						<div class="form-group account-btn text-left m-t-10 agreement">
 						    <div class="col-xs-12">
 						        <label class="checkbox" for="agree_terms">
-                                    <input name="agree_terms" required type="checkbox" >
+                                    <input name="agree_terms" required type="checkbox" id="agree_terms">
                                     I understand by checking the box, I acknowledge that I have read, understood, and accept the <a href="/pages/pinecentre-pine-kid-s-club-disclaimer-and-the-code-of-conduct" target="_blank">Disclaimer and the Code of Conduct</a>
                                 </label>
                                 <label class=""> <a href="https://www.morguard.com/privacy/"> Read our Privacy Policy here</a></label> 
