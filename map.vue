@@ -181,7 +181,6 @@
                 },
                 updatePNGMap(map) {
                     this.map = map;
-                    console.log("in updatepng")
                 },
                 addLandmark(store) {
                     this.svgMapRef.addMarker(store);
