@@ -59,7 +59,7 @@
 							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('age')}"  style="padding-top: 20px;">
 								<label class="label" for="age">Age <span class="req_star"> *</span></label>
 								<input v-model="form_data.age" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-attkkt" type="text" placeholder="Age" data-vv-delay="500" data-vv-as="age" id="age">
-								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
+								<span v-show="errors.has('age')" class="form-control-feedback">{{ errors.first('postal') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
                 				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
