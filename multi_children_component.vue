@@ -12,7 +12,7 @@
 				<span v-show="errors.has('child_last_name')" class="form-control-feedback">{{ errors.first('child_last_name') }}</span>
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}"   style="padding-top: 20px;">
-				<label class="label" for="birthday">Birthday <span class="req_star"> *</span></label>
+				<label class="label" :for=:id="'birthday'+ id_num">Birthday <span class="req_star"> *</span></label>
 				<input v-model="child_form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" :name="'birthday'+ id_num" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday" :id="'birthday'+ id_num">
 				<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
 			</div>
