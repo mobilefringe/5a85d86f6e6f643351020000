@@ -80,7 +80,7 @@
     					<nav id="primary_nav">
     						<ul>
     						    <li v-for="item in menu_items" class="menu_item">
-    						        <router-link v-if="item.sub_menu" to="#" @keyup.down="">{{$t(item.name)}}</router-link>
+    						        <router-link v-if="item.sub_menu" to="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" @keyup.down="">{{$t(item.name)}}</router-link>
     						        <router-link v-else :to="item.href">{{$t(item.name)}}</router-link>
     						        <ul v-if="item.sub_menu" class="dropdown">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
