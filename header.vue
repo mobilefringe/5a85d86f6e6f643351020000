@@ -83,7 +83,7 @@
     						        <router-link v-if="item.sub_menu" to="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" :aria-expanded="item.open_dropdown" @keyup.down="item.open_dropdown = true; console.log('tabbing');">{{$t(item.name)}}</router-link>
     						        <router-link v-else :to="item.href">{{$t(item.name)}}</router-link>
     						        <ul v-if="item.sub_menu">
-    						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item" :class="{}">
+    						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
     						                <router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
     						            </li>
     								</ul>
