@@ -17,8 +17,8 @@
 				<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
-				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
-				<input style="display:none;" id="gender">
+				<label class="label" :for="gender">Gender <span class="req_star"> *</span></label>
+				<input style="display:none;" id="'gender_'+randKey">
 				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
                 <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
