@@ -1282,9 +1282,8 @@ strong, .bold {
         padding: 50px 0;
         text-align: center;
         .stay_update {
-            font-family: cursive;
-            display:inline-block;
-            padding-right: 50px;
+            font-size: 1.5rem;
+    line-height: 29px;
         }
         #newsletterBlogForm {
             position: relative;
