@@ -708,6 +708,7 @@ strong, .bold {
 	line-height: 26px;
 	a {
 	    color: $secondary;
+	    background: transparent;
 	}
 }
 
