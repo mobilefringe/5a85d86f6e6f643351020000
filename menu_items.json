@@ -1,7 +1,7 @@
 [
     {
         "name": "header.stores",
-        "href": "#",
+        "href": "/stores",
         "sub_menu": [{
                 "name": "header.stores",
                 "href": "/stores"
@@ -18,7 +18,7 @@
     },
     {
         "name": "header.whats_happening",
-        "href": "#",
+        "href": "/events",
         "sub_menu": [{
                 "name": "header.events ",
                 "href": "/events"
@@ -47,7 +47,7 @@
     },
     {
         "name": "header.guest_services",
-        "href": "#",
+        "href": "/services",
         "sub_menu": [{
                 "name": "header.services ",
                 "href": "/services"
@@ -65,7 +65,7 @@
     },
     {
         "name": "header.contact_us",
-        "href": "#",
+        "href": "/contact_us",
         "sub_menu": [
             {
                 "name": "header.contact_us",
