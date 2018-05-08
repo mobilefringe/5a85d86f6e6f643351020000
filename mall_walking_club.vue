@@ -79,7 +79,9 @@
                 				<fieldset>
                 				    <radio name="cm-f-attkkh" value="yes" v-model="form_data.doc_approval">Yes</radio>
                                     <radio name="cm-f-attkkh" value="no" v-model="form_data.doc_approval">No</radio>
-                                </fieldset><span v-if="docError" class="form-control-feedback ">Please choose an option</span>
+                                    <legend> Choose yes or no</legend>
+                                </fieldset>
+                                <span v-if="docError" class="form-control-feedback ">Please choose an option</span>
                                 <p>* Pine Centre advises all registrants to please check with their family physician to ensure walking at Pine Centre is right for you.</p>
                 			</div>
                 			
