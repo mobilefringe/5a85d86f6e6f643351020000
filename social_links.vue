@@ -1,8 +1,8 @@
 <template>
     <div>
-        <a href="https://www.twitter.com/pinecentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><p style="display:none;">Pine Centre Faceebook</p></a>
-        <a href="https://www.facebook.com/pinecentre" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/pine_centre_mall" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com/pinecentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><p style="display:none;">Pine Centre Twiiter</p></a>
+        <a href="https://www.facebook.com/pinecentre" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i><p style="display:none;">Pine Centre Faceebook</p></a>
+        <a href="https://www.instagram.com/pine_centre_mall" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><p style="display:none;">Pine Centre Faceebook</p></a>
          
     </div>
     
