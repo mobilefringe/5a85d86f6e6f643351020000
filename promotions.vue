@@ -17,7 +17,7 @@
 						</div>
 						<div class="col-sm-6 col-md-8 event_dets_container">
 							<h2 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h2>
-							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
+							<h2 class="event_name caps" v-else>{{promo.name_2}}</h2>
 							<div v-if="promo.promotionable_type == 'Store'">
 							    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{promo.store.name}}</h4>
 							    <h4 class="event_store_name caps" v-else>{{promo.store.name_2}}</h4>
