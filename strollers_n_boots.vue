@@ -31,7 +31,7 @@
 								<span v-show="errors.has('last_name')" class="form-control-feedback">{{ errors.first('last_name') }}</span>
 							</div>
 							<div>
-							    <label class="label" for="cm-name">Full Name</label>
+							    <label class="label" for="cm-name" style="display:none;">Full Name</label>
 								<input class="form-control" name="cm-name" type="hidden" :value="form_data.first_name + ' ' + form_data.last_name" id="cm-name">
 							</div>
 						</div>
