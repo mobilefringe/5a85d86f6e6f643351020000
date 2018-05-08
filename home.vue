@@ -178,7 +178,6 @@
                         }
                     });
                     features = _.sortBy(features, [function(o) { return o.mobile_order; }]);
-                    console.log(features);
                     return features;
                 }
             },
