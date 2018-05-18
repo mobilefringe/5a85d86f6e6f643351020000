@@ -2656,7 +2656,10 @@ iframe.station_41 {
     background-color: $accent;
 }
 .mapplic-zoom-buttons {
-    
+        left: auto;
+    right: 0;
+    bottom: auto;
+    top: 0px;
 }
 .directory_list {
     max-height: 473px;
