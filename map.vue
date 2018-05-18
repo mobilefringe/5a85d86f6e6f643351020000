@@ -15,7 +15,7 @@
                     <h3 class="map_title caps">{{$t("stores_page.find_store")}}</h3>
                     <div id="stores_container" class="directory_list text-left">
                         <li v-for="store in filteredStores" class="pointer">
-							<p class="directory_store_name caps" v-on:click="addLandmark(store)">{{store.name}}</p>
+							<p class="directory_store_name caps" v-on:click="dropPin(store)">{{store.name}}</p>
 						</li>
                     </div>
                 </div>
@@ -28,7 +28,8 @@
             </div>
             <div class="col-sm-8">
             <div class="padding_top_20 map light_border">
-				<png-map ref="pngmap_ref" :png-map-url="getPNGurl" :initial-position="'1250 1250'" @updateMap="updatePNGMap"></png-map>
+				<!--<png-map ref="pngmap_ref" :png-map-url="getPNGurl" :initial-position="'1250 1250'" @updateMap="updatePNGMap"></png-map>-->
+				<mapplic-png-map ref="pngmap_ref" :height="600" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true"></mapplic-png-map>
 			</div>
             </div>
 		</div>
