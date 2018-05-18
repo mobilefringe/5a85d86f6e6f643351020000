@@ -338,7 +338,9 @@ strong, .bold {
     :-ms-input-placeholder { /* IE 10+ */
       color: #000;
     }
-
+    .selected-tag{
+        position:absolute;
+    }
     
 }
 .main_content_container {
@@ -2456,7 +2458,7 @@ strong, .bold {
 .store_hours_list{
     font-size: 1rem;
     line-height: 30px;
-        margin: 15px auto;
+    margin: 15px auto;
     overflow: hidden;
     padding: 0;
     li {
