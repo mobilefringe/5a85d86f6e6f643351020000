@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="site_container">
-			<div class="col-sm-4   padding_top_20">
+			<div class="col-sm-4">
                 <div class="map_directory text-center hidden_phone">
 <h2 style="display:none;" class="map_title caps">{{$t("stores_page.find_store")}}</h2>
                     <h3 class="map_title caps">{{$t("stores_page.find_store")}}</h3>
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col-sm-8">
-            <div class=" map light_border">
+            <div class="map light_border">
 				<!--<png-map ref="pngmap_ref" :png-map-url="getPNGurl" :initial-position="'1250 1250'" @updateMap="updatePNGMap"></png-map>-->
 				<mapplic-png-map ref="pngmap_ref" :height="600" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true"></mapplic-png-map>
 			</div>
