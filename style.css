@@ -2655,6 +2655,9 @@ iframe.station_41 {
 .mapplic-popup-link {
     background-color: $accent;
 }
+.mapplic-zoom-buttons {
+    
+}
 .directory_list {
     max-height: 473px;
     overflow-y: scroll;
