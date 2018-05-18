@@ -43,21 +43,14 @@
 	}
 </style>
 <script>
-    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent) {
-        return Vue.component("stores-component", {
+    define(["Vue", "vuex", "vue-select", "vue!search-component", "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, SearchComponent, MapplicComponent) {
+        return Vue.component("map-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    listMode: "alphabetical",
-                    selectedCat: null,
-                    selectedAlpha: "All",
-                    alphabet: ["All", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
                     filteredStores: null,
                     dataloaded: false,
-                    mobile_store: false,
-                    windowWidth: 0,
-                    storeBanner : null,
-                    search_result : null,
+                    storeBanner : null
                 }
             },
             created (){
@@ -65,29 +58,10 @@
                     this.dataloaded = true;
                     this.filteredStores = this.allStores;
                     
-                    // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
-                    var temp_repo = this.findRepoByName('Map Banner');
+                    var temp_repo = this.findRepoByName('Stores Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
-                    this.$on('updateMap', this.updatePNGMap);
-                });
-            },
-            watch: {
-                windowWidth: function() {
-                    if (this.windowWidth <= 768) {
-                        this.mobile_store = true;
-                    } else {
-                        this.mobile_store = false;
-                    }
-                },
-            },
-            mounted() {
-                // this.filteredStores = this.allStores;
-                this.$nextTick(function() {
-                    window.addEventListener('resize', this.getWindowWidth);
-                    //Init
-                    this.getWindowWidth();
                 });
             },
             computed: {
@@ -104,29 +78,16 @@
 
                 ]),
                 allStores() {
+                    this.processedStores.map(function(store){
+                        store.zoom = 1;
+                    })
                     return this.processedStores;
-                },
-                allCatergories() {
-                    return this.processedCategories;
-                },
-                dropDownCats() {
-                    var cats = _.map(this.processedCategories, 'name');
-                    cats.unshift('All');
-                    return cats;
-                },
-                storeNames () {
-                    return _.map(this.processedStores, 'name');
                 },
                 getPNGurl() {
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
-                svgMapRef() {
-                    return _.filter(this.$children, function(o) {
-                        return (o.$el.className == "svg-map")
-                    })[0];
-                },
-                getStoreById(){
-                    
+                pngMapRef() {
+                    return this.$refs.pngmap_ref;
                 },
                 filterStores() {
                     letter = this.selectedAlpha;
@@ -139,32 +100,19 @@
                         this.filteredStores = filtered;
                     }
                 },
-                filterByCategory() {
-                    category_id = this.selectedCat;
-                    if (category_id == "All" || category_id == null || category_id == undefined) {
-                        category_id = "All";
-                    } else {
-                        category_id = this.findCategoryByName(category_id).id;
-                    }
-
-                    if (category_id == "All") {
-                        this.filteredStores = this.allStores;
-                    } else {
-
-                        var find = this.findCategoryById;
-                        var filtered = _.filter(this.allStores, function(o) {
-                            return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
-                        });
+                floorList () {
+                    var floor_list = [];
                     
-                        this.filteredStores = filtered;
-                    }
-                    var el = document.getElementById("selectByCat");
-                    if(el) {
-                        el.classList.remove("open");
-                        console.log(el.classList);
-                    }
+                    var floor_1 = {};
+                    floor_1.id = "first-floor";
+                    floor_1.title = "Floor 1";
+                    floor_1.map = this.getPNGurl;
+                    floor_1.z_index = 1;
+                    floor_1.show = true;
                     
-                },
+                    floor_list.push(floor_1);
+                    return floor_list;
+                }
                 
             },
             methods: {
@@ -176,27 +124,10 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                changeMode(mode) {
-                    this.listMode = mode;
-                },
-                updatePNGMap(map) {
-                    this.map = map;
-                },
-                addLandmark(store) {
-                    this.svgMapRef.addMarker(store);
-                },
-                getWindowWidth(event) {
-                    this.windowWidth = window.innerWidth;
-                },
-                onOptionSelect(option) {
-                    this.search_result = "";
-                    this.$router.push("/stores/"+option.slug);
-                },
-            },
-            
-            beforeDestroy: function() {
-                window.removeEventListener('resize', this.getWindowWidth);
-            },
+                dropPin(store) {
+                    this.pngMapRef.showLocation(store.id);
+                }
+            }
         });
     });
 </script>
