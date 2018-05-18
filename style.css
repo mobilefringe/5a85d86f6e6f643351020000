@@ -2680,7 +2680,7 @@ iframe.station_41 {
     position: relative;
     top: 0;
     left: 0;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 #map_reset {
     padding: 4px 10px;
