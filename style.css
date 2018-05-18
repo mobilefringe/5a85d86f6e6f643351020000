@@ -2656,9 +2656,9 @@ iframe.station_41 {
     background-color: $accent;
 }
 .mapplic-zoom-buttons {
-        left: auto;
+    left: auto;
     right: 0;
-    bottom: auto;
+    bottom: auto!important;
     top: 0px;
 }
 .directory_list {
