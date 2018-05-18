@@ -2676,61 +2676,6 @@ iframe.station_41 {
     }
 }
 
-.map {
-    position: relative;
-    top: 0;
-    left: 0;
-    border-radius: 0px;
-}
-#map_reset {
-    padding: 4px 10px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 9;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0,0.55);
-    // opacity: 0.55;
-    font-size: 1rem;
-    line-height: 20px;
-    color: #dbdbdb;
-    &:hover {
-        color: #FFF;
-    }
-}
-#zoom_container .landmarks {
-    position: absolute;
-    z-index: 10;
-    top: 0px;
-    left: 0px;
-    font-family: Helvetica, Arial, Verdana;
-    font-size: 0.75rem;
-    color: #ffffff;
-}
-#zoom_container .landmarks .item {
-    position: absolute;
-    text-align: center;
-    background: transparent;
-}
-#zoom_container .landmarks .mark .text {
-    background-color: #6e6e6e;
-    padding: 10px;
-    width: 150px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding-top: 12px;
-    font-size: 1rem;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-
-#_zi_icon {
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/png/1496346912000/icons.png) !important;
-}
-#_zo_icon {
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/png/1496346912000/icons.png) !important;
-}
 
 .demo1{
     float: left;
