@@ -58,55 +58,6 @@
                     currentPage: null,
                     pageBanner : null,
                     services : []
-//                     [
-//                         {
-//                             title: "Strollers, Wheelchairs and Power Scooters",
-//                             text: " For your shopping convenience, Toddler Strollers are available at Guest Services for FREE.   Some strollers can accommodate two children.    There is no charge to use the strollers but current photo ID is required as a deposit. Do you need some assistance getting around? Then visit the Guest Services for FREE use of a wheelchair or power scooter during your visit to Pine Centre.*you will need to leave a piece of photo identification with customer service until you return the wheelchairs and/or strollers.",
-//                             is_visible : true,
-//                             id: "accordion_1"
-//                         },
-//                         {
-//                             title: "Locker Storage",
-//                             text: ` For your shopping convenience, coin operated lockers are now available and located down the hallway with the pay phones near Guest Services. They are available for a small fee of $2 per use.
-// Please review the Locker Usage Rules & Regulations located below and on the inside door of each locker.
-
-// 1. Lockers are available to our shoppers for their convenience while at Pine Centre.
-// 2. There is a $2.00 fee per use (noting once you open your locker, you will be required to insert an additional $2.00 to re-use).
-// 3. Lockers are available during Pine Centre shopping hours only and will be emptied daily at closing times.
-// 4. Please ensure that you collect all of your belongings at the end of your visit.
-// 5. Any items left at the end of the day will be considered ‘lost’ and recorded and handled as per our ‘Lost and Found Policy’.
-// 6. Lockers are meant to store jackets, shopping bags and other personal items that cannot be managed while shopping.
-// 7. Pine Centre Mall is NOT responsible for any lost or stolen items.
-// 8. Any misuse of lockers including vandalism, storage of illegal items, or storage of items that are ‘perishable’ in nature or otherwise unsuitable for storage, may result in legal action.
-// 9. It is important to note that this area is under video surveillance and activities may be recorded.
-// 10. Please see the Guest Services to claim any items left behind, report damaged lockers or request additional information about our Lost & Found Policy or Video Surveillance Policy or call 250 563 3681.
-// 11. There is a $10 replacement fee for lost keys.`,
-//                             is_visible : false,
-//                             id: "accordion_2"
-//                         }, 
-//                         {
-//                             title: "Community Booking",
-//                             text: `Would you like to promote your charity or non-profit at Pine Centre? Contact Shelley Sivell at 250 563 3681 ext. 22 at to book a table or event or to display your brochure at Guest Services.  Download the <a href="//www.mallmaverick.com/system/site_images/photos/000/036/937/original/jan2016Pine-Centre-Use-of-Premises-Application.pdf?1519147526">Use of Premises Booking Form here.</a>`,
-//                             is_visible : false,
-//                             id: "accordion_3"
-//                         },
-//                          {
-//                             title: "Lost and Found",
-//                             text: `If you have lost or found an item during your visit to Pine Centre, please contact Guest Services immediately. Lost and found items will be held for a maximum of thirty (30) days. If you have lost something, please be sure to leave your name and phone number with our Guest Service Representatives so that we can contact you if your item(s) are found. We cannot guarantee the safe return of your item(s), but will do our best!`,
-//                             is_visible : false,
-//                             id: "accordion_4"
-//                         },
-//                         {
-//                             title: "Wifi Access and Wifi Terms and Conditions",
-//                             text: `FREE Wifi is available in select areas of the main mall. The strongest signals can be found in the following locations:
-// Toddler Play Area / Guest Services
-// Food Court / Centre Court
-// South Entrance Junction
-// Use is limited to a thirty (30) minute session, thereby, the user would need to sign-in again for further use. Users must agree to the Terms and Conditions. <a href="//www.mallmaverick.com/system/site_images/photos/000/036/937/original/jan2016Pine-Centre-Use-of-Premises-Application.pdf?1519147526">Use of Premises Booking Form here.</a>`,
-//                             is_visible : false,
-//                             id: "accordion_5"
-//                         }
-//                         ]
                 }
             },
             props:['id', 'locale'],
