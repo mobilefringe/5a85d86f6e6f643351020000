@@ -85,14 +85,6 @@
             },
             watch: {
                 currentPage () {
-                    // _.forEach(this.currentPage.subpages, function(val, key) {
-                    //     val.is_visible = false;
-                    //     if(key == 0) {
-                    //       val.is_visible = true;
-                    //     }
-                    //     val.accord_id = "accord_"+val.id;
-                    // });
-                    // this.services = this.currentPage.subpages;
                     var temp_service = [];
                     _.forEach(this.currentPage.subpages, function(val, key) {
                         console.log("key", key)
