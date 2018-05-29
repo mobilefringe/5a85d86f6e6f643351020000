@@ -143,7 +143,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://pinecentre.com/event/" + slug;
+                    var share_url = "https://pinecentre.com/event/" + slug;
                     return share_url;
                 },
             }
