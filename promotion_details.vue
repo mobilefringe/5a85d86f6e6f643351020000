@@ -121,7 +121,7 @@
                         this.storePromos = temp_promo;
                     }
                     if(this.currentPromo.store) {
-                         var storeHours = [];
+                        var storeHours = [];
                         var vm = this;
                         _.forEach(this.currentPromo.store.store_hours, function (value, key) {
                             var hour = vm.findHourById(value);
