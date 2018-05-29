@@ -166,7 +166,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://pinecentre.com//promotions/" + slug;
+                    var share_url = "https://pinecentre.com//promotions/" + slug;
                     return share_url;
                 },
             }
