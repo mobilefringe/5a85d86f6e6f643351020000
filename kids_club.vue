@@ -117,7 +117,8 @@
                     numberOfChildren: 1,
                     showChild2 : false,
                     showChild3 : false,
-                    noMoreChildren : false
+                    noMoreChildren : false,
+                    currentPage: null
                 }
             },
             created() {
