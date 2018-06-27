@@ -25,7 +25,7 @@
                         <span class="sr-only">Error:</span>
                         There was an error when trying to submit your request. Please try again later.
                     </div>
-                    <form class="form-horizontal js-cm-form" id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal js-cm-form" id="subForm" v-on:submit.prevent="validateBeforeSubmit" action="https://mobilefringe.createsend.com/t/d/s/fiilhi/" method="post">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
 								<label class="label" for="first_name">First Name <span class="req_star"> *</span></label>
