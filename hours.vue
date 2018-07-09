@@ -34,6 +34,7 @@
                                 </span>
                                 <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                             </div>
+                            <span>We are open 11:00 AM - 5:00 PM on all Statutory Holidays</span>
                         </div>
                         
                         <div class="padding_top_20"></div>
