@@ -25,6 +25,7 @@
                         <div class="padding_top_20"></div>
                         
                         <h3 class="hours_heading text-left">{{$t("hours_page.extended_holiday_hours")}}</h3>
+                        <span class="bold">We are open 11:00 AM - 5:00 PM on all Statutory Holidays</span>
                         <div id="holidays_hours_container" class="hours_container">
                             <div class="hours_div text-left"  v-for="hour in reducedHolidays">
                                 <span v-if="hour.holiday_date">
@@ -34,7 +35,7 @@
                                 </span>
                                 <span v-if="hour.holiday_date">{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                             </div>
-                            <span class="bold">We are open 11:00 AM - 5:00 PM on all Statutory Holidays</span>
+                            
                         </div>
                         
                         <div class="padding_top_20"></div>
