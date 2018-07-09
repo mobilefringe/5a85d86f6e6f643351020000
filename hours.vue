@@ -36,7 +36,6 @@
                                 </span>
                                 <span v-if="hour.holiday_date">{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                             </div>
-                            
                         </div>
                         
                         <div class="padding_top_20"></div>
@@ -105,7 +104,7 @@
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
-                    return _.filter(holidayHours, function(o) { return !o.is_closed; });
+                    return _.filter(holidayHours, function(o) { return !o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 },
                 closeHolidays () {
                     var holidayHours = this.holidayHours;
