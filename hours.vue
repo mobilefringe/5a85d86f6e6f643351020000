@@ -32,7 +32,7 @@
                                     <span v-else>{{hour.holiday_name_2}}</span>
                                     ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})
                                 </span>
-                                <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
+                                <span v-if="hour.holiday_date">{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                             </div>
                             <span class="bold">We are open 11:00 AM - 5:00 PM on all Statutory Holidays</span>
                         </div>
