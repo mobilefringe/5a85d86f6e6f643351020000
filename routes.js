@@ -206,7 +206,8 @@ define([], function() {
                 component: view('strollers_n_boots'),
                 name: 'strollers_n_boots'
             }]
-        },{
+        },
+        {
             path: '/mall_walking_club',
             component: view('default'),
             redirect: '/404',
@@ -214,6 +215,16 @@ define([], function() {
                 path: '',
                 component: view('mall_walking_club'),
                 name: 'mall_walking_club'
+            }]
+        },
+        {
+            path: '/test',
+            component: view('default'),
+            redirect: '/404',
+            children: [{
+                path: '',
+                component: view('test'),
+                name: 'test'
             }]
         },
         {
