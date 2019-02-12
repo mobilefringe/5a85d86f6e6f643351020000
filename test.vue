@@ -6,7 +6,7 @@
 <script>
     define(["Vue", "vuex"], function(Vue, Vuex) {
         
-        return Vue.component("social-links", {
+        return Vue.component("test", {
             template: template, // the variable template will be injected,
         });
     });
