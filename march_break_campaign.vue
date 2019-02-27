@@ -139,6 +139,7 @@
                     'findRepoByName'
                 ]),
                 timeslots(){
+                    var timeslots = [];
                     return timeslots;
                 }
             },
