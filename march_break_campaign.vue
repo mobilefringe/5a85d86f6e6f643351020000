@@ -44,8 +44,8 @@
 							</div>
 						</div>
 						<multi-children-component @childUpdated="updateChild" key="1" :id_num="1" :campaign="true"></multi-children-component>
-						<multi-children-component v-show="showChild2" @childUpdated="updateChild" key="2" :id_num="2"></multi-children-component>
-						<multi-children-component v-show="showChild3" @childUpdated="updateChild" key="3" :id_num="3"></multi-children-component>
+						<multi-children-component v-show="showChild2" @childUpdated="updateChild" key="2" :id_num="2" :campaign="true"></multi-children-component>
+						<multi-children-component v-show="showChild3" @childUpdated="updateChild" key="3" :id_num="3" :campaign="true"></multi-children-component>
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						
 						
