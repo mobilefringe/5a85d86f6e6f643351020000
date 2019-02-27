@@ -110,7 +110,7 @@
             },
             created() {
                 this.loadData().then(response => {
-                    this.currentContest = this.findContestBySlug('pinecentre-kids-pine-club--2');
+                    this.currentContest = this.findContestBySlug('pinecentre-march-break-campaign');
                     this.currentPage =  response[0].data;
                     var temp_repo = this.findRepoByName('Kids Club Banner');
                     if(temp_repo) {
@@ -181,7 +181,6 @@
                                 
                                 contact_form["child"+(key+1)+"_name"] = vm.form_data["child_"+(key+1)].child_first_name + " "  +  vm.form_data["child_"+(key+1)].child_last_name;
                                 contact_form["child"+(key+1)+"_age"] = vm.form_data["child_"+(key+1)].age;
-                                contact_form["child"+(key+1)+"_gender"] = vm.form_data["child_"+(key+1)].gender;
                                 
                                 
                             });
