@@ -104,6 +104,7 @@
                     numberOfChildren: 1,
                     showChild2 : false,
                     showChild3 : false,
+                    showChild4: false,
                     noMoreChildren : false,
                     currentPage: null
                 }
