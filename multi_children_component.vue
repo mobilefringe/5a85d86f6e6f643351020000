@@ -23,7 +23,7 @@
                 <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
 			</div>
 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('age')}" v-if="campaign">
-				<label class="label" for="age">Child's Last Name <span class="req_star"> *</span></label>
+				<label class="label" for="age">Child's Age <span class="req_star"> *</span></label>
 				<input v-model="child_form_data.age" v-validate="'required|integer'" class="form-control" :class="{'input': true}" :name="'age'+ id_num" type="text" placeholder="Age" data-vv-delay="500" data-vv-as="child's age" :id="'age'+ id_num">
 				<span v-show="errors.has('age')" class="form-control-feedback">{{ errors.first('age') }}</span>
 			</div>
