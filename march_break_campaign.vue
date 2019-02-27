@@ -137,7 +137,10 @@
                     'timezone',
                     'findContestBySlug',
                     'findRepoByName'
-                ])
+                ]),
+                timeslots(){
+                    return timeslots;
+                }
             },
             methods: {
                 validateBeforeSubmit(form) {
