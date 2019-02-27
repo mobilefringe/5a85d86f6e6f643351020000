@@ -99,7 +99,7 @@
         Vue.use(Meta);
         Vue.use(VeeValidate);
         Vue.use(CheckboxRadio.default);
-        return Vue.component("kids-club-component", {
+        return Vue.component("march-break-campaign-component", {
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
