@@ -223,7 +223,7 @@ define([], function() {
             redirect: '/404',
             children: [{
                 path: '',
-                component: view('test'),
+                component: view('march_break_campaign'),
                 name: 'test'
             }]
         },
