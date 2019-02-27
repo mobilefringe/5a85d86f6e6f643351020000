@@ -189,16 +189,28 @@
                             send_data = {};
                             send_data.url = "https://www.mallmaverick.com/send_contact_email";
                             send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
-                            vm.$store.dispatch("CONTACT_US", send_data).then(res => {
-                                console.log("submission email sent to guest services");
-                            }).catch(error => {
-                                console.log("Data load error: " + error.message);
-                                vm.formError = true;
+                            // vm.$store.dispatch("CONTACT_US", send_data).then(res => {
+                            //     console.log("submission email sent to guest services");
+                            // }).catch(error => {
+                            //     console.log("Data load error: " + error.message);
+                            //     vm.formError = true;
+                            // });
+                            $.ajax({
+                                url : send_data.url,
+                                type: "POST",
+                                data : perm_formdata,
+                                success: function(data, textStatus, jqXHR){
+                                    vm.formSuccessPerm = true;
+                                },
+                                error: function (jqXHR, textStatus, errorThrown){
+                                  console.log("Data load error: " + error.message);
+                                  vm.formErrorPerm = true;
+                                }
                             });
                             //if mm is successful,send to campaign monitor
                             if(mm_success) {
                                 vm.formSuccess = true;
-                                console.log("posted to cm")
+                                // console.log("posted to cm")
                                 
                             }
                             else {
