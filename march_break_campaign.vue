@@ -187,6 +187,7 @@
                             });
                             //sending email
                             send_data = {};
+                            send_data.url = "https://www.mallmaverick.com/send_contact_email";
                             send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
                             vm.$store.dispatch("CONTACT_US", send_data).then(res => {
                                 console.log("submission email sent to guest services");
