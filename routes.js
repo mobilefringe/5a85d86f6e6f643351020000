@@ -218,7 +218,7 @@ define([], function() {
             }]
         },
         {
-            path: '/test',
+            path: '/march-break-campaign',
             component: view('default'),
             redirect: '/404',
             children: [{
