@@ -197,8 +197,7 @@
                             });
                             //if mm is successful,send to campaign monitor
                             if(mm_success) {
-                                // var  isSuccess  = this.campaignMonitorCall($('#kids_pine_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A8DDE32AF44AB08B46803BB31E1FE05F5C4FA8E6E56C2AB825D0D1632B931A288368F6A7724A3366782D673B9B4210D7C');
-                                form.target.submit();
+                                vm.formSuccess = true;
                                 console.log("posted to cm")
                                 
                             }
