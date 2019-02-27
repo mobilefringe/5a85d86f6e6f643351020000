@@ -155,9 +155,6 @@
                             contact_form.guardian_name = vm.form_data.parent_first_name + " " + vm.form_data.parent_first_name;
                             contact_form.email = vm.form_data.email;
                             contact_form.phone = vm.form_data.phone;
-                            contact_form.mailing_address = vm.form_data.mailing_address;
-                            contact_form.city = vm.form_data.city;
-                            contact_form.postal_code = vm.form_data.postal_code;
                             //cycling through children to send separete entries
                             _.times(this.numberOfChildren, function(key) {
                                 json_data.child_name = vm.form_data["child_"+(key+1)].child_first_name + " "  +  vm.form_data["child_"+(key+1)].child_last_name;
