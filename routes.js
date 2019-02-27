@@ -224,7 +224,7 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('march_break_campaign'),
-                name: 'test'
+                name: 'march_break_campaign'
             }]
         },
         {
