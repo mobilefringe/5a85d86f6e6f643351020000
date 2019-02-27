@@ -140,6 +140,9 @@
                 ]),
                 timeslots(){
                     var timeslots = [];
+                    timeslots.push(
+                        name: "March 22nd - 11:00am - 11:40am"
+                    )
                     return timeslots;
                 }
             },
