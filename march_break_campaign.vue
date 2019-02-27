@@ -229,7 +229,7 @@
                 },
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/pinecentre-kids-pine-club.json"}),this.$store.dispatch("getData", "contests"),this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/pinecentre-march-break-campaign.json"}),this.$store.dispatch("getData", "contests"),this.$store.dispatch("getData", "repos")]);
                         // /pages/pinecentre-kids-pine-club
                         return results;
                     } catch (e) {
