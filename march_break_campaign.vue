@@ -251,6 +251,9 @@
                     else {
                         this.form_data.child_4 = data;
                     }
+                },
+                timeSlotOneSelected(val){
+                    console.log(val)
                 }
             }
         });
