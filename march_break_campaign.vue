@@ -53,7 +53,7 @@
                 				<label class="label" for="timeslot1">Gender <span class="req_star"> *</span></label>
                 				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
                                 <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
-                                <span v-if="genderError" class="form-control-feedback">Please choosed a timeslot</span>
+                                <span v-if="genderError" class="form-control-feedback">Please choosed a timeslot for your first choice</span>
                 			</div>
 						</div>
 						<div class="form-group account-btn text-left m-t-10 agreement">
