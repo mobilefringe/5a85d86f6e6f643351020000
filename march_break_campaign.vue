@@ -16,11 +16,7 @@
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
                     <form class="form-horizontal padding_top_20 js-cm-form" v-on:submit.prevent="validateBeforeSubmit" id="kids_pine_club" action="https://mobilefringe.createsend.com/t/d/s/ziknd/" method="post">
-						<multi-children-component @childUpdated="updateChild" key="1" :id_num="1"></multi-children-component>
-						<multi-children-component v-show="showChild2" @childUpdated="updateChild" key="2" :id_num="2"></multi-children-component>
-						<multi-children-component v-show="showChild3" @childUpdated="updateChild" key="3" :id_num="3"></multi-children-component>
-						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
-						<div class="form-group ">
+                        <div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
 								<label class="label" for="first_name">Guardian's First Name <span class="req_star"> *</span></label>
 								<input v-model="form_data.parent_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="first_name" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="guardian's first name">
@@ -35,6 +31,12 @@
 								<input class="form-control" name="cm-name" type="hidden" :value="form_data.parent_first_name + ' ' + form_data.parent_last_name">
 							</div>
 						</div>
+						
+						<multi-children-component @childUpdated="updateChild" key="1" :id_num="1"></multi-children-component>
+						<multi-children-component v-show="showChild2" @childUpdated="updateChild" key="2" :id_num="2"></multi-children-component>
+						<multi-children-component v-show="showChild3" @childUpdated="updateChild" key="3" :id_num="3"></multi-children-component>
+						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
+						
 						<div class="form-group">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
 								<label class="label" for="email">Email <span class="req_star"> *</span></label>
