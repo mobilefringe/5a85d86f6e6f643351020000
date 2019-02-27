@@ -42,9 +42,8 @@
 								<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjri" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="phone">
 								<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
 							</div>
-							
 						</div>
-						<multi-children-component @childUpdated="updateChild" key="1" :id_num="1"></multi-children-component>
+						<multi-children-component @childUpdated="updateChild" key="1" :id_num="1" :campaign="true"></multi-children-component>
 						<multi-children-component v-show="showChild2" @childUpdated="updateChild" key="2" :id_num="2"></multi-children-component>
 						<multi-children-component v-show="showChild3" @childUpdated="updateChild" key="3" :id_num="3"></multi-children-component>
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
