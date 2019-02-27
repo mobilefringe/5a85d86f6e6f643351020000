@@ -207,15 +207,6 @@
                                   vm.formError = true;
                                 }
                             });
-                            //if mm is successful,send to campaign monitor
-                            if(mm_success) {
-                                vm.formSuccess = true;
-                                // console.log("posted to cm")
-                                
-                            }
-                            else {
-                                this.formError = true;
-                            }
                            
                         }
                     })
