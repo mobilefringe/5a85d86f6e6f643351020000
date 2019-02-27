@@ -49,7 +49,7 @@
 						<multi-children-component v-show="showChild4" @childUpdated="updateChild" key="4" :id_num="4" :campaign="true"></multi-children-component>
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						<div class="form-group">
-    						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}"  style="padding-top: 20px;" v-if="!campaign">
+    						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}"  style="padding-top: 20px;">
                 				<label class="label" for="timeslot1">Gender <span class="req_star"> *</span></label>
                 				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
                                 <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
