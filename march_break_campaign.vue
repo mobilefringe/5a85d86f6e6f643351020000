@@ -231,6 +231,10 @@
                     }
                     else if (this.numberOfChildren == 3) {
                         this.showChild3 = true;
+                        // this.noMoreChildren = true;
+                    }
+                    else if (this.numberOfChildren == 3) {
+                        this.showChild3 = true;
                         this.noMoreChildren = true;
                     }
                 },
