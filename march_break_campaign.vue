@@ -50,11 +50,9 @@
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						<div class="form-group">
     						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}">
-                				<label class="label" for="timeslot1">First Choice <span class="req_star"> *</span></label>
-                				<radio :name="'timeslot1_'+randKey" value="male" v-model="child_form_data.timeslot1" :key="randKey">Male</radio>
-                                <radio :name="'timeslot1_'+ (randKey+1)" value="female" v-model="child_form_data.timeslot1" :key="randKey+1">Female</radio>
-                                <span v-if="genderError" class="form-control-feedback">Please choosed a timeslot for your first choice</span>
+                				<v-select :options="allStores" label="name" :searchable="false" :on-change="addLandmark" id="mobile_alpha_list" :placeholder="$t('stores_page.select_a_store')"></v-select>
                 			</div>
+                			
 						</div>
 						<div class="form-group account-btn text-left m-t-10 agreement">
 						    <div class="col-xs-12">
