@@ -197,7 +197,7 @@
                             $.ajax({
                                 url : send_data.url,
                                 type: "POST",
-                                data : send_data.form_data,
+                                data : contact_form,
                                 success: function(data, textStatus, jqXHR){
                                     vm.formSuccess = true;
                                 },
