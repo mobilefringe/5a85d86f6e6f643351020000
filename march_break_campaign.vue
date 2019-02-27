@@ -51,6 +51,7 @@
 						<div class="form-group">
     						<!--<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}">-->
                 				<v-select :options="timeslot" label="name" :searchable="false" :on-change="timeSlotOneSelected()" id="mobile_alpha_list" :placeholder="$t('stores_page.select_a_store')"></v-select>
+                				<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                 			<!--</div>-->
                 			
 						</div>
@@ -253,7 +254,7 @@
                     }
                 },
                 timeSlotOneSelected(val){
-                    console.log(val)
+                    console.log(val);
                 }
             }
         });
