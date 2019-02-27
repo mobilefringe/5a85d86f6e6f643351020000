@@ -241,8 +241,11 @@
                     else if(data.id_num == 2) {
                         this.form_data.child_2 = data;
                     } 
-                    else {
+                    else if (data.id_num == 3) {
                         this.form_data.child_3 = data;
+                    }
+                    else {
+                        this.form_data.child_4 = data;
                     }
                 },
                 campaignMonitorCall(form, form_data_id) {
