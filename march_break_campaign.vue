@@ -49,10 +49,10 @@
 						<multi-children-component v-show="showChild4" @childUpdated="updateChild" key="4" :id_num="4" :campaign="true"></multi-children-component>
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						<div class="form-group">
-    						<!--<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}">-->
+    						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}">
                 				<v-select :options="timeslot" label="name" :searchable="false" :on-change="timeSlotOneSelected()" id="" placeholder="Select first choice" v-validate="'required:true'" class="form-control" :class="{'input': true}" data-vv-delay="500" data-vv-as="timeslot 1"></v-select>
                 				<span v-show="errors.has('timeslot1')" class="form-control-feedback">{{ errors.first('timeslot1') }}</span>
-                			<!--</div>-->
+                			</div>
                 			
 						</div>
 						<div class="form-group account-btn text-left m-t-10 agreement">
