@@ -50,7 +50,7 @@
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						<div class="form-group">
     						<!--<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('timeslot1')}">-->
-                				<v-select :options="timeslot" label="name" :searchable="false" :on-change="timeSlotOneSelected()" id="mobile_alpha_list" :placeholder="$t('stores_page.select_a_store')"></v-select>
+                				<v-select :options="timeslot" label="name" :searchable="false" :on-change="timeSlotOneSelected()" id="" placeholder="Select first choice"></v-select>
                 				<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                 			<!--</div>-->
                 			
