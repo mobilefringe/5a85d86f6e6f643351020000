@@ -16,7 +16,7 @@
 				<input v-model="child_form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" :name="'birthday'+ id_num" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday" :id="'birthday'+ id_num">
 				<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
 			</div>
-			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
+			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;" v-if="!campaign">
 				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
 				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
                 <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
