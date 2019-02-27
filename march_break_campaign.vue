@@ -171,7 +171,6 @@
                                     data: contest_entry,
                                     async: false,
                                     success: function(data) {
-                                      mm_success = true;
                                       console.log("mm post successful");
                                     },
                                     error: function(data){
