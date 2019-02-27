@@ -198,7 +198,7 @@
                             $.ajax({
                                 url : send_data.url,
                                 type: "POST",
-                                data : perm_formdata,
+                                data : send_data.form_data,
                                 success: function(data, textStatus, jqXHR){
                                     vm.formSuccessPerm = true;
                                 },
