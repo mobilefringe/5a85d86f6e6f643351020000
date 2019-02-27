@@ -233,7 +233,7 @@
                         this.showChild3 = true;
                         // this.noMoreChildren = true;
                     }
-                    else if (this.numberOfChildren == 3) {
+                    else if (this.numberOfChildren == 4) {
                         this.showChild4 = true;
                         this.noMoreChildren = true;
                     }
