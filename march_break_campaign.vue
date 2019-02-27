@@ -180,7 +180,7 @@
                                 });
                                 
                                 contact_form["child"+(key+1)+"_name"] = vm.form_data["child_"+(key+1)].child_first_name + " "  +  vm.form_data["child_"+(key+1)].child_last_name;
-                                contact_form["child"+(key+1)+"_birthday"] = vm.form_data["child_"+(key+1)].birthday;
+                                contact_form["child"+(key+1)+"_age"] = vm.form_data["child_"+(key+1)].age;
                                 contact_form["child"+(key+1)+"_gender"] = vm.form_data["child_"+(key+1)].gender;
                                 
                                 
