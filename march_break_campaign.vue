@@ -200,11 +200,11 @@
                                 type: "POST",
                                 data : send_data.form_data,
                                 success: function(data, textStatus, jqXHR){
-                                    vm.formSuccessPerm = true;
+                                    vm.formSuccess = true;
                                 },
                                 error: function (jqXHR, textStatus, errorThrown){
                                   console.log("Data load error: " + error.message);
-                                  vm.formErrorPerm = true;
+                                  vm.formError = true;
                                 }
                             });
                             //if mm is successful,send to campaign monitor
