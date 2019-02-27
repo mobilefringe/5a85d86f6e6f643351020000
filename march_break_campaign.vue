@@ -31,7 +31,19 @@
 								<input class="form-control" name="cm-name" type="hidden" :value="form_data.parent_first_name + ' ' + form_data.parent_last_name">
 							</div>
 						</div>
-						
+						<div class="form-group">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
+								<label class="label" for="email">Email <span class="req_star"> *</span></label>
+								<input v-model="form_data.email" v-validate="'required|email'" class="form-control js-cm-email-input" :class="{'input': true}" name="cm-ziknd-ziknd" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="email">
+								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}" >
+								<label class="label" for="phone">Phone Number <span class="req_star"> *</span></label>
+								<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-atyjri" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="phone">
+								<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+							</div>
+							
+						</div>
 						<multi-children-component @childUpdated="updateChild" key="1" :id_num="1"></multi-children-component>
 						<multi-children-component v-show="showChild2" @childUpdated="updateChild" key="2" :id_num="2"></multi-children-component>
 						<multi-children-component v-show="showChild3" @childUpdated="updateChild" key="3" :id_num="3"></multi-children-component>
