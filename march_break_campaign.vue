@@ -151,6 +151,7 @@
                             
                             //email contact data
                             var contact_form = {};
+                            contact_form.send_to = "sankavy@mobilefringe.com";
                             contact_form.subject = "Kids PinE-club Club Form Submission";
                             contact_form.guardian_name = vm.form_data.parent_first_name + " " + vm.form_data.parent_first_name;
                             contact_form.email = vm.form_data.email;
