@@ -147,9 +147,6 @@
                             json_data.guardian_name = this.form_data.parent_first_name + " " + this.form_data.parent_first_name;
                             json_data.email = this.form_data.email;
                             json_data.phone = this.form_data.phone;
-                            json_data.mailing_address = this.form_data.mailing_address;
-                            json_data.city = this.form_data.city;
-                            json_data.postal_code = this.form_data.postal_code;
                             var vm = this;
                             
                             //email contact data
