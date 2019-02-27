@@ -158,8 +158,7 @@
                             //cycling through children to send separete entries
                             _.times(this.numberOfChildren, function(key) {
                                 json_data.child_name = vm.form_data["child_"+(key+1)].child_first_name + " "  +  vm.form_data["child_"+(key+1)].child_last_name;
-                                json_data.child_birthday = vm.form_data["child_"+(key+1)].birthday;
-                                json_data.child_gender = vm.form_data["child_"+(key+1)].gender;
+                                json_data.child_age= vm.form_data["child_"+(key+1)].age;
                                 
                                 var contest_entry = {};
                                 contest_entry.json = json_data;
