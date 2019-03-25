@@ -24,10 +24,6 @@
                 "href": "/events"
             },
             {
-                "name": "header.march_break",
-                "href": "/march-break-campaign"
-            },
-            {
                 "name": "header.community",
                 "href": "/pages/pinecentre-community"
             },
@@ -38,10 +34,6 @@
             {
                 "name": "header.kids_club",
                 "href": "/kids_club"
-            },
-            {
-                "name": "header.strollers_n_boots",
-                "href": "/strollers_n_booties"
             },
             {
                 "name": "header.mall_walking",
