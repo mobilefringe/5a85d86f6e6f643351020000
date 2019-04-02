@@ -40,7 +40,7 @@
                 "href" : "/mall_walking_club"
             },
             {
-                "name": "header.club_foodie"
+                "name": "header.club_foodie",
                 "href" : "/pages/pinecentre-club-foodie"
             }
         ]
