@@ -14,7 +14,7 @@
                 <div class="col-sm-12">
                     <div v-if="currentPage" v-html="currentPage.body"></div>
                 </div>
-                <div class="col-sm-12"  v-if="currentPage.subpages">
+                <div class="col-sm-12"  v-if="currentPage && currentPage.subpages">
                     <div v-if="currentPage" v-html="currentPage.subpages[0].body"></div>
                 </div>
             </div> 
