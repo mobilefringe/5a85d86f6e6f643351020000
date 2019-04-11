@@ -168,8 +168,8 @@
                     currentPage : null,
                     showForm:false,
                     screenQuestionTwo: null,
-                    screenQuestionTwo: false,
-                    screenQuestionTwo: false,
+                    screenQuestionThree: false,
+                    screenQuestionTFour: false,
                     screenQuestionTwo: false,
                 }
             },
