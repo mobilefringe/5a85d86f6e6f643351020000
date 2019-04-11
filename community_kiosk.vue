@@ -14,6 +14,9 @@
                 <div class="col-sm-12">
                     <div v-if="currentPage" v-html="currentPage.body"></div>
                 </div>
+                <div class="col-sm-12"  v-if="currentPage.subpages">
+                    <div v-if="currentPage" v-html="currentPage.body"></div>
+                </div>
             </div> 
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
