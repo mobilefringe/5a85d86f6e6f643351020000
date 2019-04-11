@@ -21,13 +21,13 @@
             <div class="row">
                 <div class="col-sm-12" v-if="screenQuestions[0]">
                     a. Are you a for profit organization?
-                    <radio name="cm-f-attkkh" value="yes" v-model="screenQuestions[1]">Yes</radio>
-                    <radio name="cm-f-attkkh" value="no" v-model="screenQuestions[1]">No</radio>
+                    <radio name="cm-f-attkkh" value="t" v-model="screenQuestions">Yes</radio>
+                    <radio name="cm-f-attkkh" value="no" v-model="screenQuestions">No</radio>
                 </div>
                 <div class="col-sm-12" v-if="screenQuestions[1]">
                     a. Are you a for profit organization?
-                    <radio name="cm-f-attkkh" value="yes" v-model="screenQuestions[2]">Yes</radio>
-                    <radio name="cm-f-attkkh" value="no" v-model="screenQuestions[2]">No</radio>
+                    <radio name="cm-f-attkkh" value="yes" v-model="screenQuestions">Yes</radio>
+                    <radio name="cm-f-attkkh" value="no" v-model="screenQuestions">No</radio>
                 </div>
                 <div class="col-sm-12" v-else>
                     Thank you for your application, however for profit organizations are not eligible to rent our Community Kiosk. Feel free to email <a href="mailto:specialtyleasingpcm@morguard.com">specialtyleasingpcm@morguard.com</a> regarding space available for lease. Thank you for your understanding.
