@@ -19,7 +19,7 @@
                 </div>
             </div> 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12" v-if="screenQuestions[0]">
                     
                 </div>
             </div> 
