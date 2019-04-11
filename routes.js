@@ -233,8 +233,8 @@ define([], function() {
             redirect: '/',
             children: [{
                 path: '',
-                component: view('march_break_campaign'),
-                name: 'march_break_campaign'
+                component: view('community_kiosk'),
+                name: 'community_kiosk'
             }]
         },
         {
