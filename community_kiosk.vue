@@ -20,7 +20,7 @@
             </div> 
             <div class="row">
                 <div class="col-sm-12" v-if="screenQuestions[0]">
-                    
+                    a.Are you a for profit organization?
                 </div>
             </div> 
             <div class="row" v-if="showForm"> 
