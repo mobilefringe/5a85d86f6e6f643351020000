@@ -150,7 +150,8 @@
                     genderError : false,
                     docError: false,
                     // heardError : false,
-                    currentPage : null
+                    currentPage : null,
+                    showForm:false
                 }
             },
             created() {
