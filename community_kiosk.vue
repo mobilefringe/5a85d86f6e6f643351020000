@@ -167,6 +167,7 @@
                     // heardError : false,
                     currentPage : null,
                     showForm:false,
+                    screenQuestions:[null,null,null,null,null]
                     screenQuestionTwo: null,
                     screenQuestionThree: false,
                     screenQuestionFour: false,
