@@ -244,7 +244,7 @@ define([], function() {
         },
         {
             path: '*',
-            redirect: '/404'
+            redirect: '/'
         }
     ]
 
