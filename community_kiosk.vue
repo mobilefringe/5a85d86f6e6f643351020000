@@ -167,7 +167,10 @@
                     // heardError : false,
                     currentPage : null,
                     showForm:false,
-                    screenQuestions:[true,false,false,false,false]
+                    screenQuestionTwo: null,
+                    screenQuestionTwo: false,
+                    screenQuestionTwo: false,
+                    screenQuestionTwo: false,
                 }
             },
             created() {
