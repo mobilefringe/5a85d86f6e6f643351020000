@@ -131,7 +131,7 @@
         Vue.use(VeeValidate);
         Vue.use(VCalendar.default);
         Vue.use(CheckboxRadio.default);
-        return Vue.component("community_kios", {
+        return Vue.component("community_kiosk", {
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
@@ -234,7 +234,7 @@
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/pinecentre-walking-club.json"}), this.$store.dispatch("getData", "contests"),this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/pinecentre-community-kiosk.json"}), this.$store.dispatch("getData", "contests"),this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
