@@ -30,7 +30,7 @@
                     <radio name="cm-f-attkkh" value="no" v-model="screenQuestions[2]">No</radio>
                 </div>
                 <div class="col-sm-12" v-else>
-                    Thank you for your application, however for profit organizations are not eligible to rent our Community Kiosk. Feel free to email specialtyleasingpcm@morguard.com regarding space available for lease. Thank you for your understanding.
+                    Thank you for your application, however for profit organizations are not eligible to rent our Community Kiosk. Feel free to email <a href="mailto:specialtyleasingpcm@morguard.com">specialtyleasingpcm@morguard.com</a> regarding space available for lease. Thank you for your understanding.
                 </div>
             </div> 
             <div class="row" v-if="showForm"> 
