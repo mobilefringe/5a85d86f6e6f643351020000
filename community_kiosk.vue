@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-sm-12" v-if="screenQuestions[0]">
                     a. Are you a for profit organization?
-                    <radio name="cm-f-attkkh" value="t" v-model="screenQuestions">Yes</radio>
+                    <radio name="cm-f-attkkh" value="true" v-model="screenQuestions">Yes</radio>
                     <radio name="cm-f-attkkh" value="no" v-model="screenQuestions">No</radio>
                 </div>
                 <div class="col-sm-12" v-if="screenQuestions[1]">
