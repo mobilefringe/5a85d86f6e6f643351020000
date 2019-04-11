@@ -72,7 +72,7 @@ define([], function() {
         {
             path: '/map',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('map'),
@@ -119,7 +119,7 @@ define([], function() {
         {
             path: '/pages',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: ':id',
                 component: view('page_details'),
@@ -130,7 +130,7 @@ define([], function() {
         {
             path: '/find_us',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('find_us'),
@@ -160,7 +160,7 @@ define([], function() {
         {
             path: '/kids_club',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('kids_club'),
@@ -170,7 +170,7 @@ define([], function() {
         {
             path: '/pine_club',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('pine_club'),
@@ -180,7 +180,7 @@ define([], function() {
         {
             path: '/services',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('services'),
@@ -190,7 +190,7 @@ define([], function() {
         {
             path: '/toddler_play_area',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('activities'),
@@ -200,7 +200,7 @@ define([], function() {
         {
             path: '/strollers_n_booties',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('strollers_n_boots'),
@@ -210,7 +210,7 @@ define([], function() {
         {
             path: '/mall_walking_club',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('mall_walking_club'),
@@ -220,7 +220,7 @@ define([], function() {
         {
             path: '/march-break-campaign',
             component: view('default'),
-            redirect: '/404',
+            redirect: '/',
             children: [{
                 path: '',
                 component: view('march_break_campaign'),
