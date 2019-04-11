@@ -20,7 +20,7 @@
             </div> 
             <div class="row">
                 <div class="col-sm-12">
-                    <div v-if="currentPage" v-html="currentPage.body"></div>
+                    
                 </div>
             </div> 
             <div class="row" v-if="showForm"> 
@@ -156,7 +156,8 @@
                     docError: false,
                     // heardError : false,
                     currentPage : null,
-                    showForm:false
+                    showForm:false,
+                    screenQuestions:[true,false,false,false,false]
                 }
             },
             created() {
