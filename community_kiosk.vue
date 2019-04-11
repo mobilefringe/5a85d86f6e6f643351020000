@@ -169,8 +169,8 @@
                     showForm:false,
                     screenQuestionTwo: null,
                     screenQuestionThree: false,
-                    screenQuestionTFour: false,
-                    screenQuestionTwo: false,
+                    screenQuestionFour: false,
+                    screenQuestionFive: false,
                 }
             },
             created() {
