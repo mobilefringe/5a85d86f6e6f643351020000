@@ -131,7 +131,7 @@
         Vue.use(VeeValidate);
         Vue.use(VCalendar.default);
         Vue.use(CheckboxRadio.default);
-        return Vue.component("mall_walking_club", {
+        return Vue.component("community_kios", {
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
