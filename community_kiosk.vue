@@ -29,6 +29,9 @@
                     <radio name="cm-f-attkkh" value="yes" v-model="screenQuestions[2]">Yes</radio>
                     <radio name="cm-f-attkkh" value="no" v-model="screenQuestions[2]">No</radio>
                 </div>
+                <div class="col-sm-12" v-else>
+                    Thank you for your application, however for profit organizations are not eligible to rent our Community Kiosk. Feel free to email specialtyleasingpcm@morguard.com regarding space available for lease. Thank you for your understanding.
+                </div>
             </div> 
             <div class="row" v-if="showForm"> 
                 <div class="col-sm-12 contest_contents">
