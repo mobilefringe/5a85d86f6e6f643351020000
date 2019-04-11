@@ -18,7 +18,7 @@
                     <div v-if="currentPage" v-html="currentPage.subpages[0].body"></div>
                 </div>
             </div> 
-            <div class="row"> 
+            <div class="row" v-if="showForm"> 
                 <div class="col-sm-12 contest_contents">
                     <form id="walking_club" class="form-horizontal padding_top_20 js-cm-form" v-on:submit.prevent="validateBeforeSubmit" action="https://mobilefringe.createsend.com/t/d/s/ziuddl/" method="post">
                         <div class="form-group ">
