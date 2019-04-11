@@ -24,7 +24,7 @@
                     <radio name="cm-f-attkkh" value="true" v-model="screenQuestions">Yes</radio>
                     <radio name="cm-f-attkkh" value="false" v-model="screenQuestions">No</radio>
                 </div>
-                <div class="col-sm-12" v-if="screenQuestions[1]">
+                <div class="col-sm-12" v-if="screenQuestionsTwo">
                     a. Are you a for profit organization?
                     <radio name="cm-f-attkkh" value="yes" v-model="screenQuestions">Yes</radio>
                     <radio name="cm-f-attkkh" value="no" v-model="screenQuestions">No</radio>
