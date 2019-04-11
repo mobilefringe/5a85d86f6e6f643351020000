@@ -228,6 +228,16 @@ define([], function() {
             }]
         },
         {
+            path: '/community-kiosk',
+            component: view('default'),
+            redirect: '/',
+            children: [{
+                path: '',
+                component: view('march_break_campaign'),
+                name: 'march_break_campaign'
+            }]
+        },
+        {
             path: '/404',
             name: '404',
             component: view('notfoundcomponent')
