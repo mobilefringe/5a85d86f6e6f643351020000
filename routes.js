@@ -143,7 +143,7 @@ define([], function() {
             redirect: '/404',
             children: [{
                 path: '',
-                component: view('community'),
+                component: view('community_kiosk'),
                 name: 'community'
             }]
         },
