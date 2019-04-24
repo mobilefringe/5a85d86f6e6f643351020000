@@ -138,7 +138,7 @@ define([], function() {
             }]
         },
         {
-            path: '/community',
+            path: '/community-kiosk',
             component: view('default'),
             redirect: '/404',
             children: [{
