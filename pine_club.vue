@@ -69,7 +69,7 @@
 						    <div class="col-xs-12">
 						        <label class="checkbox">
                                     <input name="agree_terms" required type="checkbox" >
-                                     Yes, I would like to receive ongoing news related to events, promotions and special announcements from {{property.name}}
+                                     I agree to receive Commercial Electronic Messages from Morguard, the management company of Pine Centre and its affiliates that will include: special retail sales offers, promotions, new retailer announcements, upcoming events, trend and style news and other inside information. You can unsubscribe at any time. Pine Centre and 3055 Massey Dr, Prince George, BC V2N 2S9 also pinecentre.com
                                 </label>
 						    </div>
 							<div class="col-xs-12" style="margin-top: 20px;">
