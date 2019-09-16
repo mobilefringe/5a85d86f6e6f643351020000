@@ -10,9 +10,6 @@
         <div class="margin_25_across padding_top_40 site_container">
             <div class="row"> 
                 <div class="col-sm-6 text-left" v-if="currentPage">
-            		<!--<div class="property_address">-->
-            		<!--     {{property.address1}} <br/> {{property.city}} <br/> {{property.province}} {{property.postal_code}} -->
-            		<!--</div>-->
                     <div class="text-left contact_us_body" v-html="currentPage.body"></div>
                 </div> 
                 <hr class="visible_phone" style="border-top: #000 1px solid">
@@ -50,7 +47,6 @@
                             </div>
                         </div>
                     </form>
-                    
                     <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
@@ -61,39 +57,15 @@
                         <span class="sr-only">Error:</span>
                         There was an error when trying to submit your request. Please try again later.
                     </div>
-                    
                 </div>
-                
             </div>
             <div class="padding_top_40"></div>    
         </div>
     </div>
 </template>
 
-<!--<style>-->
-<!--    #contact_us_container .row{-->
-<!--        margin-left:inherit;-->
-<!--    }-->
-<!--    #contact_us_container {-->
-<!--        margin: 20px auto 0;-->
-<!--    }-->
-<!--    #contact_us_container .page_header {-->
-<!--        margin-bottom:20px;-->
-<!--    }-->
-<!--    #contact_us_container .property_address {-->
-<!--        margin-bottom:20px;-->
-<!--    }-->
-<!--    .form-group .form-control-feedback{-->
-<!--        font-size: 12px;-->
-        /*top:60px;*/
-<!--        color: #F44336;-->
-<!--        top: initial;-->
-<!--        bottom: -27px;-->
-<!--    }-->
-<!--</style>-->
-
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'utility'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate,Utility) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'utility'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate, Utility) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("contact-us-component", {
@@ -114,11 +86,9 @@
                 this.loadData().then(response => {
                     this.currentPage = response[0].data;
                     var temp_repo = this.findRepoByName('Contact Us Banner');
-                    if(temp_repo) {
+                    if (temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
-                    // this.pageBanner = this.findRepoByName('Contact Us Banner').images[0];
-                   console.log(this.pageBanner); 
                 });
             },
             mounted () {
@@ -141,42 +111,41 @@
             methods: {
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
-                    if (result && (this.correctValNum === this.validaNum)) {
-                        this.validNumError = false;
-                        let errors = this.errors;
-                        send_data = {};
-                        send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
-                        this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                            this.formSuccess = true;
-                        }).catch(error => {
-                            try {
-                                if (error.response.status == 401) {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                } 
-                                else {
+                        if (result && (this.correctValNum === this.validaNum)) {
+                            this.validNumError = false;
+                            let errors = this.errors;
+                            send_data = {};
+                            send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
+                            this.$store.dispatch("CONTACT_US", send_data).then(res => {
+                                this.formSuccess = true;
+                            }).catch(error => {
+                                try {
+                                    if (error.response.status == 401) {
+                                        console.log("Data load error: " + error.message);
+                                        this.formError = true;
+                                    } else {
+                                        console.log("Data load error: " + error.message);
+                                        this.formError = true;
+                                    }
+                                } catch (e) {
                                     console.log("Data load error: " + error.message);
                                     this.formError = true;
                                 }
-                            } 
-                            catch (e) {
-                                console.log("Data load error: " + error.message);
-                                this.formError = true;
-                            }
-                        })
+                            })
                         }
-                    
                     })
                 },
                 loadData: async function() {
                     try {
-                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/pinecentre-contact-us.json"}),this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "	/pages/pinecentre-contact-us.json" }),
+                            this.$store.dispatch("getData", "repos")
+                        ]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
+                }
             }
         });
     });
