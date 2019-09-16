@@ -197,7 +197,7 @@
                 validateBeforeSubmit(form) {
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
-                        if(errors && errors.items.length == 0){ 
+                        if (result){ 
                             if(errors.length > 0) {
                                 console.log("Error", errors);
                                 this.formError = true;
