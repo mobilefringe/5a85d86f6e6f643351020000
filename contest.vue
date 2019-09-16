@@ -157,11 +157,10 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "axios", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', "v-calendar", 'utility'], function(Vue, Vuex,axios, moment, tz, VueMoment, Meta, VeeValidate, VCalendar, Utility) {
+    define(["Vue", "vuex", "axios", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', "v-calendar", 'utility'], function(Vue, Vuex, axios, moment, tz, VueMoment, Meta, VeeValidate, VCalendar, Utility) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         Vue.use(VCalendar.default);
-
         return Vue.component("contest-component", {
             template: template, // the variable template will be injected
             props:['locale'],
@@ -181,7 +180,7 @@
                 this.loadData(this.id).then(response => {
                     this.currentContest = this.findContestBySlug('pinecentre-test-contest');
                     var temp_repo = this.findRepoByName('Pages Banner');
-                    if(temp_repo) {
+                    if (temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
                     this.pageBanner = this.pageBanner;
@@ -190,7 +189,6 @@
             mounted() {
                 //creating random validation num 
                 this.correctValNum = Utility.rannumber();
-                
             },
             computed: {
                 ...Vuex.mapGetters([
@@ -198,7 +196,7 @@
                     'timezone',
                     'findContestBySlug',
                     'findRepoByName'
-                ]),
+                ])
             },
             methods: {
                 validateBeforeSubmit() {
@@ -224,7 +222,7 @@
                                     }
                                 });  
                             }
-                            //format contests data for MM
+                            // Format contest data for MM
                             var contest_entry = {};
                             contest_entry.contest = this.form_data;
                             var vm = this;
@@ -242,19 +240,19 @@
                                 }
                             });
                         }
-
                     })
                 },
                 loadData: async function(id) {
                     try {
-                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        console.log("this.id", this.id);
-                        let results = await Promise.all([this.$store.dispatch("getData", "contests"),this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "contests"),
+                            this.$store.dispatch("getData", "repos")
+                        ]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
+                }
             }
         });
     });
