@@ -198,16 +198,12 @@
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         if (result){ 
-                            if(errors.length > 0) {
-                                console.log("Error", errors);
-                                this.formError = true;
-                                form.preventDefault();
-                                form.target.action = "";
-                            }
-                            else {
-                                // this.campaignMonitorCall($('#subForm'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A2424A7FAF2895AE27BC1E6B945831C3A814668D6DF314C6CFD5AD436FBA4357E38F8203633B221924D53F47AEFF534B1'); 
-                                form.target.submit();
-                            }
+                            form.target.submit();
+                        } else {
+                            console.log("Error", errors);
+                            this.formError = true;
+                            form.preventDefault();
+                            form.target.action = "";
                         }
                     })
                 },
