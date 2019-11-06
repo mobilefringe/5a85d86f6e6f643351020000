@@ -77,7 +77,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!today_hours", "vue!search-component", 'vue!vue-slick', 'js-cookie', 'masonry' , 'vue-masonry-plugin', 'vue-lazy-load'], function(Vue, Vuex, TodayHoursComponent, SearchComponent, slick, Cookies, masonry, VueMasonryPlugin, VueLazyload) {
+    define(["Vue", "vuex", "vue-meta", "vue!today_hours", "vue!search-component", 'vue!vue-slick', 'js-cookie', 'masonry' , 'vue-masonry-plugin', 'vue-lazy-load'], function(Vue, Vuex, Meta, TodayHoursComponent, SearchComponent, slick, Cookies, masonry, VueMasonryPlugin, VueLazyload) {
         Vue.use(VueMasonryPlugin.default);
         Vue.use(VueLazyload);
         return Vue.component("home-component", {
@@ -104,9 +104,10 @@
                     formData : {},
                     instaFeed: null,
                     meta: {
-                        meta_title: "",
-                        meta_description: "",
-                        meta_keywords: ""
+                       meta_title: "",
+                       meta_description: "",
+                       meta_keywords: "",
+                       meta_image: ""
                     }
                 }
             },
@@ -258,13 +259,16 @@
                 }
             },
             metaInfo () {
-                return {
-                    title: this.meta.meta_title,
-                    meta: [
-                        {name: 'description', content: this.meta.meta_description},
-                        {name: 'keywords', content: this.meta.meta_keywords}
-                    ] 
-                }
+               return {
+                  title: this.meta.meta_title,
+                  meta: [
+                     { name: 'description', vmid: 'description', content: this.meta.meta_description },
+                     { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
+                     { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
+                     { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
+                     { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
+                  ]
+               }
             }
         })
     })
