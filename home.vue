@@ -121,6 +121,7 @@
                     this.instaFeed = _.slice(social_feed, [0], [4]);
                     
                     this.meta = this.findMetaDataByPath(this.$route.path);
+                    console.log(this.meta)
 
                 });
             },
