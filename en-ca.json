@@ -74,8 +74,8 @@
   },
   "hours_page" : {
     "hours" : "Hours",
-    "reg_hours" : "Regular Shopping Hours",
-    "extended_holiday_hours" : "Extended Holiday Hours",
+    "reg_hours" : "Shopping Hours",
+    "extended_holiday_hours" : "Holiday Hours",
     "holiday_closures" : "Holiday Closures"
   },
   "newsletter_page" : {
