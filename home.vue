@@ -9,7 +9,7 @@
 						<a v-if="banner.url" :href="banner.url">
 						    <div class="home-banner" v-lazy:background-image="banner.image_url">
     						    <div class="banner_content" v-if="banner.name">
-    						        <h1 class="hero_text">{{banner.name}}</h1>
+    						        <!--<h1 class="hero_text">{{banner.name}}</h1>-->
     						        <p class="hero_desc">
     						            {{banner.description}}
     						        </p>
@@ -18,7 +18,7 @@
 						</a>
 						<div v-else class="home-banner" v-lazy:background-image="banner.image_url">
 						    <div class="banner_content" v-if="banner.name">
-						        <h1 class="hero_text">{{banner.name}}</h1>
+						        <!--<h1 class="hero_text">{{banner.name}}</h1>-->
 						        <p class="hero_desc">
 						            {{banner.description}}
 						        </p>
