@@ -270,7 +270,7 @@
                             this.$store.dispatch("getData", "feature_items"), 
                             this.$store.dispatch("getData", "promotions"), 
                             this.$store.dispatch("getData", "popups"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "//pinecentre.mallmaverickstaging.com/api/v4/pinecentre/social.json" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "//pinecentre.mallmaverick.com/api/v4/pinecentre/social.json" })
                         ]);
                         return results;
                     } catch (e) {
